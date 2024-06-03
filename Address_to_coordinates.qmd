@@ -1,0 +1,37 @@
+---
+title: "Addresses to Coordinates"
+format: gfm
+editor: visual
+---
+
+```{r}
+#install.packages('terra')
+library('tidyverse')
+library('ggmap')
+library('terra')
+```
+
+```{r}
+c <- read.csv('Houston Data Collection - Charlotte.csv')
+
+
+register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
+```
+
+```{r}
+addr <- data.frame(Address = c$Address,
+                   stringsAsFactors = FALSE)
+
+addr.geo <- mutate_geocode(addr, location = Address, output = "latlona")
+```
+
+```{r}
+lon <- addr.geo$lon
+lat <- addr.geo$lat
+lonlat <- cbind(lon,lat)
+
+crdref <- "+proj=longlat +datum=WGS84"
+
+pts <- vect(lonlat, crs = crdref)
+plot(pts, pax = list(xat = c(-95.4, -95.39, -95.38, -95.37, -95.36)))
+```
