@@ -4,15 +4,21 @@ format: gfm
 editor: visual
 ---
 
+tall.packages('tidyverse')
+
 ```{r}
 #install.packages('terra')
+#install.packages('tidyverse')
+#install.packages('ggmap')
+#install.packages('terra')
+
 library('tidyverse')
 library('ggmap')
 library('terra')
 ```
 
 ```{r}
-c <- read.csv('Houston Data Collection - Charlotte.csv')
+c <- read.csv('Power Plants - Sheet1.csv')
 
 
 register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
@@ -22,7 +28,33 @@ register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
 addr <- data.frame(Address = c$Address,
                    stringsAsFactors = FALSE)
 
+power_plant.geo <- mutate_geocode(addr, location = Address, output = "latlona")
+```
+
+```{r}
+c <- read.csv('Houston Data Collection - Charlotte.csv')
+
+
+register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
+
+```
+
+```{r}
+addr <- data.frame(Address = c$Address,
+                   stringsAsFactors = FALSE)
+
 addr.geo <- mutate_geocode(addr, location = Address, output = "latlona")
+
+
+```
+
+```{r}
+lon <- c(-95.231449, -95.450936, -95.219529)
+lat <- c(29.718620, 29.645589, 29.821974)
+extra_pwr_lonlat <- cbind(lon, lat)
+```
+
+```{}
 ```
 
 ```{r}
