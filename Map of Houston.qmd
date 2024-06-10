@@ -1,5 +1,5 @@
 ---
-title: "Addresses to Coordinates"
+title: "Map of Houston"
 format: gfm
 editor: visual
 ---
@@ -10,29 +10,29 @@ tall.packages('tidyverse')
 #install.packages('terra')
 #install.packages('tidyverse')
 #install.packages('ggmap')
-#install.packages('terra')
 
 library('tidyverse')
 library('ggmap')
 library('terra')
+library('maptiles')
 ```
 
 ```{r}
-c <- read.csv('Untitled spreadsheet - Sheet1.csv')
+power_plants <- read.csv('Untitled spreadsheet - Sheet1.csv')
 
 
 register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
 ```
 
 ```{r}
-addr <- data.frame(Address = c$Address,
+power_plants_addr <- data.frame(Address = power_plants$Address,
                    stringsAsFactors = FALSE)
 
-power_plant.geo <- mutate_geocode(addr, location = Address, output = "latlona")
+power_plant.geo <- mutate_geocode(power_plants_addr, location = Address, output = "latlona")
 ```
 
 ```{r}
-c <- read.csv('Houston Data Collection - Charlotte.csv')
+stations <- read.csv('Houston Data Collection - Charlotte.csv')
 
 
 register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
@@ -40,30 +40,51 @@ register_google(key = "AIzaSyBwB1vPbEGg11mc-E2ePo8K_C5-cSmsWPw", write = TRUE)
 ```
 
 ```{r}
-addr <- data.frame(Address = c$Address,
+stations_addr <- data.frame(Address = stations$Address,
                    stringsAsFactors = FALSE)
 
-addr.geo <- mutate_geocode(addr, location = Address, output = "latlona")
+stations_addr.geo <- mutate_geocode(stations_addr, location = Address, output = "latlona")
 
 
 ```
 
 ```{r}
-lon <- c(-95.231449, -95.450936, -95.219529)
-lat <- c(29.718620, 29.645589, 29.821974)
-extra_pwr_lonlat <- cbind(lon, lat)
+ext_lon <- c(-95.231449, -95.450936, -95.219529)
+ext_lat <- c(29.718620, 29.645589, 29.821974)
+
+
+pow_pla_lon <- c(power_plant.geo$lon, ext_lon)
+pow_pla_lat <- c(power_plant.geo$lat,ext_lat)
+pow_pla_lonlat <- cbind(pow_pla_lon,pow_pla_lat)
+
+pow_pla_pts <- vect(pow_pla_lonlat, crs = crdref)
+
 ```
 
 ```         
 ```
 
 ```{r}
-lon <- addr.geo$lon
-lat <- addr.geo$lat
-lonlat <- cbind(lon,lat)
+sta_lon <- stations_addr.geo$lon
+sta_lat <- stations_addr.geo$lat
+sta_lonlat <- cbind(sta_lon,sta_lat)
 
-crdref <- "+proj=longlat +datum=WGS84"
+crdref <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 
-pts <- vect(lonlat, crs = crdref)
-plot(pts, pax = list(xat = c(-95.4, -95.39, -95.38, -95.37, -95.36)))
+sta_pts <- vect(sta_lonlat, crs = crdref)
+
+```
+
+```{r}
+df <- stations_addr.geo %>%
+  filter(Address == "3604 Main St., Houston, TX 77002") %>%
+  select(lon,lat)
+x <- vect(df, geom = c('lon','lat'), crs = crdref)
+extent <- buffer(x, width = 10000)
+
+bg <- get_tiles(ext(extent))
+plot(bg)
+points(sta_pts)
+points(pow_pla_pts, col = 'blue')
+#lines(tsp)
 ```
