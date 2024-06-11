@@ -28,11 +28,14 @@ Which demographic groups are impacted by light rail openings in the United State
 
         -   Meteorological Factors
 
--   Include table of confounding factors
+-   Include table of confounding factor
+
+```{r}
+t <- read.csv('Untitled spreadsheet - Sheet1.csv')
+kable(t)
+```
 
 -   Include table or map of stations
-
--   \
 
 ```{r}
 library("knitr")
@@ -43,7 +46,8 @@ kable(t)
 ```{r}
 library("terra")
 
-sta<-vect("buff_sta.shp")
-
-plot(sta)
+plot(bg)
+points(pow_pla_pts, col = 'blue')
+lines(tsp, col = 'yellow', lwd = 2)
+lines(buff_sta, col = 'red')
 ```
