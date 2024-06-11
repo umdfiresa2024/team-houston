@@ -4,17 +4,17 @@ format: gfm
 editor: visual
 ---
 
-tall.packages('tidyverse')
-
 ```{r}
 #install.packages('terra')
 #install.packages('tidyverse')
 #install.packages('ggmap')
+install.packages("knitr")
 
 library('tidyverse')
 library('ggmap')
 library('terra')
 library('maptiles')
+
 ```
 
 ```{r}
@@ -61,7 +61,14 @@ pow_pla_pts <- vect(pow_pla_lonlat, crs = crdref)
 
 ```
 
-```         
+```{r}
+r<-terra::vect("tl_2021_txharris_roads/tl_2021_48201_roads.shp")
+
+rdf<-as.data.frame(r)
+
+tsp<-subset(r, r$FULLNAME=="N Loop W Svc Rd" | r$FULLNAME == "Southwest Fwy" | r$FULLNAME == "Katy Fwy" | r$FULLNAME == "S Loop W Svc Rd" | r$FULLNAME == "W Loop S Fwy" | r$FULLNAME == "W Loop S Svc Rd" | r$FULLNAME == "Gulf Fwy" | r$FULLNAME == "North Fwy" | r$FULLNAME == "N Loop E Fwy" | r$FULLNAME == "N Loop E Svc Rd" | r$FULLNAME == "South Fwy")
+tsp_df <- as.data.frame(tsp)
+terra::plot(tsp)
 ```
 
 ```{r}
@@ -82,9 +89,13 @@ df <- stations_addr.geo %>%
 x <- vect(df, geom = c('lon','lat'), crs = crdref)
 extent <- buffer(x, width = 10000)
 
-bg <- get_tiles(ext(extent))
-plot(bg)
-points(sta_pts)
+buff_sta <- buffer(sta_pts, width = 250)
+outfile <- "buff_sta.shp"
+writeVector(buff_sta, outfile, overwrite = TRUE)
+#bg <- get_tiles(ext(extent))
+#plot(bg)
+plot(sta_pts)
 points(pow_pla_pts, col = 'blue')
-#lines(tsp)
+lines(tsp, col = 'yellow', lwd = 2)
+lines(buff_sta, col = 'red')
 ```

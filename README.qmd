@@ -6,21 +6,39 @@ editor: visual
 
 ## Research Question
 
+Which demographic groups are impacted by light rail openings in the United States.
+
 ## Research Context
 
--   Which city, which light rail
+-   Houston, Texas
 
--   Which timeline
+    -   Red Line Light Rail
 
--   Hypothesis (light rail openings will cause decrease/increase) around stations
+-   Timeline: 2000-2008
 
-    -   Reasoning on why you think your hypothesis is true
+-   Hypothesis: Light rail openings increase pollution around stations
 
-    -   Confounding factors, explain what factors can also impact pollution near stations
+    -   Reasoning: Light rail stations aggregate commuters throughout Houston, resulting in a concentration of pollution around these stations.
+
+    -   Confounding Factors
+
+        -   Power Plants: Houston has several power plants that produce PM2.5
+
+        -   Roads/Highways/Intersections: Houston has some of the most congested roads in the U.S.
+
+        -   Meteorological Factors
 
 -   Include table of confounding factors
 
 -   Include table or map of stations
+
+-   \
+
+```{r}
+library("knitr")
+t <- read.csv('Houston Data Collection - Charlotte.csv')
+kable(t)
+```
 
 ```{r}
 library("terra")
