@@ -31,6 +31,7 @@ Which demographic groups are impacted by light rail openings in the United State
 -   Include table of confounding factor
 
 ```{r}
+library('knitr')
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
 kable(t)
 ```
@@ -38,16 +39,30 @@ kable(t)
 -   Include table or map of stations
 
 ```{r}
-library("knitr")
 t <- read.csv('Houston Data Collection - Charlotte.csv')
 kable(t)
 ```
 
 ```{r}
-library("terra")
+library('terra')
+library('maptiles')
+library('tidyverse')
+library('ggmap')
+
+x <- vect('bg_x_vect.shp')
+buff_sta <- vect('buff_sta.shp')
+sta_pts <- vect('sta_pts.shp')
+pow_pla_pts <- vect('pow_pla_pts.shp')
+tsp <- vect('tsp.shp')
+
+extent <- buffer(x, width = 10000)
+bg <- get_tiles(ext(extent))
+
+
 
 plot(bg)
+points(sta_pts)
 points(pow_pla_pts, col = 'blue')
-lines(tsp, col = 'yellow', lwd = 2)
 lines(buff_sta, col = 'red')
+lines(tsp, col = "yellow", lwd = 2)
 ```

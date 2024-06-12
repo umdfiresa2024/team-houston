@@ -29,17 +29,30 @@ United States.
 
     - Meteorological Factors
 
-- Include table of confounding factors
-
-- Include table or map of stations
-
--   
+- Include table of confounding factor
 
 ``` r
-library("knitr")
+library('knitr')
 ```
 
     Warning: package 'knitr' was built under R version 4.3.3
+
+``` r
+t <- read.csv('Untitled spreadsheet - Sheet1.csv')
+kable(t)
+```
+
+| Name                            | Address                                         | Coords |
+|:--------------------------------|:------------------------------------------------|:-------|
+| UH Central Power Plant          | 4738 Calhoun Rd, Houston, TX 77004              | NA     |
+| NRG T.H. Wharton Plant          | 16301 Texas 249 Access Rd, Houston, TX 77064    | NA     |
+| Friendswood Energy Center       | 12100 Hiram Clarke Rd bldg-d, Houston, TX 77045 | NA     |
+| W.A. Parish Generating Station  | 2500 Y. U. Jones Rd, Richmond, TX 77469         | NA     |
+| EIF Channelview Cogeneration    | 8580 Sheldon Rd, Houston, TX 77049              | NA     |
+| Smith Power Systems             | 256 N Sam Houston Pkwy E, Houston, TX 77060     | NA     |
+| Calpine Deer Park Energy Center | 5665 Hwy 225, Deer Park, TX 77536               | NA     |
+
+- Include table or map of stations
 
 ``` r
 t <- read.csv('Houston Data Collection - Charlotte.csv')
@@ -76,7 +89,7 @@ kable(t)
 | Fannin South                                      | 1/1/2004        | 1604 West Bellfort Ave., Houston, TX 77054  | NA         | TRUE    |
 
 ``` r
-library("terra")
+library('terra')
 ```
 
     Warning: package 'terra' was built under R version 4.3.3
@@ -91,9 +104,63 @@ library("terra")
         spin
 
 ``` r
-sta<-vect("buff_sta.shp")
-
-plot(sta)
+library('maptiles')
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
+    Warning: package 'maptiles' was built under R version 4.3.3
+
+``` r
+library('tidyverse')
+```
+
+    ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+    ✔ dplyr     1.1.4     ✔ readr     2.1.5
+    ✔ forcats   1.0.0     ✔ stringr   1.5.1
+    ✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+    ✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+    ✔ purrr     1.0.2     
+
+    ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ✖ tidyr::extract() masks terra::extract()
+    ✖ dplyr::filter()  masks stats::filter()
+    ✖ dplyr::lag()     masks stats::lag()
+    ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+``` r
+library('ggmap')
+```
+
+    Warning: package 'ggmap' was built under R version 4.3.3
+
+    ℹ Google's Terms of Service: <https://mapsplatform.google.com>
+      Stadia Maps' Terms of Service: <https://stadiamaps.com/terms-of-service/>
+      OpenStreetMap's Tile Usage Policy: <https://operations.osmfoundation.org/policies/tiles/>
+    ℹ Please cite ggmap if you use it! Use `citation("ggmap")` for details.
+
+    Attaching package: 'ggmap'
+
+
+    The following object is masked from 'package:terra':
+
+        inset
+
+``` r
+x <- vect('bg_x_vect.shp')
+buff_sta <- vect('buff_sta.shp')
+sta_pts <- vect('sta_pts.shp')
+pow_pla_pts <- vect('pow_pla_pts.shp')
+tsp <- vect('tsp.shp')
+
+extent <- buffer(x, width = 10000)
+bg <- get_tiles(ext(extent))
+
+
+
+plot(bg)
+points(sta_pts)
+points(pow_pla_pts, col = 'blue')
+lines(buff_sta, col = 'red')
+lines(tsp, col = "yellow", lwd = 2)
+```
+
+![](README_files/figure-commonmark/unnamed-chunk-3-1.png)

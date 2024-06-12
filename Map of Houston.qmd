@@ -8,7 +8,7 @@ editor: visual
 #install.packages('terra')
 #install.packages('tidyverse')
 #install.packages('ggmap')
-install.packages("knitr")
+#install.packages("knitr")
 
 library('tidyverse')
 library('ggmap')
@@ -92,7 +92,8 @@ extent <- buffer(x, width = 10000)
 buff_sta <- buffer(sta_pts, width = 250)
 outfile <- "buff_sta.shp"
 writeVector(buff_sta, outfile, overwrite = TRUE)
-#bg <- get_tiles(ext(extent))
+
+bg <- get_tiles(ext(extent))
 #plot(bg)
 plot(sta_pts)
 points(pow_pla_pts, col = 'blue')
