@@ -1,0 +1,68 @@
+---
+title: "README"
+format: gfm
+editor: visual
+---
+
+## Research Question
+
+Which demographic groups are impacted by light rail openings in the United States.
+
+## Research Context
+
+-   Houston, Texas
+
+    -   Red Line Light Rail
+
+-   Timeline: 2000-2008
+
+-   Hypothesis: Light rail openings increase pollution around stations
+
+    -   Reasoning: Light rail stations aggregate commuters throughout Houston, resulting in a concentration of pollution around these stations.
+
+    -   Confounding Factors
+
+        -   Power Plants: Houston has several power plants that produce PM2.5
+
+        -   Roads/Highways/Intersections: Houston has some of the most congested roads in the U.S.
+
+        -   Meteorological Factors
+
+-   Include table of confounding factor
+
+```{r}
+library('knitr')
+t <- read.csv('Untitled spreadsheet - Sheet1.csv')
+kable(t)
+```
+
+-   Include table or map of stations
+
+```{r}
+t <- read.csv('Houston Data Collection - Charlotte.csv')
+kable(t)
+```
+
+```{r}
+library('terra')
+library('maptiles')
+library('tidyverse')
+library('ggmap')
+
+x <- vect('bg_x_vect.shp')
+buff_sta <- vect('buff_sta.shp')
+sta_pts <- vect('sta_pts.shp')
+pow_pla_pts <- vect('pow_pla_pts.shp')
+tsp <- vect('tsp.shp')
+
+extent <- buffer(x, width = 10000)
+bg <- get_tiles(ext(extent))
+
+
+
+plot(bg)
+points(sta_pts)
+points(pow_pla_pts, col = 'blue')
+lines(buff_sta, col = 'red')
+lines(tsp, col = "yellow", lwd = 2)
+```
