@@ -93,6 +93,18 @@ buff_sta <- buffer(sta_pts, width = 250)
 outfile <- "buff_sta.shp"
 writeVector(buff_sta, outfile, overwrite = TRUE)
 
+outfile <- "bg_x_vect.shp"
+writeVector(x,outfile, overwrite = TRUE)
+
+outfile <- "sta_pts.shp"
+writeVector(sta_pts, outfile, overwrite = TRUE)
+
+outfile <- "pow_pla_pts.shp"
+writeVector(pow_pla_pts, outfile, overwrite = TRUE)
+
+outfile <- "tsp.shp"
+writeVector(tsp, outfile, overwrite = TRUE)
+
 bg <- get_tiles(ext(extent))
 #plot(bg)
 plot(sta_pts)

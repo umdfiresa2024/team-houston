@@ -1,6 +1,7 @@
 ---
 title: "README"
 format: gfm
+prefer-html: true
 editor: visual
 ---
 
@@ -48,6 +49,7 @@ library('terra')
 library('maptiles')
 library('tidyverse')
 library('ggmap')
+library('leaflet')
 
 x <- vect('bg_x_vect.shp')
 buff_sta <- vect('buff_sta.shp')
@@ -65,4 +67,11 @@ points(sta_pts)
 points(pow_pla_pts, col = 'blue')
 lines(buff_sta, col = 'red')
 lines(tsp, col = "yellow", lwd = 2)
+
+p <- plet(x) %>%
+  points(sta_pts) %>%
+  points(pow_pla_pts, col = 'blue') %>%
+  lines(buff_sta, col ='red') %>%
+  lines(tsp, col = 'yellow', lwd =2)
+p
 ```
