@@ -1,0 +1,54 @@
+---
+title: "Combing Met & PM25 Data"
+format: gfm
+editor: visual
+---
+
+```{r}
+pm25 = PM25_data
+met = met_data_df
+
+
+pm252<-pm25%>%
+  mutate(date_parse = substring(date, 1, 8))
+
+met2 <- met %>%
+  mutate(date_parse = substring(date,1,8))
+
+merged_tab <- merge(x = pm252, y= met2, by = "date_parse")
+
+```
+
+```{r}
+holiday_dates <- c(20000101, 20010101, 20020101, 20030101, 20040101,
+20050101, 20060101, 20070101, 20080101, 20000117, 20010115, 20020121,
+20030120, 20040119, 20050117, 20060116, 20070115, 20080121, 20000221,
+20010219, 20020218, 20030217, 20040216, 20050221, 20060220, 20070219,
+20080218, 20000529, 20010528, 20020527, 20030526, 20040531, 20050530,
+20060529, 20070528, 20080526, 20000619, 20010619, 20020619, 20030619,
+20040619, 20050619, 20060619, 20070619, 20080619, 20000704, 20010704,
+20020704, 20030704, 20040704, 20050704, 20060704, 20070704, 20080704,
+20000904, 20010903, 20020902, 20030901, 20040906, 20050905, 20060904,
+20070903, 20080901, 20001009, 20011008, 20021014, 20031013, 20041011,
+20051010, 20061009, 20071008, 20081013, 20001111, 20011111, 20021111,
+20031111, 20041111, 20051111, 20061111, 20071111, 20081111, 20001123,
+20011122, 20021128, 20031127, 20041125, 20051124, 20061123, 20071122,
+20081127, 20001124, 20011123, 20021129, 20031128, 20041126, 20051125,
+20061124, 20071123, 20081128, 20001225, 20011225, 20021225, 20031225,
+20041225, 20051225, 20061225, 20071225, 20081225)
+
+merged_tab <- merged_tab%>%
+    mutate(holiday = date_parse %in% holiday_dates)%>%
+    mutate(month = substring(date_parse,5,6))%>%
+  mutate(DOW = weekdays(ymd(date_parse)))
+stat_tab <- stations %>%
+   mutate(city_num = c(1:26))
+stat_num_name <- stat_tab%>%
+    select(Station, city_num)
+merged_tab <- merge(merged_tab, stat_num_name, by="city_num")
+
+merged_tab <- merged_tab[, !duplicated(colnames(merged_tab))]
+
+stat_data <- merged_tab%>%
+  select(Station.x, city_num, date_parse, pm25, Tair_f_tavg, Wind_f_tavg, Qair_f_tavg, Swnet_tavg, Lwnet_tavg, Qle_tavg, Qh_tavg, Qg_tavg, Rainf_tavg, Qsb_tavg, AvgSurfT_tavg, SoilMoist_S_tavg, SoilMoist_RZ_tavg, SoilMoist_P_tavg, TVeg_tavg, ESoil_tavg, ACond_tavg, Rainf_f_tavg, Psurf_f_tavg, SWdown_f_tavg, month, DOW, holiday)
+```
