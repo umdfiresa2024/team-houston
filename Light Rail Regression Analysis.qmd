@@ -23,7 +23,11 @@ endDate <- as.Date('2008-12-31', format = '%Y-%m-%d')
 openDate <- as.Date('2004-1-1', format = '%Y-%m-%d')
 consDate <- as.Date('2001-3-13', format = '%Y-%m-%d')
 
+TERPstart <- as.Date('2001-11-14', format = '%Y-%m-%d')
+TERPinactive <- as.Date('2002-2-1', format = '%Y-%m-%d')
+TERPreactive <- as.Date('2003-6-26', format = '%Y-%m-%d')
 
+NAAQS <- as.Date('2006-10-17', format = '%Y-%m-%d')
 ```
 
 ```{r}
@@ -35,12 +39,17 @@ df3 <- df2 %>%
   group_by(city_num)%>%
   rename(c('pm25.y' = 'pm25'))%>%
   arrange(city_num, date)%>%
-  mutate(lpm25 = lag(pm25))
+  mutate(lpm25 = lag(pm25)) %>%
+  mutate(t = as.numeric(date - startDate)) %>%
+  mutate(t2 = t^2, t3 = t^3, t4= t^4)%>%
+  mutate(TERP = ifelse(date > TERPstart & date < TERPinactive | date > TERPreactive,1,0)) %>%
+  mutate(NAAQS = ifelse(date>NAAQS,1,0))
 ```
 
 ```{r}
 summary(m1 <- lm(log(pm25) ~ MetroOpen +
                    construction +
                    as.factor(dow), data = df3))
-summary(m2 <- lm(log(pm25) ~ MetroOpen + construction+ as.factor(dow)))
+
+summary(m2 <- lm(log(pm25) ~ MetroOpen + construction+ as.factor(dow) + TERP + NAAQS+holiday+month, data = df3))
 ```

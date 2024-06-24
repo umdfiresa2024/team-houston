@@ -7,21 +7,39 @@ editor: visual
 ```{r}
 library('tidyverse')
 library('plyr')
+library('dplyr')
 ```
 
 ```{r}
 dir<-dir('PM25_daily', pattern = 'buff0', full.names=TRUE)
-PM25_data<-data.frame()
+buff0_data <- data.frame()
 for(file in dir){
   temp <- read.csv(file, header = TRUE)
-  rbind(PM25_data, temp)
-  
+  buff0_data <- unique(rbind(buff0_data, temp))
 }
+buff0_data <- buff0_data %>%
+  slice(1:3288)
+
+dir <- dir('PM25_daily', pattern = 'lr_centroid', full.names=TRUE)
+PM25_data <- data.frame()
+for(file in dir){
+  temp <- read.csv(file, header = TRUE)
+  PM25_data <- unique(rbind(PM25_data, temp))
+}
+PM25_data <- PM25_data %>%
+  slice(1:85488)
+
+PM25_data <- left_join(buff0_data, PM25_data, by=c("date"))
+PM25_data$pm25.y <- ifelse(PM25_data$city_num.x == 1 & PM25_data$city_num.y == 1 & PM25_data$date == PM25_data$date, PM25_data$pm25.x, PM25_data$pm25.y)
+
+PM25_data <- PM25_data%>%
+  select("date", "city_num.y","pm25.y")
 ```
 
 ```{r}
 pm25 = PM25_data
-met = met_data_df
+
+met = read.csv('Met_sta_daily/met_.csv')
 
 
 pm252<-pm25%>%
@@ -55,7 +73,11 @@ holiday_dates <- c(20000101, 20010101, 20020101, 20030101, 20040101,
 merged_tab <- merged_tab%>%
     mutate(holiday = date_parse %in% holiday_dates)%>%
     mutate(month = substring(date_parse,5,6))%>%
-  mutate(DOW = weekdays(ymd(date_parse)))
+  mutate(DOW = weekdays(ymd(date_parse))) %>%
+  rename(c('city_num.y'='city_num'))
+
+stations <- read.csv('Houston Data Collection - Charlotte.csv')
+
 stat_tab <- stations %>%
    mutate(city_num = c(1:26))
 stat_num_name <- stat_tab%>%
@@ -65,5 +87,5 @@ merged_tab <- merge(merged_tab, stat_num_name, by="city_num")
 merged_tab <- merged_tab[, !duplicated(colnames(merged_tab))]
 
 stat_data <- merged_tab%>%
-  select(Station.x, city_num, date_parse, pm25, Tair_f_tavg, Wind_f_tavg, Qair_f_tavg, Swnet_tavg, Lwnet_tavg, Qle_tavg, Qh_tavg, Qg_tavg, Rainf_tavg, Qsb_tavg, AvgSurfT_tavg, SoilMoist_S_tavg, SoilMoist_RZ_tavg, SoilMoist_P_tavg, TVeg_tavg, ESoil_tavg, ACond_tavg, Rainf_f_tavg, Psurf_f_tavg, SWdown_f_tavg, month, DOW, holiday)
+  select(Station, city_num, date_parse, pm25.y, Tair_f_tavg, Wind_f_tavg, Qair_f_tavg, Swnet_tavg, Lwnet_tavg, Qle_tavg, Qh_tavg, Qg_tavg, Rainf_tavg, Qsb_tavg, AvgSurfT_tavg, SoilMoist_S_tavg, SoilMoist_RZ_tavg, SoilMoist_P_tavg, TVeg_tavg, ESoil_tavg, ACond_tavg, Rainf_f_tavg, Psurf_f_tavg, SWdown_f_tavg, month, DOW, holiday)
 ```
