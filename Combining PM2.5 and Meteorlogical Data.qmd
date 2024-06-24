@@ -5,6 +5,21 @@ editor: visual
 ---
 
 ```{r}
+library('tidyverse')
+library('plyr')
+```
+
+```{r}
+dir<-dir('PM25_daily', pattern = 'buff0', full.names=TRUE)
+PM25_data<-data.frame()
+for(file in dir){
+  temp <- read.csv(file, header = TRUE)
+  rbind(PM25_data, temp)
+  
+}
+```
+
+```{r}
 pm25 = PM25_data
 met = met_data_df
 

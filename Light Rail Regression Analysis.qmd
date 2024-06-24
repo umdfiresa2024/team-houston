@@ -1,0 +1,46 @@
+---
+title: "Light Rail Analysis"
+format: html
+editor: visual
+---
+
+## DB-OLS
+
+```{r}
+library('tidyverse')
+```
+
+```{r}
+df <- stat_data
+df2 <- df %>%
+  mutate(date = as.Date(date_parse, format = '%Y%m%d'))
+```
+
+```{r}
+#Period of analysis 1/1/2000
+startDate <- as.Date('2000-1-1', format = '%Y-%m-%d')
+endDate <- as.Date('2008-12-31', format = '%Y-%m-%d')
+openDate <- as.Date('2004-1-1', format = '%Y-%m-%d')
+consDate <- as.Date('2001-3-13', format = '%Y-%m-%d')
+
+
+```
+
+```{r}
+df3 <- df2 %>%
+  filter(date >=startDate & date <= endDate) %>%
+  mutate(MetroOpen = ifelse(date >= openDate,1,0)) %>%
+  mutate(dow = wday(date))%>%
+  mutate(construction = ifelse(date>consDate & date < openDate, 1 , 0)) %>%
+  group_by(city_num)%>%
+  rename(c('pm25.y' = 'pm25'))%>%
+  arrange(city_num, date)%>%
+  mutate(lpm25 = lag(pm25))
+```
+
+```{r}
+summary(m1 <- lm(log(pm25) ~ MetroOpen +
+                   construction +
+                   as.factor(dow), data = df3))
+summary(m2 <- lm(log(pm25) ~ MetroOpen + construction+ as.factor(dow)))
+```
