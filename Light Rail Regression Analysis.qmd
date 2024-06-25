@@ -8,9 +8,11 @@ editor: visual
 
 ```{r}
 library('tidyverse')
+library('dplyr')
 ```
 
 ```{r}
+
 df <- stat_data
 df2 <- df %>%
   mutate(date = as.Date(date_parse, format = '%Y%m%d'))
@@ -37,11 +39,21 @@ df3 <- df2 %>%
   mutate(dow = wday(date))%>%
   mutate(construction = ifelse(date>consDate & date < openDate, 1 , 0)) %>%
   group_by(city_num)%>%
-  rename(c('pm25.y' = 'pm25'))%>%
+  rename(pm25 = pm25.y)%>%
   arrange(city_num, date)%>%
   mutate(lpm25 = lag(pm25)) %>%
+  mutate(lpm25_2 = lpm25^2, lpm25_3 = lpm25^3, lpm25_4= lpm25^4)%>%
   mutate(t = as.numeric(date - startDate)) %>%
-  mutate(t2 = t^2, t3 = t^3, t4= t^4)%>%
+  mutate(t2 = t^2, t3 = t^3, t4 = t^4)%>%
+  mutate(temp = Tair_f_tavg)%>%
+  mutate(lag_temp = lag(Tair_f_tavg))%>%
+  mutate(lag_temp_2 = lag_temp^2, lag_temp_3 = lag_temp^3, lag_temp_4 = lag_temp^4) %>%
+  mutate(wind = Wind_f_tavg)%>%
+  mutate(lag_wind = lag(Wind_f_tavg))%>%
+  mutate(lag_wind_2 = lag_wind^2, lag_wind_3 = lag_wind^3, lag_wind_4 = lag_wind^4)%>%
+  mutate(humidity = Qair_f_tavg)%>%
+  mutate(lag_humidity = lag(Qair_f_tavg))%>%
+  mutate(lag_humidity_2 = lag_humidity^2, lag_humidity_3 = lag_humidity^3, lag_humidity_4 = lag_humidity^4)%>%
   mutate(TERP = ifelse(date > TERPstart & date < TERPinactive | date > TERPreactive,1,0)) %>%
   mutate(NAAQS = ifelse(date>NAAQS,1,0))
 ```
@@ -51,5 +63,24 @@ summary(m1 <- lm(log(pm25) ~ MetroOpen +
                    construction +
                    as.factor(dow), data = df3))
 
-summary(m2 <- lm(log(pm25) ~ MetroOpen + construction+ as.factor(dow) + TERP + NAAQS+holiday+month, data = df3))
+summary(m2 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS + lpm25 + lpm25_2 + lpm25_3 + lpm25_4 + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4 + t:MetroOpen + t2:MetroOpen + t3:MetroOpen + t4:MetroOpen, data = df3))
+
+summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +lpm25 + lpm25_2 + lpm25_3 + lpm25_4 + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4, data = df3))
+
+summary(m4 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +lpm25 + lpm25_2 + lpm25_3 + lpm25_4 + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4+ t:MetroOpen, data = df3))
+```
+
+```{r}
+t<-seq(0, 3000, 10)
+
+pm_0<- -2.188892e-03*t + 6.964582e-06*t^2 + -6.552888e-09*t^3 + 
+  1.974321e-12 *t^4
+
+pm_1<- 8.116823e+00 + -2.188892e-03*t + 6.964582e-06*t^2 + -6.552888e-09*t^3 + 
+  1.974321e-12 *t^4 +-1.257239e-02*t + 2.776794e-06*t^2 +3.770394e-09*t^3 + 
+  -1.683477e-12*t^4
+
+df<-data.frame(cbind(t, pm_0, pm_1))
+
+ggplot(data=df)+geom_line(aes(x=t, y=pm_0, col="Close")) + geom_line(aes(x=t, y=pm_1, col="Open"))
 ```

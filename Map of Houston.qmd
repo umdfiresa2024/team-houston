@@ -14,6 +14,7 @@ library('tidyverse')
 library('ggmap')
 library('terra')
 library('maptiles')
+crdref <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 
 ```
 
@@ -106,8 +107,8 @@ outfile <- "tsp.shp"
 writeVector(tsp, outfile, overwrite = TRUE)
 
 bg <- get_tiles(ext(extent))
-#plot(bg)
-plot(sta_pts)
+plot(bg)
+geom(sta_pts)
 points(pow_pla_pts, col = 'blue')
 lines(tsp, col = 'yellow', lwd = 2)
 lines(buff_sta, col = 'red')
