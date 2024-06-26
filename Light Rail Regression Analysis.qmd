@@ -63,11 +63,9 @@ summary(m1 <- lm(log(pm25) ~ MetroOpen +
                    construction +
                    as.factor(dow), data = df3))
 
-summary(m2 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS + lpm25 + lpm25_2 + lpm25_3 + lpm25_4 + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4 + t:MetroOpen + t2:MetroOpen + t3:MetroOpen + t4:MetroOpen, data = df3))
+summary(m2 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4 + t:MetroOpen + t2:MetroOpen + t3:MetroOpen + t4:MetroOpen, data = df3))
 
-summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +lpm25 + lpm25_2 + lpm25_3 + lpm25_4 + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4, data = df3))
-
-summary(m4 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +lpm25 + lpm25_2 + lpm25_3 + lpm25_4 + temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4+ t:MetroOpen, data = df3))
+summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4, data = df3))
 ```
 
 ```{r}
@@ -83,4 +81,16 @@ pm_1<- 8.116823e+00 + -2.188892e-03*t + 6.964582e-06*t^2 + -6.552888e-09*t^3 +
 df<-data.frame(cbind(t, pm_0, pm_1))
 
 ggplot(data=df)+geom_line(aes(x=t, y=pm_0, col="Close")) + geom_line(aes(x=t, y=pm_1, col="Open"))
+```
+
+```{r}
+summary(m4 <- lm(log(pm25) ~ MetroOpen:as.factor(city_num) + 
+                   as.factor(city_num) +
+                   construction + TERP + NAAQS +
+                   temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + 
+                   wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 +
+                   humidity + lag_humidity + lag_humidity_2 + 
+                   lag_humidity_3 + lag_humidity_4 + 
+                   as.factor(month) + as.factor(dow) + holiday + 
+                   t + t2 + t3 + t4, data = df3))
 ```

@@ -29,7 +29,7 @@ Which demographic groups are impacted by light rail openings in the United State
 
         -   Meteorological Factors
 
--   Include table of confounding factor
+    ### Table of Power Plants
 
 ```{r}
 library('knitr')
@@ -37,19 +37,33 @@ t <- read.csv('Untitled spreadsheet - Sheet1.csv')
 kable(t)
 ```
 
--   Include table or map of stations
+### Table of Red Line Stations
 
 ```{r}
 t <- read.csv('Houston Data Collection - Charlotte.csv')
 kable(t)
 ```
 
+### Map of Houston
+
+-   Red Line Stations: Black Points
+
+-   Buffers: Red Circles
+
+    -   Radius: 125 km
+
+-   Highways: Yellow Lines
+
+-   Power Plants: Blue Points
+
 ```{r}
+#|warning: false
+#|message: false
+
 library('terra')
 library('maptiles')
 library('tidyverse')
 library('ggmap')
-library('leaflet')
 
 x <- vect('bg_x_vect.shp')
 buff_sta <- vect('buff_sta.shp')
@@ -68,10 +82,17 @@ points(pow_pla_pts, col = 'blue')
 lines(buff_sta, col = 'red')
 lines(tsp, col = "yellow", lwd = 2)
 
-p <- plet(x) %>%
-  points(sta_pts) %>%
-  points(pow_pla_pts, col = 'blue') %>%
-  lines(buff_sta, col ='red') %>%
-  lines(tsp, col = 'yellow', lwd =2)
-p
+```
+
+### Combining PM2.5 Data and Meteorological Data
+
+```{r}
+t <- read.csv('stations_data.csv')
+head(t)
+#kable(t)
+```
+
+```{r}
+m <- read.csv('regression_model.csv')
+m
 ```
