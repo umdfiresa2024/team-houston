@@ -101,67 +101,11 @@ kable(t)
 - Power Plants: Blue Points
 
 ``` r
-#|warning: false
-#|message: false
-
 library('terra')
-```
-
-    Warning: package 'terra' was built under R version 4.3.3
-
-    terra 1.7.78
-
-
-    Attaching package: 'terra'
-
-    The following object is masked from 'package:knitr':
-
-        spin
-
-``` r
 library('maptiles')
-```
-
-    Warning: package 'maptiles' was built under R version 4.3.3
-
-``` r
 library('tidyverse')
-```
-
-    Warning: package 'tidyverse' was built under R version 4.3.3
-
-    ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-    ✔ dplyr     1.1.4     ✔ readr     2.1.5
-    ✔ forcats   1.0.0     ✔ stringr   1.5.1
-    ✔ ggplot2   3.4.4     ✔ tibble    3.2.1
-    ✔ lubridate 1.9.3     ✔ tidyr     1.3.0
-    ✔ purrr     1.0.2     
-
-    ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ✖ tidyr::extract() masks terra::extract()
-    ✖ dplyr::filter()  masks stats::filter()
-    ✖ dplyr::lag()     masks stats::lag()
-    ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-
-``` r
 library('ggmap')
-```
 
-    Warning: package 'ggmap' was built under R version 4.3.3
-
-    ℹ Google's Terms of Service: <https://mapsplatform.google.com>
-      Stadia Maps' Terms of Service: <https://stadiamaps.com/terms-of-service/>
-      OpenStreetMap's Tile Usage Policy: <https://operations.osmfoundation.org/policies/tiles/>
-    ℹ Please cite ggmap if you use it! Use `citation("ggmap")` for details.
-
-    Attaching package: 'ggmap'
-
-
-    The following object is masked from 'package:terra':
-
-        inset
-
-``` r
 x <- vect('bg_x_vect.shp')
 buff_sta <- vect('buff_sta.shp')
 sta_pts <- vect('sta_pts.shp')

@@ -9,6 +9,7 @@ editor: visual
 ```{r}
 library('tidyverse')
 library('dplyr')
+library('broom')
 ```
 
 ```{r}
@@ -93,4 +94,8 @@ summary(m4 <- lm(log(pm25) ~ MetroOpen:as.factor(city_num) +
                    lag_humidity_3 + lag_humidity_4 + 
                    as.factor(month) + as.factor(dow) + holiday + 
                    t + t2 + t3 + t4, data = df3))
+```
+
+```{r}
+write.csv( tidy( m3 ) , "regression_model.csv" )
 ```

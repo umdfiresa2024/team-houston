@@ -57,8 +57,8 @@ kable(t)
 -   Power Plants: Blue Points
 
 ```{r}
-#|warning: false
-#|message: false
+#| warning: false
+#| message: false
 
 library('terra')
 library('maptiles')
@@ -92,7 +92,7 @@ head(t)
 #kable(t)
 ```
 
-###  Linear Regression Model for PM2.5
+### Linear Regression Model for PM2.5
 
 ```{r}
 m <- read.csv('regression_model.csv')
