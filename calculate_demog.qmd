@@ -9,6 +9,7 @@ In this document, you will calculate station-level PM2.5 changes. Afterward, you
 # Calculating Station-Level Pollution Change
 
 ```{r}
+#install.packages('tigris')
 library("tidyverse")
 library("knitr")
 ```
@@ -54,9 +55,8 @@ Run stations level regressions. Use the best regression specification (in your t
 
 ```{r}
 summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(city_num) + construction + TERP + NAAQS +temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4, data = df3))
+#The code below prints out the station-level effect and the p-values
 ```
-
-The code below prints out the station-level effect and the p-values
 
 ```{r}
 len_coef<-length(coef(m1))
@@ -129,6 +129,9 @@ plot(buff)
 Download shapefiles from [tigris package](https://github.com/walkerke/tigris)
 
 ```{r}
+#install.packages('sp')
+library('sp')
+library('tigris')
 shape<-tigris::blocks(state="TX", county="Harris County", class="sp", year=2010)
 shapevect<-vect(shape)
 shapedf<-as.data.frame(shape)
@@ -149,16 +152,16 @@ summary(blockracedf)
 Intersect blocks with buffers
 
 ```{r}
+for(i in 1:26){
 buffdf <- as.data.frame(buff)
-buff2 <-subset(buffdf, buffdf$FID ==1)
+buff2 <-subset(buff, buffdf$FID ==i)
 plot(buff2)
 
-int<-crop(blockrace, buff)
+int<-crop(blockrace, buff2)
 
 int$intarea<-expanse(int, unit="m")
 
-intdf<-as.data.frame(int)
-%>%
+intdf<-as.data.frame(int)%>%
   mutate(frac_area=intarea/blockarea) %>%
   mutate(total=total*frac_area, 
          white=white*frac_area, 
@@ -177,6 +180,8 @@ intdf<-as.data.frame(int)
          pct_native=native*100/total,
          pct_asian=asian*100/total,
          pct_hisp=hisp*100/total)
+print("")
+}
 ```
 
 Summarize demographic groups that live near light rail stations
