@@ -65,21 +65,19 @@ readRenviron("~/.Renviron")
 Identify variables that you would like to query
 
 ```{r}
-vars<-load_variables(year=2004, dataset="acs1", cache = TRUE)
+vars<-load_variables(year=2010, dataset="sf1", cache = TRUE)
 #P005001 Total
 #P005003 White
 #P005004 Black
 #P005005 Native
 #P005006 Asian
 #P005010 Hispanic
+vars2<-load_variables(year=2010, dataset="sf1", cache = TRUE)
+write.csv(vars2, "demo_vars_Dec00.csv")
+vars3 <- load_variables(year=2000, dataset = 'sf2', cache = TRUE)
+vars4 <- load_variables(year=2010, dataset = 'acs1', cache = TRUE)
 
-vars2<-load_variables(year=2008, dataset="acs1", cache = TRUE)
-write.csv(vars2, "demo_vars.csv")
-
-vars5<-load_variables(2010, dataset="sf2")
-vars4<-load_variables(2020, dataset="sf1")
-write.csv(vars4, "demo_vars5.csv")
-
+vars4 <- load_variables(year=2005, dataset = 'acs1', cache = TRUE)
 
 ```
 
@@ -88,10 +86,13 @@ Query variables
 ```{r}
 
 targetvars<-c("P005001","P005003", "P005004","P005005","P005006","P005010")
-targetvars_acs <- c("B00001_001","B00002_001","B01001A_001")
-race<-get_acs(year = 2008, geography = "county", variables=targetvars_acs, 
-                    state="TX", county="Harris County", output="wide",
-              survey = 'acs1')
+race<-get_decennial(year = 2010, geography = "block", variables=targetvars, 
+                    state="TX", county="Harris County", output="wide")
+
+
+transportation_vars <- c('B08006_001','B08006_002','B08006_008','B08006_014','B08006_015','B08006_016','B08006_017')
+transportation <- get_acs(geography = 'tract', variables = transportation_vars, state = 'TX', county = 'Harris County',year = 2010, output = 'wide')
+transportation2 <- get_acs(geography = 'tract', variables = transportation_vars, state = 'TX', county = 'Harris County',year = 2005, output = 'wide')
 ```
 
 Rename columns
@@ -100,6 +101,10 @@ Rename columns
 racename<-race %>%
   rename(total=P005001, white=P005003, black=P005004, native=P005005, 
          asian=P005006, hisp=P005010)
+
+transname<-transportation %>%
+  rename(total = B08006_001E, CarTruckVan = B08006_002E, PublicTransportation = B08006_008E,
+         Bicycle = B08006_014E, Walk = B08006_015E, TaxicabMotorcycleEtc = B08006_016E, WorkedHome = B08006_017E )
 ```
 
 # Calculate affected demographic group
@@ -137,6 +142,16 @@ blockracedf<-as.data.frame(blockrace)
 summary(blockracedf)
 
 #100 percent match
+```
+
+```{r}
+tract_trans <- merge(shapevect, transname, by.x = "GEOID10", by.y = "GEOID")
+
+tract_trans$blockarea <- expanse(tract_trans, unit = 'm')
+
+tract_trans_df <- as.data.frame(tract_trans)
+
+summary(tract_trans_df)
 ```
 
 Intersect blocks with buffers
@@ -177,6 +192,44 @@ output<-rbind(output, intdf)
 }
 ```
 
+```{r}
+buffdf <- as.data.frame(buff)
+
+output<-c()
+
+for(i in 0:25){
+  print(i)
+  buff2 <-subset(buff, buff$FID ==i)
+  int<-crop(tract_trans, buff2)
+  int$intarea<-expanse(int, unit="m")
+  intdf<-as.data.frame(int)%>%
+  mutate(frac_area=intarea/blockarea) %>%
+  mutate(total = total*frac_area,
+         CarTruckVan=CarTruckVan*frac_area, 
+         PublicTransportation=PublicTransportation*frac_area, 
+         Bicycle=Bicycle*frac_area,
+         Walk = Walk*frac_area,
+         TaxicabMotorcycleEtc = TaxicabMotorcycleEtc*frac_area,
+         WorkedHome = WorkedHome*frac_area) %>%
+  summarize(total = sum(total),
+            CarTruckVan=sum(CarTruckVan), 
+            PublicTransportation=sum(PublicTransportation), 
+            Bicycle=sum(Bicycle),
+            Walk = sum(Walk),
+            TaxicabMotorcycleEtc = sum(TaxicabMotorcycleEtc),
+            WorkedHome = sum(WorkedHome)) %>%
+  mutate(pct_CarTruckVan=CarTruckVan*100/total, 
+         pct_PublicTransportation=PublicTransportation*100/total, 
+         pct_Bicycle=Bicycle*100/total,
+         pct_Walk=Walk*100/total,
+         pct_TaxicabMotorcycleEtc = TaxicabMotorcycleEtc*100/total,
+         pct_WorkedHome = WorkedHome*100/total) %>%
+    mutate(FID=i)
+
+output<-rbind(output, intdf)
+}
+```
+
 Summarize demographic groups that live near light rail stations
 
 ```{r}
@@ -193,6 +246,26 @@ sum_demog<-output %>%
          pct_asian=asian*100/total,
          pct_hisp=hisp*100/total) %>%
   select(pct_hisp, pct_white, pct_native, pct_black, pct_asian)
+
+kable(sum_demog, digits=2)
+```
+
+```{r}
+sum_demog<-output %>%
+  summarize(total=sum(total), 
+            CarTruckVan=sum(CarTruckVan), 
+            PublicTransportation=sum(PublicTransportation), 
+            Bicycle=sum(Bicycle),
+            Walk = sum(Walk),
+            TaxicabMotorcycleEtc = sum(TaxicabMotorcycleEtc),
+            WorkedHome = sum(WorkedHome)) %>%
+  mutate(pct_CarTruckVan=CarTruckVan*100/total, 
+         pct_PublicTransportation=PublicTransportation*100/total, 
+         pct_Bicycle=Bicycle*100/total,
+         pct_Walk = Walk*100/total,
+         pct_TaxicabMotorcycleEtc = TaxicabMotorcycleEtc*100/total,
+         pct_WorkedHome = WorkedHome*100/total) %>%
+  select(pct_CarTruckVan, pct_PublicTransportation, pct_Bicycle, pct_Walk, pct_TaxicabMotorcycleEtc, pct_WorkedHome)
 
 kable(sum_demog, digits=2)
 ```
@@ -232,6 +305,41 @@ reddf<-alldf %>%
 #display results
 changedf<-reddf %>%
   select(total_change_ave, black_change_ave, white_change_ave, native_change_ave, hisp_change_ave)
+
+kable(changedf, digits=2)
+```
+
+```{r}
+reddf<-alldf %>%
+  mutate(total_change=total*coef, CarTruckVan_change=CarTruckVan*coef, 
+         PublicTransportation_change=PublicTransportation*coef, Bicycle_change=Bicycle*coef,
+         Walk_change = Walk*coef, TaxicabMotorcycleEtc_change = TaxicabMotorcycleEtc*coef,
+         WorkedHome_change = WorkedHome*coef) %>%
+  summarize(total_change_sum=sum(total_change),
+            CarTruckVan_change_sum=sum(CarTruckVan_change),
+            PublicTransportation_change_sum=sum(PublicTransportation_change),
+            Bicycle_change_sum=sum(Bicycle_change),
+            Walk_change_sum=sum(Walk_change),
+            TaxicabMotorcycleEtc_change_sum=sum(TaxicabMotorcycleEtc_change),
+            WorkedHome_change_sum=sum(WorkedHome_change),
+            total=sum(total), 
+            CarTruckVan=sum(CarTruckVan), 
+            PublicTransportation=sum(PublicTransportation),
+            Bicycle=sum(Bicycle),
+            Walk=sum(Walk),
+            TaxicabMotorcycleEtc=sum(TaxicabMotorcycleEtc),
+            WorkedHome=sum(WorkedHome)) %>%
+  mutate(total_change_ave=total_change_sum*100/total,
+         CarTruckVan_change_ave=CarTruckVan_change_sum*100/CarTruckVan,
+         PublicTransportation_change_ave=PublicTransportation_change_sum*100/PublicTransportation,
+         Bicycle_change_ave=Bicycle_change_sum*100/Bicycle,
+         Walk_change_ave=Walk_change_sum*100/Walk,
+         TaxicabMotorcycleEtc_change_ave = TaxicabMotorcycleEtc_change_sum*100/TaxicabMotorcycleEtc,
+         WorkedHome_change_ave = WorkedHome_change_sum*100/WorkedHome)
+
+#display results
+changedf<-reddf %>%
+  select(total_change_ave, CarTruckVan_change_ave, PublicTransportation_change_ave, Bicycle_change_ave, Walk_change_ave, TaxicabMotorcycleEtc_change_ave, WorkedHome_change_ave)
 
 kable(changedf, digits=2)
 ```
