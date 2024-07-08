@@ -56,7 +56,7 @@ Get census key
 ```{r}
 library(tidycensus)
 api_key <- "6a05830bfcff3c85fb89403e86551d59a94c059a"
-# Thanicha - 43a847b486e6474534b5e09d747e72ffd18f4ba2
+# Thanicha Key: 43a847b486e6474534b5e09d747e72ffd18f4ba2
 # Avi Key: 6a05830bfcff3c85fb89403e86551d59a94c059a
 census_api_key(api_key, install=TRUE, overwrite = T)
 readRenviron("~/.Renviron")
@@ -124,7 +124,7 @@ Download shapefiles from [tigris package](https://github.com/walkerke/tigris)
 #install.packages('sp')
 library('sp')
 library('tigris')
-shape<-tigris::tracts(state="TX", county="Harris County", class="sp", year=2010)
+shape<-tigris::pumas(state="TX",class="sp", year=2012)
 shapevect<-vect(shape)
 shapedf<-as.data.frame(shape)
 
@@ -133,7 +133,11 @@ lines(shapevect, col="red")
 ```
 
 ```{r}
-blockrace<-merge(shapevect, racename, by.x="GEOID10", by.y="GEOID")
+
+pum4<-read.csv("puma2004.csv") |>
+  mutate(PUMACE10=substr(Selected.Geographies, 6, 10))
+
+blockrace<-merge(shapevect, pum4, by="PUMACE10")
 
 blockrace$blockarea<-expanse(blockrace, unit="m")
 
@@ -162,30 +166,18 @@ buffdf <- as.data.frame(buff)
 
 output<-c()
 
-for(i in 0:25){
+for(i in 0:24){
   print(i)
   buff2 <-subset(buff, buff$FID ==i)
   int<-crop(blockrace, buff2)
   int$intarea<-expanse(int, unit="m")
-  intdf<-as.data.frame(int)%>%
+  intdf<-as.data.frame(int) %>%
   mutate(frac_area=intarea/blockarea) %>%
-  mutate(total=total*frac_area, 
-         white=white*frac_area, 
-         black=black*frac_area, 
-         native=native*frac_area, 
-         asian=asian*frac_area, 
-         hisp=hisp*frac_area) %>%
-  summarize(total=sum(total), 
-            white=sum(white), 
-            black=sum(black), 
-            native=sum(native), 
-            asian=sum(asian), 
-            hisp=sum(hisp)) %>%
-  mutate(pct_white=white*100/total, 
-         pct_black=black*100/total, 
-         pct_native=native*100/total,
-         pct_asian=asian*100/total,
-         pct_hisp=hisp*100/total) %>%
+  mutate(Total=Total*frac_area, 
+         Car.truck.van=Car.truck.van*frac_area) |>
+  summarize(Total=sum(Total), 
+            Car.truck.van=sum(Car.truck.van)) %>%
+  mutate(pct_Car.truck.van=Car.truck.van*100/Total) %>%
     mutate(FID=i)
 
 output<-rbind(output, intdf)
