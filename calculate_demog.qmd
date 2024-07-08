@@ -12,6 +12,7 @@ In this document, you will calculate station-level PM2.5 changes. Afterward, you
 #install.packages('tigris')
 library("tidyverse")
 library("knitr")
+library('terra')
 ```
 
 Upload your team's full data frame required to estimate the impact of light rails on PM2.5 levels surrounding all stations. Below is a simplified example.
@@ -64,15 +65,21 @@ readRenviron("~/.Renviron")
 Identify variables that you would like to query
 
 ```{r}
-vars<-load_variables(year=2010, dataset="sf1", cache = TRUE)
+vars<-load_variables(year=2004, dataset="acs1", cache = TRUE)
 #P005001 Total
 #P005003 White
 #P005004 Black
 #P005005 Native
 #P005006 Asian
 #P005010 Hispanic
-vars2<-load_variables(year=2010, dataset="sf1", cache = TRUE)
+
+vars2<-load_variables(year=2008, dataset="acs1", cache = TRUE)
 write.csv(vars2, "demo_vars.csv")
+
+vars5<-load_variables(2010, dataset="sf2")
+vars4<-load_variables(2020, dataset="sf1")
+write.csv(vars4, "demo_vars5.csv")
+
 
 ```
 
@@ -81,8 +88,10 @@ Query variables
 ```{r}
 
 targetvars<-c("P005001","P005003", "P005004","P005005","P005006","P005010")
-race<-get_decennial(year = 2010, geography = "block", variables=targetvars, 
-                    state="TX", county="Harris County", output="wide")
+targetvars_acs <- c("B00001_001","B00002_001","B01001A_001")
+race<-get_acs(year = 2008, geography = "county", variables=targetvars_acs, 
+                    state="TX", county="Harris County", output="wide",
+              survey = 'acs1')
 ```
 
 Rename columns
@@ -110,9 +119,12 @@ Download shapefiles from [tigris package](https://github.com/walkerke/tigris)
 #install.packages('sp')
 library('sp')
 library('tigris')
-shape<-tigris::blocks(state="TX", county="Harris County", class="sp", year=2010)
+shape<-tigris::tracts(state="TX", county="Harris County", class="sp", year=2010)
 shapevect<-vect(shape)
 shapedf<-as.data.frame(shape)
+
+plot(buff)
+lines(shapevect, col="red")
 ```
 
 ```{r}
