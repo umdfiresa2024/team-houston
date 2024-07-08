@@ -1,0 +1,3878 @@
+TBLID#ORDER#STUB
+B01001#T#B01001. SEX BY AGE - Universe:  TOTAL POPULATION
+B01001#1#Total:
+B01001#2#Male:
+B01001#3#Under 5 years
+B01001#4#5 to 9 years
+B01001#5#10 to 14 years
+B01001#6#15 to 17 years
+B01001#7#18 and 19 years
+B01001#8#20 years
+B01001#9#21 years
+B01001#10#22 to 24 years
+B01001#11#25 to 29 years
+B01001#12#30 to 34 years
+B01001#13#35 to 39 years
+B01001#14#40 to 44 years
+B01001#15#45 to 49 years
+B01001#16#50 to 54 years
+B01001#17#55 to 59 years
+B01001#18#60 and 61 years
+B01001#19#62 to 64 years
+B01001#20#65 and 66 years
+B01001#21#67 to 69 years
+B01001#22#70 to 74 years
+B01001#23#75 to 79 years
+B01001#24#80 to 84 years
+B01001#25#85 years and over
+B01001#26#Female:
+B01001#27#Under 5 years
+B01001#28#5 to 9 years
+B01001#29#10 to 14 years
+B01001#30#15 to 17 years
+B01001#31#18 and 19 years
+B01001#32#20 years
+B01001#33#21 years
+B01001#34#22 to 24 years
+B01001#35#25 to 29 years
+B01001#36#30 to 34 years
+B01001#37#35 to 39 years
+B01001#38#40 to 44 years
+B01001#39#45 to 49 years
+B01001#40#50 to 54 years
+B01001#41#55 to 59 years
+B01001#42#60 and 61 years
+B01001#43#62 to 64 years
+B01001#44#65 and 66 years
+B01001#45#67 to 69 years
+B01001#46#70 to 74 years
+B01001#47#75 to 79 years
+B01001#48#80 to 84 years
+B01001#49#85 years and over
+B01002#T#B01002. MEDIAN AGE BY SEX - Universe:  TOTAL POPULATION
+B01002#1#Median age --
+B01002#2#Total:
+B01002#3#Male
+B01002#4#Female
+B01003#T#B01003. Total population - Universe:  TOTAL POPULATION
+B01003#1#Total
+B02001#T#B02001. RACE - Universe:  TOTAL POPULATION
+B02001#1#Total:
+B02001#2#White alone
+B02001#3#Black or African American alone
+B02001#4#American Indian and Alaska Native alone
+B02001#5#Asian alone
+B02001#6#Native Hawaiian and Other Pacific Islander alone
+B02001#7#Some other race alone
+B02001#8#Two or more races:
+B02001#9#Two races including Some other race
+B02001#10#Two races excluding Some other race, and three or more races
+B02003#T#B02003. RACE - Universe:  TOTAL POPULATION
+B02003#1#Total:
+B02003#2#Population of one race:
+B02003#3#White
+B02003#4#Black or African American
+B02003#5#American Indian and Alaska Native
+B02003#6#Asian alone
+B02003#7#Native Hawaiian and Other Pacific Islander
+B02003#8#Some other race
+B02003#9#Population of two or more races:
+B02003#10#Two or more races including Some other race
+B02003#11#Two or more races excluding Some other race
+B02003#12#Population of two races:
+B02003#13#White; Black or African American
+B02003#14#White; American Indian and Alaska Native
+B02003#15#White; Asian
+B02003#16#Black or African American; American Indian and Alaska Native
+B02003#17#All other two race combinations
+B02003#18#Population of three races
+B02003#19#Population of four or more races
+B02005#T#B02005. AMERICAN INDIAN AND ALASKA NATIVE ALONE WITH ONE TRIBE REPORTED FOR SELECTED TRIBAL GROUPINGS - Universe:  PEOPLE WHO ARE AMERICAN INDIAN AND ALASKA NATIVE ALONE - TOTAL TRIBES TALLIED FOR PEOPLE WITH ONE TRIBE ONLY, AND PEOPLE WITH NO TRI
+BE REPORTED
+B02005#1#Total:
+B02005#2#American Indian tribes, specified:
+B02005#3#Apache alone
+B02005#4#Blackfeet alone
+B02005#5#Cherokee alone
+B02005#6#Cheyenne alone
+B02005#7#Chickasaw alone
+B02005#8#Chippewa alone
+B02005#9#Choctaw alone
+B02005#10#Colville alone
+B02005#11#Comanche alone
+B02005#12#Cree alone
+B02005#13#Creek alone
+B02005#14#Crow alone
+B02005#15#Delaware alone
+B02005#16#Houma alone
+B02005#17#Iroquois alone
+B02005#18#Kiowa alone
+B02005#19#Lumbee alone
+B02005#20#Menominee alone
+B02005#21#Navajo alone
+B02005#22#Osage alone
+B02005#23#Ottawa alone
+B02005#24#Paiute alone
+B02005#25#Pima alone
+B02005#26#Potawatomi alone
+B02005#27#Pueblo alone
+B02005#28#Puget Sound Salish alone
+B02005#29#Seminole alone
+B02005#30#Shoshone alone
+B02005#31#Sioux alone
+B02005#32#Tohono O'Odham alone
+B02005#33#Ute alone
+B02005#34#Yakama alone
+B02005#35#Yaqui alone
+B02005#36#Yuman alone
+B02005#37#All other American Indian tribes
+B02005#38#American Indian tribes, not specified
+B02005#39#Alaska Native tribes, specified:
+B02005#40#Alaskan Athabascan alone
+B02005#41#Aleut alone
+B02005#42#Eskimo alone
+B02005#43#Tlingit-Haida alone
+B02005#44#All other Alaska Native tribes
+B02005#45#Alaska Native tribes, not specified
+B02005#46#American Indian tribes or Alaska Native tribes, not specified
+B02006#T#B02006. ASIAN ALONE BY SELECTED GROUPS - Universe:  TOTAL ASIAN ALONE POPULATION
+B02006#1#Total:
+B02006#2#Asian Indian alone
+B02006#3#Bangladeshi alone
+B02006#4#Cambodian alone
+B02006#5#Chinese alone, except Taiwanese
+B02006#6#Filipino alone
+B02006#7#Hmong alone
+B02006#8#Indonesian alone
+B02006#9#Japanese alone
+B02006#10#Korean alone
+B02006#11#Laotian alone
+B02006#12#Malaysian alone
+B02006#13#Pakistani alone
+B02006#14#Sri Lankan alone
+B02006#15#Taiwanese alone
+B02006#16#Thai alone
+B02006#17#Vietnamese alone
+B02006#18#Other Asian
+B02006#19#Other Asian, not specified
+B02007#T#B02007. NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE BY SELECTED GROUPS - Universe:  TOTAL NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE POPULATION
+B02007#1#Total:
+B02007#2#Polynesian alone:
+B02007#3#Native Hawaiian alone
+B02007#4#Samoan alone
+B02007#5#Tongan alone
+B02007#6#Other Polynesian
+B02007#7#Micronesian alone:
+B02007#8#Guamanian or Chamorro alone
+B02007#9#Other Micronesian
+B02007#10#Melanesian alone:
+B02007#11#Fijian alone
+B02007#12#Other Melanesian
+B02007#13#Other Pacific Islander
+B02007#14#Other Pacific Islander, not specified (check box only)
+B02007#15#Other Pacific Islander, not specified
+B02008#T#B02008. WHITE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES - Universe:  WHITE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES
+B02008#1#Total:
+B02009#T#B02009. BLACK OR AFRICAN AMERICAN ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES - Universe:  BLACK OR AFRICAN AMERICAN ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES
+B02009#1#Total:
+B02010#T#B02010. AMERICAN INDIAN AND ALASKA NATIVE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES - Universe:  AMERICAN INDIAN AND ALASKA NATIVE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES
+B02010#1#Total:
+B02011#T#B02011. ASIAN ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES - Universe:  ASIAN ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES
+B02011#1#Total:
+B02012#T#B02012. NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES - Universe:  NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES
+B02012#1#Total:
+B02013#T#B02013. SOME OTHER RACE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES - Universe:  SOME OTHER RACE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES
+B02013#1#Total:
+B03001#T#B03001. HISPANIC OR LATINO ORIGIN BY SPECIFIC ORIGIN - Universe:  TOTAL POPULATION
+B03001#1#Total:
+B03001#2#Not Hispanic or Latino
+B03001#3#Hispanic or Latino:
+B03001#4#Mexican
+B03001#5#Puerto Rican
+B03001#6#Cuban
+B03001#7#Dominican (Dominican Republic)
+B03001#8#Central American:
+B03001#9#Costa Rican
+B03001#10#Guatemalan
+B03001#11#Honduran
+B03001#12#Nicaraguan
+B03001#13#Panamanian
+B03001#14#Salvadoran
+B03001#15#Other Central American
+B03001#16#South American:
+B03001#17#Argentinean
+B03001#18#Bolivian
+B03001#19#Chilean
+B03001#20#Colombian
+B03001#21#Ecuadorian
+B03001#22#Paraguayan
+B03001#23#Peruvian
+B03001#24#Uruguayan
+B03001#25#Venezuelan
+B03001#26#Other South American
+B03001#27#Other Hispanic or Latino:
+B03001#28#Spaniard
+B03001#29#Spanish
+B03001#30#Spanish American
+B03001#31#All other Hispanic or Latino
+B03002#T#B03002. HISPANIC OR LATINO ORIGIN BY RACE - Universe:  TOTAL POPULATION
+B03002#1#Total:
+B03002#2#Not Hispanic or Latino:
+B03002#3#White alone
+B03002#4#Black or African American alone
+B03002#5#American Indian and Alaska Native alone
+B03002#6#Asian alone
+B03002#7#Native Hawaiian and other Pacific Islander alone
+B03002#8#Some other race alone
+B03002#9#Two or more races:
+B03002#10#Two races including Some other race
+B03002#11#Two races excluding Some other race, and three or more races
+B03002#12#Hispanic or Latino:
+B03002#13#White alone
+B03002#14#Black or African American alone
+B03002#15#American Indian and Alaska Native alone
+B03002#16#Asian alone
+B03002#17#Native Hawaiian and other Pacific Islander alone
+B03002#18#Some other race alone
+B03002#19#Two or more races:
+B03002#20#Two races including Some other race
+B03002#21#Two races excluding Some other race, and three or more races
+B04001#T#B04001. FIRST ANCESTRY REPORTED - Universe:  TOTAL POPULATION
+B04001#1#Total:
+B04001#2#Afghan
+B04001#3#Albanian
+B04001#4#Alsatian
+B04001#5#American
+B04001#6#Arab:
+B04001#7#Egyptian
+B04001#8#Iraqi
+B04001#9#Jordanian
+B04001#10#Lebanese
+B04001#11#Moroccan
+B04001#12#Palestinian
+B04001#13#Syrian
+B04001#14#Arab
+B04001#15#Other Arab
+B04001#16#Armenian
+B04001#17#Assyrian/Chaldean/Syriac
+B04001#18#Australian
+B04001#19#Austrian
+B04001#20#Basque
+B04001#21#Belgian
+B04001#22#Brazilian
+B04001#23#British
+B04001#24#Bulgarian
+B04001#25#Cajun
+B04001#26#Canadian
+B04001#27#Carpatho Rusyn
+B04001#28#Celtic
+B04001#29#Croatian
+B04001#30#Cypriot
+B04001#31#Czech
+B04001#32#Czechoslovakian
+B04001#33#Danish
+B04001#34#Dutch
+B04001#35#Eastern European
+B04001#36#English
+B04001#37#Estonian
+B04001#38#European
+B04001#39#Finnish
+B04001#40#French (except Basque)
+B04001#41#French Canadian
+B04001#42#German
+B04001#43#German Russian
+B04001#44#Greek
+B04001#45#Guyanese
+B04001#46#Hungarian
+B04001#47#Icelander
+B04001#48#Iranian
+B04001#49#Irish
+B04001#50#Israeli
+B04001#51#Italian
+B04001#52#Latvian
+B04001#53#Lithuanian
+B04001#54#Luxemburger
+B04001#55#Macedonian
+B04001#56#Maltese
+B04001#57#New Zealander
+B04001#58#Northern European
+B04001#59#Norwegian
+B04001#60#Pennsylvania German
+B04001#61#Polish
+B04001#62#Portuguese
+B04001#63#Romanian
+B04001#64#Russian
+B04001#65#Scandinavian
+B04001#66#Scotch-Irish
+B04001#67#Scottish
+B04001#68#Serbian
+B04001#69#Slavic
+B04001#70#Slovak
+B04001#71#Slovene
+B04001#72#Soviet Union
+B04001#73#Subsaharan African:
+B04001#74#Cape Verdean
+B04001#75#Ethiopian
+B04001#76#Ghanian
+B04001#77#Kenyan
+B04001#78#Liberian
+B04001#79#Nigerian
+B04001#80#Senegalese
+B04001#81#Sierra Leonean
+B04001#82#Somalian
+B04001#83#South African
+B04001#84#Sudanese
+B04001#85#Ugandan
+B04001#86#Zimbabwean
+B04001#87#African
+B04001#88#Other Subsaharan African
+B04001#89#Swedish
+B04001#90#Swiss
+B04001#91#Turkish
+B04001#92#Ukrainian
+B04001#93#Welsh
+B04001#94#West Indian (except Hispanic groups):
+B04001#95#Bahamian
+B04001#96#Barbadian
+B04001#97#Belizean
+B04001#98#Bermudan
+B04001#99#British West Indian
+B04001#100#Dutch West Indian
+B04001#101#Haitian
+B04001#102#Jamaican
+B04001#103#Trinidadian and Tobagonian
+B04001#104#U.S. Virgin Islander
+B04001#105#West Indian
+B04001#106#Other West Indian
+B04001#107#Yugoslavian
+B04001#108#Other groups
+B04001#109#Unclassified or not reported
+B04002#T#B04002. SECOND ANCESTRY REPORTED - Universe:  TOTAL POPULATION
+B04002#1#Total:
+B04002#2#Afghan
+B04002#3#Albanian
+B04002#4#Alsatian
+B04002#5#American
+B04002#6#Arab:
+B04002#7#Egyptian
+B04002#8#Iraqi
+B04002#9#Jordanian
+B04002#10#Lebanese
+B04002#11#Moroccan
+B04002#12#Palestinian
+B04002#13#Syrian
+B04002#14#Arab
+B04002#15#Other Arab
+B04002#16#Armenian
+B04002#17#Assyrian/Chaldean/Syriac
+B04002#18#Australian
+B04002#19#Austrian
+B04002#20#Basque
+B04002#21#Belgian
+B04002#22#Brazilian
+B04002#23#British
+B04002#24#Bulgarian
+B04002#25#Cajun
+B04002#26#Canadian
+B04002#27#Carpatho Rusyn
+B04002#28#Celtic
+B04002#29#Croatian
+B04002#30#Cypriot
+B04002#31#Czech
+B04002#32#Czechoslovakian
+B04002#33#Danish
+B04002#34#Dutch
+B04002#35#Eastern European
+B04002#36#English
+B04002#37#Estonian
+B04002#38#European
+B04002#39#Finnish
+B04002#40#French (except Basque)
+B04002#41#French Canadian
+B04002#42#German
+B04002#43#German Russian
+B04002#44#Greek
+B04002#45#Guyanese
+B04002#46#Hungarian
+B04002#47#Icelander
+B04002#48#Iranian
+B04002#49#Irish
+B04002#50#Israeli
+B04002#51#Italian
+B04002#52#Latvian
+B04002#53#Lithuanian
+B04002#54#Luxemburger
+B04002#55#Macedonian
+B04002#56#Maltese
+B04002#57#New Zealander
+B04002#58#Northern European
+B04002#59#Norwegian
+B04002#60#Pennsylvania German
+B04002#61#Polish
+B04002#62#Portuguese
+B04002#63#Romanian
+B04002#64#Russian
+B04002#65#Scandinavian
+B04002#66#Scotch-Irish
+B04002#67#Scottish
+B04002#68#Serbian
+B04002#69#Slavic
+B04002#70#Slovak
+B04002#71#Slovene
+B04002#72#Soviet Union
+B04002#73#Subsaharan African:
+B04002#74#Cape Verdean
+B04002#75#Ethiopian
+B04002#76#Ghanian
+B04002#77#Kenyan
+B04002#78#Liberian
+B04002#79#Nigerian
+B04002#80#Senegalese
+B04002#81#Sierra Leonean
+B04002#82#Somalian
+B04002#83#South African
+B04002#84#Sudanese
+B04002#85#Ugandan
+B04002#86#Zimbabwean
+B04002#87#African
+B04002#88#Other Subsaharan African
+B04002#89#Swedish
+B04002#90#Swiss
+B04002#91#Turkish
+B04002#92#Ukrainian
+B04002#93#Welsh
+B04002#94#West Indian (except Hispanic groups):
+B04002#95#Bahamian
+B04002#96#Barbadian
+B04002#97#Belizean
+B04002#98#Bermudan
+B04002#99#British West Indian
+B04002#100#Dutch West Indian
+B04002#101#Haitian
+B04002#102#Jamaican
+B04002#103#Trinidadian and Tobagonian
+B04002#104#U.S. Virgin Islander
+B04002#105#West Indian
+B04002#106#Other West Indian
+B04002#107#Yugoslavian
+B04002#108#Other groups
+B04002#109#Unclassified or not reported
+B04006#T#B04006. PEOPLE REPORTING ANCESTRY - Universe:  TOTAL POPULATION
+B04006#1#Total:
+B04006#2#Afghan
+B04006#3#Albanian
+B04006#4#Alsatian
+B04006#5#American
+B04006#6#Arab:
+B04006#7#Egyptian
+B04006#8#Iraqi
+B04006#9#Jordanian
+B04006#10#Lebanese
+B04006#11#Moroccan
+B04006#12#Palestinian
+B04006#13#Syrian
+B04006#14#Arab
+B04006#15#Other Arab
+B04006#16#Armenian
+B04006#17#Assyrian/Chaldean/Syriac
+B04006#18#Australian
+B04006#19#Austrian
+B04006#20#Basque
+B04006#21#Belgian
+B04006#22#Brazilian
+B04006#23#British
+B04006#24#Bulgarian
+B04006#25#Cajun
+B04006#26#Canadian
+B04006#27#Carpatho Rusyn
+B04006#28#Celtic
+B04006#29#Croatian
+B04006#30#Cypriot
+B04006#31#Czech
+B04006#32#Czechoslovakian
+B04006#33#Danish
+B04006#34#Dutch
+B04006#35#Eastern European
+B04006#36#English
+B04006#37#Estonian
+B04006#38#European
+B04006#39#Finnish
+B04006#40#French (except Basque)
+B04006#41#French Canadian
+B04006#42#German
+B04006#43#German Russian
+B04006#44#Greek
+B04006#45#Guyanese
+B04006#46#Hungarian
+B04006#47#Icelander
+B04006#48#Iranian
+B04006#49#Irish
+B04006#50#Israeli
+B04006#51#Italian
+B04006#52#Latvian
+B04006#53#Lithuanian
+B04006#54#Luxemburger
+B04006#55#Macedonian
+B04006#56#Maltese
+B04006#57#New Zealander
+B04006#58#Northern European
+B04006#59#Norwegian
+B04006#60#Pennsylvania German
+B04006#61#Polish
+B04006#62#Portuguese
+B04006#63#Romanian
+B04006#64#Russian
+B04006#65#Scandinavian
+B04006#66#Scotch-Irish
+B04006#67#Scottish
+B04006#68#Serbian
+B04006#69#Slavic
+B04006#70#Slovak
+B04006#71#Slovene
+B04006#72#Soviet Union
+B04006#73#Subsaharan African:
+B04006#74#Cape Verdean
+B04006#75#Ethiopian
+B04006#76#Ghanian
+B04006#77#Kenyan
+B04006#78#Liberian
+B04006#79#Nigerian
+B04006#80#Senegalese
+B04006#81#Sierra Leonean
+B04006#82#Somalian
+B04006#83#South African
+B04006#84#Sudanese
+B04006#85#Ugandan
+B04006#86#Zimbabwean
+B04006#87#African
+B04006#88#Other Subsaharan African
+B04006#89#Swedish
+B04006#90#Swiss
+B04006#91#Turkish
+B04006#92#Ukrainian
+B04006#93#Welsh
+B04006#94#West Indian (except Hispanic groups):
+B04006#95#Bahamian
+B04006#96#Barbadian
+B04006#97#Belizean
+B04006#98#Bermudan
+B04006#99#British West Indian
+B04006#100#Dutch West Indian
+B04006#101#Haitian
+B04006#102#Jamaican
+B04006#103#Trinidadian and Tobagonian
+B04006#104#U.S. Virgin Islander
+B04006#105#West Indian
+B04006#106#Other West Indian
+B04006#107#Yugoslavian
+B04006#108#Other groups
+B04006#109#Unclassified or not reported
+B05001#T#B05001. CITIZENSHIP STATUS - Universe:  TOTAL POPULATION
+B05001#1#Total:
+B05001#2#U.S. citizen, born in the United States
+B05001#3#U.S. citizen, born in Puerto Rico or U.S. Island Areas
+B05001#4#U.S. citizen, born abroad of American parent(s)
+B05001#5#U.S. citizen, by naturalization
+B05001#6#Not a U.S. citizen
+B05002#T#B05002. PLACE OF BIRTH BY CITIZENSHIP STATUS - Universe:  TOTAL POPULATION
+B05002#1#Total:
+B05002#2#Native:
+B05002#3#Born in state of residence
+B05002#4#Born in other state in the United States:
+B05002#5#Northeast
+B05002#6#Midwest
+B05002#7#South
+B05002#8#West
+B05002#9#Born outside the United States:
+B05002#10#Puerto Rico
+B05002#11#U.S. Island Areas
+B05002#12#Born abroad of American parent(s)
+B05002#13#Foreign born:
+B05002#14#Naturalized U.S. citizen
+B05002#15#Not a U.S. citizen
+B05005#T#B05005. YEAR OF ENTRY BY CITIZENSHIP STATUS - Universe:  POPULATION BORN OUTSIDE THE UNITED STATES
+B05005#1#Total:
+B05005#2#Entered U.S. 2000 or later:
+B05005#3#Native
+B05005#4#Foreign born:
+B05005#5#Naturalized U.S. citizen
+B05005#6#Not a U.S. citizen
+B05005#7#Entered U.S. 1990 to 1999:
+B05005#8#Native
+B05005#9#Foreign born:
+B05005#10#Naturalized U.S. citizen
+B05005#11#Not a U.S. citizen
+B05005#12#Entered U.S. 1980 to 1989:
+B05005#13#Native
+B05005#14#Foreign born:
+B05005#15#Naturalized U.S. citizen
+B05005#16#Not a U.S. citizen
+B05005#17#Entered U.S. before 1980:
+B05005#18#Native
+B05005#19#Foreign born:
+B05005#20#Naturalized U.S. citizen
+B05005#21#Not a U.S. citizen
+B05006#T#B05006. PLACE OF BIRTH FOR THE FOREIGN-BORN POPULATION - Universe:  FOREIGN-BORN POPULATION EXCLUDING POPULATION BORN AT SEA
+B05006#1#Total:
+B05006#2#Europe:
+B05006#3#Northern Europe:
+B05006#4#United Kingdom:
+B05006#5#United Kingdom, excluding England and Scotland
+B05006#6#England
+B05006#7#Scotland
+B05006#8#Ireland
+B05006#9#Other Northern Europe
+B05006#10#Western Europe:
+B05006#11#Austria
+B05006#12#France
+B05006#13#Germany
+B05006#14#Netherlands
+B05006#15#Other Western Europe
+B05006#16#Southern Europe:
+B05006#17#Greece
+B05006#18#Italy
+B05006#19#Portugal
+B05006#20#Spain
+B05006#21#Other Southern Europe
+B05006#22#Eastern Europe:
+B05006#23#Croatia
+B05006#24#Czechoslovakia (includes Czech Republic and Slovakia)
+B05006#25#Hungary
+B05006#26#Poland
+B05006#27#Romania
+B05006#28#Russia
+B05006#29#Ukraine
+B05006#30#Bosnia and Herzegovina
+B05006#31#Yugoslavia
+B05006#32#Other Eastern Europe
+B05006#33#Europe, n.e.c.
+B05006#34#Asia:
+B05006#35#Eastern Asia:
+B05006#36#China:
+B05006#37#China, excluding Hong Kong and Taiwan
+B05006#38#Hong Kong
+B05006#39#Taiwan
+B05006#40#Japan
+B05006#41#Korea
+B05006#42#Other Eastern Asia
+B05006#43#South Central Asia:
+B05006#44#Afghanistan
+B05006#45#Bangladesh
+B05006#46#India
+B05006#47#Iran
+B05006#48#Pakistan
+B05006#49#Other South Central Asia
+B05006#50#South Eastern Asia:
+B05006#51#Cambodia
+B05006#52#Indonesia
+B05006#53#Laos
+B05006#54#Philippines
+B05006#55#Thailand
+B05006#56#Vietnam
+B05006#57#Other South Eastern Asia
+B05006#58#Western Asia:
+B05006#59#Iraq
+B05006#60#Israel
+B05006#61#Lebanon
+B05006#62#Syria
+B05006#63#Turkey
+B05006#64#Armenia
+B05006#65#Other Western Asia
+B05006#66#Asia,n.e.c.
+B05006#67#Africa:
+B05006#68#Eastern Africa:
+B05006#69#Ethiopia
+B05006#70#Kenya
+B05006#71#Other Eastern Africa
+B05006#72#Middle Africa
+B05006#73#Northern Africa:
+B05006#74#Egypt
+B05006#75#Other Northern Africa
+B05006#76#Southern Africa:
+B05006#77#South Africa
+B05006#78#Other Southern Africa
+B05006#79#Western Africa:
+B05006#80#Ghana
+B05006#81#Liberia
+B05006#82#Nigeria
+B05006#83#Other Western Africa
+B05006#84#Africa, n.e.c.
+B05006#85#Oceania:
+B05006#86#Australia and New Zealand Subregion:
+B05006#87#Australia
+B05006#88#Other Australian and New Zealand Subregion
+B05006#89#Oceania, n.e.c.
+B05006#90#Americas:
+B05006#91#Latin America:
+B05006#92#Caribbean:
+B05006#93#Barbados
+B05006#94#Cuba
+B05006#95#Dominican Republic
+B05006#96#Haiti
+B05006#97#Jamaica
+B05006#98#Trinidad and Tobago
+B05006#99#Other Caribbean
+B05006#100#Central America:
+B05006#101#Mexico
+B05006#102#Costa Rica
+B05006#103#El Salvador
+B05006#104#Guatemala
+B05006#105#Honduras
+B05006#106#Nicaragua
+B05006#107#Panama
+B05006#108#Other Central America
+B05006#109#South America:
+B05006#110#Argentina
+B05006#111#Bolivia
+B05006#112#Brazil
+B05006#113#Chile
+B05006#114#Colombia
+B05006#115#Ecuador
+B05006#116#Guyana
+B05006#117#Peru
+B05006#118#Uruguay
+B05006#119#Venezuela
+B05006#120#Other South America
+B05006#121#Northern America:
+B05006#122#Canada
+B05006#123#Other Northern America
+B07001#T#B07001. RESIDENCE 1 YEAR AGO BY AGE - Universe:  POPULATION 1 YEAR AND OVER
+B07001#1#Total:
+B07001#2#1 to 4 years
+B07001#3#5 to 9 years
+B07001#4#10 to 14 years
+B07001#5#15 to 17 years
+B07001#6#18 to 19 years
+B07001#7#20 to 24 years
+B07001#8#25 to 29 years
+B07001#9#30 to 34 years
+B07001#10#35 to 39 years
+B07001#11#40 to 44 years
+B07001#12#45 to 49 years
+B07001#13#50 to 54 years
+B07001#14#55 to 59 years
+B07001#15#60 to 61 years
+B07001#16#62 to 64 years
+B07001#17#65 to 69 years
+B07001#18#70 to 74 years
+B07001#19#75 to 79 years
+B07001#20#80 to 84 years
+B07001#21#85 years and over
+B07001#22#Same house 1 year ago:
+B07001#23#1 to 4 years
+B07001#24#5 to 9 years
+B07001#25#10 to 14 years
+B07001#26#15 to 17 years
+B07001#27#18 to 19 years
+B07001#28#20 to 24 years
+B07001#29#25 to 29 years
+B07001#30#30 to 34 years
+B07001#31#35 to 39 years
+B07001#32#40 to 44 years
+B07001#33#45 to 49 years
+B07001#34#50 to 54 years
+B07001#35#55 to 59 years
+B07001#36#60 to 61 years
+B07001#37#62 to 64 years
+B07001#38#65 to 69 years
+B07001#39#70 to 74 years
+B07001#40#75 to 79 years
+B07001#41#80 to 84 years
+B07001#42#85 years and over
+B07001#43#Moved within same county:
+B07001#44#1 to 4 years
+B07001#45#5 to 9 years
+B07001#46#10 to 14 years
+B07001#47#15 to 17 years
+B07001#48#18 to 19 years
+B07001#49#20 to 24 years
+B07001#50#25 to 29 years
+B07001#51#30 to 34 years
+B07001#52#35 to 39 years
+B07001#53#40 to 44 years
+B07001#54#45 to 49 years
+B07001#55#50 to 54 years
+B07001#56#55 to 59 years
+B07001#57#60 to 61 years
+B07001#58#62 to 64 years
+B07001#59#65 to 69 years
+B07001#60#70 to 74 years
+B07001#61#75 to 79 years
+B07001#62#80 to 84 years
+B07001#63#85 years and over
+B07001#64#Moved from different county within same state:
+B07001#65#1 to 4 years
+B07001#66#5 to 9 years
+B07001#67#10 to 14 years
+B07001#68#15 to 17 years
+B07001#69#18 to 19 years
+B07001#70#20 to 24 years
+B07001#71#25 to 29 years
+B07001#72#30 to 34 years
+B07001#73#35 to 39 years
+B07001#74#40 to 44 years
+B07001#75#45 to 49 years
+B07001#76#50 to 54 years
+B07001#77#55 to 59 years
+B07001#78#60 to 61 years
+B07001#79#62 to 64 years
+B07001#80#65 to 69 years
+B07001#81#70 to 74 years
+B07001#82#75 to 79 years
+B07001#83#80 to 84 years
+B07001#84#85 years and over
+B07001#85#Moved from different state:
+B07001#86#1 to 4 years
+B07001#87#5 to 9 years
+B07001#88#10 to 14 years
+B07001#89#15 to 17 years
+B07001#90#18 to 19 years
+B07001#91#20 to 24 years
+B07001#92#25 to 29 years
+B07001#93#30 to 34 years
+B07001#94#35 to 39 years
+B07001#95#40 to 44 years
+B07001#96#45 to 49 years
+B07001#97#50 to 54 years
+B07001#98#55 to 59 years
+B07001#99#60 to 61 years
+B07001#100#62 to 64 years
+B07001#101#65 to 69 years
+B07001#102#70 to 74 years
+B07001#103#75 to 79 years
+B07001#104#80 to 84 years
+B07001#105#85 years and over
+B07001#106#Moved from abroad:
+B07001#107#1 to 4 years
+B07001#108#5 to 9 years
+B07001#109#10 to 14 years
+B07001#110#15 to 17 years
+B07001#111#18 to 19 years
+B07001#112#20 to 24 years
+B07001#113#25 to 29 years
+B07001#114#30 to 34 years
+B07001#115#35 to 39 years
+B07001#116#40 to 44 years
+B07001#117#45 to 49 years
+B07001#118#50 to 54 years
+B07001#119#55 to 59 years
+B07001#120#60 to 61 years
+B07001#121#62 to 64 years
+B07001#122#65 to 69 years
+B07001#123#70 to 74 years
+B07001#124#75 to 79 years
+B07001#125#80 to 84 years
+B07001#126#85 years and over
+B07003#T#B07003. RESIDENCE 1 YEAR AGO BY SEX - Universe:  POPULATION 1 YEAR AND OVER
+B07003#1#Total:
+B07003#2#Male
+B07003#3#Female
+B07003#4#Same house 1 year ago:
+B07003#5#Male
+B07003#6#Female
+B07003#7#Moved within same county:
+B07003#8#Male
+B07003#9#Female
+B07003#10#Moved from different county within same state:
+B07003#11#Male
+B07003#12#Female
+B07003#13#Moved from different state:
+B07003#14#Male
+B07003#15#Female
+B07003#16#Moved from abroad:
+B07003#17#Male
+B07003#18#Female
+B08006#T#B08006. SEX OF WORKERS BY MEANS OF TRANSPORTATION - Universe:  WORKERS 16 YEARS AND OVER
+B08006#1#Total:
+B08006#2#Car, truck, or van:
+B08006#3#Drove alone
+B08006#4#Carpooled:
+B08006#5#In 2-person carpool
+B08006#6#In 3-person carpool
+B08006#7#In 4-person carpool
+B08006#8#In 5- or 6-person carpool
+B08006#9#In 7-or-more-person carpool
+B08006#10#Public transportation (excluding taxicab):
+B08006#11#Bus or trolley bus
+B08006#12#Streetcar or trolley car
+B08006#13#Subway or elevated
+B08006#14#Railroad
+B08006#15#Ferryboat
+B08006#16#Taxicab
+B08006#17#Motorcycle
+B08006#18#Bicycle
+B08006#19#Walked
+B08006#20#Other means
+B08006#21#Worked at home
+B08006#22#Male:
+B08006#23#Car, truck, or van:
+B08006#24#Drove alone
+B08006#25#Carpooled:
+B08006#26#In 2-person carpool
+B08006#27#In 3-person carpool
+B08006#28#In 4-person carpool
+B08006#29#In 5- or 6-person carpool
+B08006#30#In 7-or-more-person carpool
+B08006#31#Public transportation (excluding taxicab):
+B08006#32#Bus or trolley bus
+B08006#33#Streetcar or trolley car
+B08006#34#Subway or elevated
+B08006#35#Railroad
+B08006#36#Ferryboat
+B08006#37#Taxicab
+B08006#38#Motorcycle
+B08006#39#Bicycle
+B08006#40#Walked
+B08006#41#Other means
+B08006#42#Worked at home
+B08006#43#Female:
+B08006#44#Car, truck, or van:
+B08006#45#Drove alone
+B08006#46#Carpooled:
+B08006#47#In 2-person carpool
+B08006#48#In 3-person carpool
+B08006#49#In 4-person carpool
+B08006#50#In 5- or 6-person carpool
+B08006#51#In 7-or-more-person carpool
+B08006#52#Public transportation (excluding taxicab):
+B08006#53#Bus or trolley bus
+B08006#54#Streetcar or trolley car
+B08006#55#Subway or elevated
+B08006#56#Railroad
+B08006#57#Ferryboat
+B08006#58#Taxicab
+B08006#59#Motorcycle
+B08006#60#Bicycle
+B08006#61#Walked
+B08006#62#Other means
+B08006#63#Worked at home
+B08007#T#B08007. SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY LEVEL - Universe:  WORKERS 16 YEARS AND OVER
+B08007#1#Total:
+B08007#2#Worked in state of residence:
+B08007#3#Worked in county of residence
+B08007#4#Worked outside county of residence
+B08007#5#Worked outside state of residence
+B08007#6#Male:
+B08007#7#Worked in state of residence:
+B08007#8#Worked in county of residence
+B08007#9#Worked outside county of residence
+B08007#10#Worked outside state of residence
+B08007#11#Female:
+B08007#12#Worked in state of residence:
+B08007#13#Worked in county of residence
+B08007#14#Worked outside county of residence
+B08007#15#Worked outside state of residence
+B08013#T#B08013. AGGREGATE TRAVEL TIME TO WORK (IN MINUTES) OF WORKERS BY SEX - Universe:  WORKERS 16 YEARS AND OVER WHO DID NOT WORK AT HOME
+B08013#1#Aggregate travel time to work (in minutes):
+B08013#2#Male
+B08013#3#Female
+B08134#T#B08134. MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO WORK - Universe:  WORKERS 16 YEARS AND OVER WHO DID NOT WORK AT HOME
+B08134#1#Total:
+B08134#2#Less than 10 minutes
+B08134#3#10 to 14 minutes
+B08134#4#15 to 19 minutes
+B08134#5#20 to 24 minutes
+B08134#6#25 to 29 minutes
+B08134#7#30 to 34 minutes
+B08134#8#35 to 44 minutes
+B08134#9#45 to 59 minutes
+B08134#10#60 or more minutes
+B08134#11#Car, truck, or van:
+B08134#12#Less than 10 minutes
+B08134#13#10 to 14 minutes
+B08134#14#15 to 19 minutes
+B08134#15#20 to 24 minutes
+B08134#16#25 to 29 minutes
+B08134#17#30 to 34 minutes
+B08134#18#35 to 44 minutes
+B08134#19#45 to 59 minutes
+B08134#20#60 or more minutes
+B08134#21#Drove alone:
+B08134#22#Less than 10 minutes
+B08134#23#10 to 14 minutes
+B08134#24#15 to 19 minutes
+B08134#25#20 to 24 minutes
+B08134#26#25 to 29 minutes
+B08134#27#30 to 34 minutes
+B08134#28#35 to 44 minutes
+B08134#29#45 to 59 minutes
+B08134#30#60 or more minutes
+B08134#31#Carpooled:
+B08134#32#Less than 10 minutes
+B08134#33#10 to 14 minutes
+B08134#34#15 to 19 minutes
+B08134#35#20 to 24 minutes
+B08134#36#25 to 29 minutes
+B08134#37#30 to 34 minutes
+B08134#38#35 to 44 minutes
+B08134#39#45 to 59 minutes
+B08134#40#60 or more minutes
+B08134#41#In 2-person carpool:
+B08134#42#Less than 10 minutes
+B08134#43#10 to 14 minutes
+B08134#44#15 to 19 minutes
+B08134#45#20 to 24 minutes
+B08134#46#25 to 29 minutes
+B08134#47#30 to 34 minutes
+B08134#48#35 to 44 minutes
+B08134#49#45 to 59 minutes
+B08134#50#60 or more minutes
+B08134#51#In 3-or-more-person carpool:
+B08134#52#Less than 10 minutes
+B08134#53#10 to 14 minutes
+B08134#54#15 to 19 minutes
+B08134#55#20 to 24 minutes
+B08134#56#25 to 29 minutes
+B08134#57#30 to 34 minutes
+B08134#58#35 to 44 minutes
+B08134#59#45 to 59 minutes
+B08134#60#60 or more minutes
+B08134#61#Public transportation (excluding taxicab):
+B08134#62#Less than 10 minutes
+B08134#63#10 to 14 minutes
+B08134#64#15 to 19 minutes
+B08134#65#20 to 24 minutes
+B08134#66#25 to 29 minutes
+B08134#67#30 to 34 minutes
+B08134#68#35 to 44 minutes
+B08134#69#45 to 59 minutes
+B08134#70#60 or more minutes
+B08134#71#Bus or trolley bus:
+B08134#72#Less than 10 minutes
+B08134#73#10 to 14 minutes
+B08134#74#15 to 19 minutes
+B08134#75#20 to 24 minutes
+B08134#76#25 to 29 minutes
+B08134#77#30 to 34 minutes
+B08134#78#35 to 44 minutes
+B08134#79#45 to 59 minutes
+B08134#80#60 or more minutes
+B08134#81#Streetcar, trolley car, subway, or elevated:
+B08134#82#Less than 10 minutes
+B08134#83#10 to 14 minutes
+B08134#84#15 to 19 minutes
+B08134#85#20 to 24 minutes
+B08134#86#25 to 29 minutes
+B08134#87#30 to 34 minutes
+B08134#88#35 to 44 minutes
+B08134#89#45 to 59 minutes
+B08134#90#60 or more minutes
+B08134#91#Railroad or ferryboat:
+B08134#92#Less than 10 minutes
+B08134#93#10 to 14 minutes
+B08134#94#15 to 19 minutes
+B08134#95#20 to 24 minutes
+B08134#96#25 to 29 minutes
+B08134#97#30 to 34 minutes
+B08134#98#35 to 44 minutes
+B08134#99#45 to 59 minutes
+B08134#100#60 or more minutes
+B08134#101#Walked:
+B08134#102#Less than 10 minutes
+B08134#103#10 to 14 minutes
+B08134#104#15 to 19 minutes
+B08134#105#20 to 24 minutes
+B08134#106#25 to 29 minutes
+B08134#107#30 to 34 minutes
+B08134#108#35 to 44 minutes
+B08134#109#45 to 59 minutes
+B08134#110#60 or more minutes
+B08134#111#Taxicab, motorcycle, bicycle, or other means:
+B08134#112#Less than 10 minutes
+B08134#113#10 to 14 minutes
+B08134#114#15 to 19 minutes
+B08134#115#20 to 24 minutes
+B08134#116#25 to 29 minutes
+B08134#117#30 to 34 minutes
+B08134#118#35 to 44 minutes
+B08134#119#45 to 59 minutes
+B08134#120#60 or more minutes
+B09016#T#B09016. HOUSEHOLD TYPE (INCLUDING LIVING ALONE) BY RELATIONSHIP FOR THE POPULATION IN HOUSEHOLDS - Universe:  POPULATION IN HOUSEHOLDS
+B09016#1#Total:
+B09016#2#In family households:
+B09016#3#Householder:
+B09016#4#Male
+B09016#5#Female
+B09016#6#Spouse
+B09016#7#Child
+B09016#8#Grandchild
+B09016#9#Brother or sister
+B09016#10#Parent
+B09016#11#Other relatives
+B09016#12#Nonrelatives:
+B09016#13#Roomer or boarder
+B09016#14#Housemate or roommate
+B09016#15#Unmarried partner
+B09016#16#Foster child
+B09016#17#Other nonrelatives
+B09016#18#In nonfamily households:
+B09016#19#Householder:
+B09016#20#Male:
+B09016#21#Living alone
+B09016#22#Not living alone
+B09016#23#Female:
+B09016#24#Living alone
+B09016#25#Not living alone
+B09016#26#Nonrelatives:
+B09016#27#Roomer or boarder
+B09016#28#Housemate or roommate
+B09016#29#Unmarried partner
+B09016#30#Foster child
+B09016#31#Other nonrelatives
+B10050#T#B10050. GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN BY LENGTH OF TIME RESPONSIBLE FOR OWN GRANDCHILDREN FOR THE POPULATION 30 YEARS AND OVER BY AGE OF GRANDPARENT - Universe:  POPULATION 30 YEA
+RS AND OVER
+B10050#1#Total:
+B10050#2#Living with own grandchildren under 18 years:
+B10050#3#Grandparent responsible for own grandchildren under 18 years:
+B10050#4#Grandparent responsible less than 6 months:
+B10050#5#Age 30 to 59 years
+B10050#6#Age 60 and over
+B10050#7#Grandparent responsible 6 to 11 months:
+B10050#8#Age 30 to 59 years
+B10050#9#Age 60 and over
+B10050#10#Grandparent responsible 1 or 2 years:
+B10050#11#Age 30 to 59 years
+B10050#12#Age 60 and over
+B10050#13#Grandparent responsible 3 or 4 years:
+B10050#14#Age 30 to 59 years
+B10050#15#Age 60 and over
+B10050#16#Grandparent responsible 5 years or more:
+B10050#17#Age 30 to 59 years
+B10050#18#Age 60 and over
+B10050#19#Grandparent not responsible for own grandchildren under 18 years
+B10050#20#Not living with own grandchildren under 18 years
+B10056#T#B10056. SEX OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT - Universe:  GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS IN HOUSEHOLD
+B10056#1#Total:
+B10056#2#Male:
+B10056#3#Grandparent responsible for own grandchildren under 18 years:
+B10056#4#30 to 59 years
+B10056#5#60 years and over
+B10056#6#Grandparent not responsible for own grandchildren under 18 years
+B10056#7#Female:
+B10056#8#Grandparent responsible for own grandchildren under 18 years:
+B10056#9#30 to 59 years
+B10056#10#60 years and over
+B10056#11#Grandparent not responsible for own grandchildren under 18 years
+B10057#T#B10057. MARITAL STATUS BY GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT - Universe:  GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS IN HOUSEHOLD
+B10057#1#Total:
+B10057#2#Now married (including spouse absent):
+B10057#3#Grandparent responsible for own grandchildren under 18 years:
+B10057#4#30 to 59 years
+B10057#5#60 years and over
+B10057#6#Grandparent not responsible for own grandchildren under 18 years
+B10057#7#Unmarried (never married, widowed, and divorced):
+B10057#8#Grandparent responsible for own grandchildren under 18 years:
+B10057#9#30 to 59 years
+B10057#10#60 years and over
+B10057#11#Grandparent not responsible for own grandchildren under 18 years
+B10058#T#B10058. EMPLOYMENT STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN BY PRESENCE OF PARENT OF GRANDCHILDREN AND AGE OF GRANDPARENT - Universe:  GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UN
+DER 18 YEARS IN HOUSEHOLD
+B10058#1#Total:
+B10058#2#In labor force:
+B10058#3#Grandparent responsible for own grandchildren under 18 years:
+B10058#4#Householder or spouse with no parent of grandchildren present:
+B10058#5#30 to 59 years
+B10058#6#60 years and over
+B10058#7#Other grandparents:
+B10058#8#30 to 59 years
+B10058#9#60 years and over
+B10058#10#Grandparent not responsible for own grandchildren under 18 years
+B10058#11#Not in labor force:
+B10058#12#Grandparent responsible for own grandchildren under 18 years:
+B10058#13#Householder or spouse with no parent of grandchildren present:
+B10058#14#30 to 59 years
+B10058#15#60 years and over
+B10058#16#Other grandparents:
+B10058#17#30 to 59 years
+B10058#18#60 years and over
+B10058#19#Grandparent not responsible for own grandchildren under 18 years
+B10059#T#B10059. POVERTY STATUS IN THE PAST 12 MONTHS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT - Universe:  GRANDPARENTS WITH OWN GRANDCHILDREN UNDER 18 YEARS FOR WHOM POVER
+TY STATUS IS DETERMINED IN HOUSEHOLDS
+B10059#1#Total:
+B10059#2#Income in the past 12 months below poverty level:
+B10059#3#Grandparent responsible for own grandchildren under 18 years:
+B10059#4#30 to 59 years
+B10059#5#60 years and over
+B10059#6#Grandparent not responsible for own grandchildren under 18 years
+B10059#7#Income in the past 12 months at or above poverty level:
+B10059#8#Grandparent responsible for own grandchildren under 18 years:
+B10059#9#30 to 59 years
+B10059#10#60 years and over
+B10059#11#Grandparent not responsible for own grandchildren under 18 years
+B11001#T#B11001. HOUSEHOLD TYPE (INCLUDING LIVING ALONE) - Universe:  HOUSEHOLDS
+B11001#1#Total:
+B11001#2#Family households:
+B11001#3#Married-couple family
+B11001#4#Other family:
+B11001#5#Male householder, no wife present
+B11001#6#Female householder, no husband present
+B11001#7#Nonfamily households:
+B11001#8#Householder living alone
+B11001#9#Householder not living alone
+B11002#T#B11002. HOUSEHOLD TYPE BY RELATIVES AND NONRELATIVES FOR POPULATION IN HOUSEHOLDS - Universe:  POPULATION IN HOUSEHOLDS
+B11002#1#Total:
+B11002#2#In family households:
+B11002#3#Married-couple family:
+B11002#4#Relatives
+B11002#5#Nonrelatives
+B11002#6#Male householder, no wife present:
+B11002#7#Relatives
+B11002#8#Nonrelatives
+B11002#9#Female householder, no husband present:
+B11002#10#Relatives
+B11002#11#Nonrelatives
+B11002#12#In nonfamily households
+B11003#T#B11003. FAMILY TYPE BY PRESENCE AND AGE OF OWN CHILDREN UNDER 18 YEARS BY AGE OF OWN CHILDREN - Universe:  FAMILIES
+B11003#1#Total:
+B11003#2#Married-couple family:
+B11003#3#With own children under 18 years:
+B11003#4#Under 6 years only
+B11003#5#Under 6 years and 6 to 17 years
+B11003#6#6 to 17 years only
+B11003#7#No own children under 18 years
+B11003#8#Other family:
+B11003#9#Male householder, no wife present:
+B11003#10#With own children under 18 years:
+B11003#11#Under 6 years only
+B11003#12#Under 6 years and 6 to 17 years
+B11003#13#6 to 17 years only
+B11003#14#No own children under 18 years
+B11003#15#Female householder, no husband present:
+B11003#16#With own children under 18 years:
+B11003#17#Under 6 years only
+B11003#18#Under 6 years and 6 to 17 years
+B11003#19#6 to 17 years only
+B11003#20#No own children under 18 years
+B11005#T#B11005. HOUSEHOLDS BY PRESENCE OF PEOPLE UNDER 18 YEARS BY HOUSEHOLD TYPE - Universe:  HOUSEHOLDS
+B11005#1#Total:
+B11005#2#Households with one or more people under 18 years:
+B11005#3#Family households:
+B11005#4#Married-couple family
+B11005#5#Other family:
+B11005#6#Male householder, no wife present
+B11005#7#Female householder, no husband present
+B11005#8#Nonfamily households:
+B11005#9#Male householder
+B11005#10#Female householder
+B11005#11#Households with no people under 18 years:
+B11005#12#Family households:
+B11005#13#Married-couple family
+B11005#14#Other family:
+B11005#15#Male householder, no wife present
+B11005#16#Female householder, no husband present
+B11005#17#Nonfamily households:
+B11005#18#Male householder
+B11005#19#Female householder
+B11007#T#B11007. HOUSEHOLDS BY PRESENCE OF PEOPLE 65 YEARS AND OVER, HOUSEHOLD SIZE AND HOUSEHOLD TYPE - Universe:  HOUSEHOLDS
+B11007#1#Total:
+B11007#2#Households with one or more people 65 years and over:
+B11007#3#1-person household
+B11007#4#2-or-more-person household:
+B11007#5#Family households
+B11007#6#Nonfamily households
+B11007#7#Households with no people 65 years and over:
+B11007#8#1-person households
+B11007#9#2-or-more-person household:
+B11007#10#Family households
+B11007#11#Nonfamily households
+B11010#T#B11010. NONFAMILY HOUSEHOLDS BY SEX OF HOUSEHOLDER BY LIVING ALONE BY AGE OF HOUSEHOLDER - Universe:  NONFAMILY HOUSEHOLDS
+B11010#1#Total:
+B11010#2#Male householder:
+B11010#3#Living alone:
+B11010#4#Householder 15 to 64 years
+B11010#5#Householder 65 years and over
+B11010#6#Not living alone:
+B11010#7#Householder 15 to 64 years
+B11010#8#Householder 65 years and over
+B11010#9#Female householder:
+B11010#10#Living alone:
+B11010#11#Householder 15 to 64 years
+B11010#12#Householder 65 years and over
+B11010#13#Not living alone:
+B11010#14#Householder 15 to 64 years
+B11010#15#Householder 65 years and over
+B12001#T#B12001. SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS AND OVER - Universe:  POPULATION 15 YEARS AND OVER
+B12001#1#Total:
+B12001#2#Male:
+B12001#3#Never married
+B12001#4#Now married:
+B12001#5#Married, spouse present
+B12001#6#Married, spouse absent:
+B12001#7#Separated
+B12001#8#Other
+B12001#9#Widowed
+B12001#10#Divorced
+B12001#11#Female:
+B12001#12#Never married
+B12001#13#Now married:
+B12001#14#Married, spouse present
+B12001#15#Married, spouse absent:
+B12001#16#Separated
+B12001#17#Other
+B12001#18#Widowed
+B12001#19#Divorced
+B13001#T#B13001. MARITAL STATUS BY AGE FOR WOMEN 15 TO 50 YEARS - Universe:  WOMEN 15 TO 50 YEARS
+B13001#1#Total:
+B13001#2#Now married (including spouse absent):
+B13001#3#15 to 19 years old
+B13001#4#20 to 34 years old
+B13001#5#35 to 50 years old
+B13001#6#Unmarried (never married, widowed, and divorced):
+B13001#7#15 to 19 years old
+B13001#8#20 to 34 years old
+B13001#9#35 to 50 years old
+B13002#T#B13002. NUMBER OF WOMEN 15 TO 50 YEARS WHO HAD A BIRTH IN THE PAST 12 MONTHS BY MARITAL STATUS AND AGE - Universe:  WOMEN 15 TO 50 YEARS
+B13002#1#Total:
+B13002#2#Number of women who had a birth in the past 12 months:
+B13002#3#Now married (including spouse absent):
+B13002#4#15 to 19 years old
+B13002#5#20 to 34 years old
+B13002#6#35 to 50 years old
+B13002#7#Unmarried (never married, widowed, and divorced):
+B13002#8#15 to 19 years old
+B13002#9#20 to 34 years old
+B13002#10#35 to 50 years old
+B13002#11#Number of women who did not have a birth in the past 12 months
+B14001#T#B14001. SCHOOL ENROLLMENT BY LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER - Universe:  POPULATION 3 YEARS AND OVER
+B14001#1#Total:
+B14001#2#Enrolled in school:
+B14001#3#Enrolled in nursery school, preschool
+B14001#4#Enrolled in kindergarten
+B14001#5#Enrolled in grade 1 to grade 4
+B14001#6#Enrolled in grade 5 to grade 8
+B14001#7#Enrolled in grade 9 to grade 12
+B14001#8#Enrolled in college, undergraduate years
+B14001#9#Graduate or professional school
+B14001#10#Not enrolled in school
+B14005#T#B14005. SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS - Universe:  POPULATION 16 TO 19 YEARS
+B14005#1#Total:
+B14005#2#Male:
+B14005#3#Enrolled in school:
+B14005#4#Employed
+B14005#5#Unemployed
+B14005#6#Not in labor force
+B14005#7#Not enrolled in school:
+B14005#8#High school graduate:
+B14005#9#Employed
+B14005#10#Unemployed
+B14005#11#Not in labor force
+B14005#12#Not high school graduate:
+B14005#13#Employed
+B14005#14#Unemployed
+B14005#15#Not in labor force
+B14005#16#Female:
+B14005#17#Enrolled in school:
+B14005#18#Employed
+B14005#19#Unemployed
+B14005#20#Not in labor force
+B14005#21#Not enrolled in school:
+B14005#22#High school graduate:
+B14005#23#Employed
+B14005#24#Unemployed
+B14005#25#Not in labor force
+B14005#26#Not high school graduate:
+B14005#27#Employed
+B14005#28#Unemployed
+B14005#29#Not in labor force
+B15002#T#B15002. SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER - Universe:  POPULATION 25 YEARS AND OVER
+B15002#1#Total:
+B15002#2#Male:
+B15002#3#No schooling completed
+B15002#4#Nursery to 4th grade
+B15002#5#5th and 6th grade
+B15002#6#7th and 8th grade
+B15002#7#9th grade
+B15002#8#10th grade
+B15002#9#11th grade
+B15002#10#12th grade, no diploma
+B15002#11#High school graduate (includes equivalency)
+B15002#12#Some college, less than 1 year
+B15002#13#Some college, 1 or more years, no degree
+B15002#14#Associate's degree
+B15002#15#Bachelor's degree
+B15002#16#Master's degree
+B15002#17#Professional school degree
+B15002#18#Doctorate degree
+B15002#19#Female:
+B15002#20#No schooling completed
+B15002#21#Nursery to 4th grade
+B15002#22#5th and 6th grade
+B15002#23#7th and 8th grade
+B15002#24#9th grade
+B15002#25#10th grade
+B15002#26#11th grade
+B15002#27#12th grade, no diploma
+B15002#28#High school graduate (includes equivalency)
+B15002#29#Some college, less than 1 year
+B15002#30#Some college, 1 or more years, no degree
+B15002#31#Associate's degree
+B15002#32#Bachelor's degree
+B15002#33#Master's degree
+B15002#34#Professional school degree
+B15002#35#Doctorate degree
+B16004#T#B16004. AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER - Universe:  POPULATION 5 YEARS AND OVER
+B16004#1#Total:
+B16004#2#5 to 17 years:
+B16004#3#Speak only English
+B16004#4#Speak Spanish:
+B16004#5#Speak English "very well"
+B16004#6#Speak English "well"
+B16004#7#Speak English "not well"
+B16004#8#Speak English "not at all"
+B16004#9#Speak other Indo-European languages:
+B16004#10#Speak English "very well"
+B16004#11#Speak English "well"
+B16004#12#Speak English "not well"
+B16004#13#Speak English "not at all"
+B16004#14#Speak Asian and Pacific Island languages:
+B16004#15#Speak English "very well"
+B16004#16#Speak English "well"
+B16004#17#Speak English "not well"
+B16004#18#Speak English "not at all"
+B16004#19#Speak other languages:
+B16004#20#Speak English "very well"
+B16004#21#Speak English "well"
+B16004#22#Speak English "not well"
+B16004#23#Speak English "not at all"
+B16004#24#18 to 64 years:
+B16004#25#Speak only English
+B16004#26#Speak Spanish:
+B16004#27#Speak English "very well"
+B16004#28#Speak English "well"
+B16004#29#Speak English "not well"
+B16004#30#Speak English "not at all"
+B16004#31#Speak other Indo-European languages:
+B16004#32#Speak English "very well"
+B16004#33#Speak English "well"
+B16004#34#Speak English "not well"
+B16004#35#Speak English "not at all"
+B16004#36#Speak Asian and Pacific Island languages:
+B16004#37#Speak English "very well"
+B16004#38#Speak English "well"
+B16004#39#Speak English "not well"
+B16004#40#Speak English "not at all"
+B16004#41#Speak other languages:
+B16004#42#Speak English "very well"
+B16004#43#Speak English "well"
+B16004#44#Speak English "not well"
+B16004#45#Speak English "not at all"
+B16004#46#65 years and over:
+B16004#47#Speak only English
+B16004#48#Speak Spanish:
+B16004#49#Speak English "very well"
+B16004#50#Speak English "well"
+B16004#51#Speak English "not well"
+B16004#52#Speak English "not at all"
+B16004#53#Speak other Indo-European languages:
+B16004#54#Speak English "very well"
+B16004#55#Speak English "well"
+B16004#56#Speak English "not well"
+B16004#57#Speak English "not at all"
+B16004#58#Speak Asian and Pacific Island languages:
+B16004#59#Speak English "very well"
+B16004#60#Speak English "well"
+B16004#61#Speak English "not well"
+B16004#62#Speak English "not at all"
+B16004#63#Speak other languages:
+B16004#64#Speak English "very well"
+B16004#65#Speak English "well"
+B16004#66#Speak English "not well"
+B16004#67#Speak English "not at all"
+B17001#T#B17001. POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE - Universe:  POPULATION FOR WHOM POVERTY STATUS IS DETERMINED
+B17001#1#Total:
+B17001#2#Income in the past 12 months below poverty level:
+B17001#3#Male:
+B17001#4#Under 5 years
+B17001#5#5 years
+B17001#6#6 to 11 years
+B17001#7#12 to 14 years
+B17001#8#15 years
+B17001#9#16 and 17 years
+B17001#10#18 to 24 years
+B17001#11#25 to 34 years
+B17001#12#35 to 44 years
+B17001#13#45 to 54 years
+B17001#14#55 to 64 years
+B17001#15#65 to 74 years
+B17001#16#75 years and over
+B17001#17#Female:
+B17001#18#Under 5 years
+B17001#19#5 years
+B17001#20#6 to 11 years
+B17001#21#12 to 14 years
+B17001#22#15 years
+B17001#23#16 and 17 years
+B17001#24#18 to 24 years
+B17001#25#25 to 34 years
+B17001#26#35 to 44 years
+B17001#27#45 to 54 years
+B17001#28#55 to 64 years
+B17001#29#65 to 74 years
+B17001#30#75 years and over
+B17001#31#Income in the past 12 months at or above poverty level:
+B17001#32#Male:
+B17001#33#Under 5 years
+B17001#34#5 years
+B17001#35#6 to 11 years
+B17001#36#12 to 14 years
+B17001#37#15 years
+B17001#38#16 and 17 years
+B17001#39#18 to 24 years
+B17001#40#25 to 34 years
+B17001#41#35 to 44 years
+B17001#42#45 to 54 years
+B17001#43#55 to 64 years
+B17001#44#65 to 74 years
+B17001#45#75 years and over
+B17001#46#Female:
+B17001#47#Under 5 years
+B17001#48#5 years
+B17001#49#6 to 11 years
+B17001#50#12 to 14 years
+B17001#51#15 years
+B17001#52#16 and 17 years
+B17001#53#18 to 24 years
+B17001#54#25 to 34 years
+B17001#55#35 to 44 years
+B17001#56#45 to 54 years
+B17001#57#55 to 64 years
+B17001#58#65 to 74 years
+B17001#59#75 years and over
+B17002#T#B17002. RATIO OF INCOME IN THE PAST 12 MONTHS TO POVERTY LEVEL - Universe:  POPULATION FOR WHOM POVERTY STATUS IS DETERMINED
+B17002#1#Total:
+B17002#2#Under .50
+B17002#3#.50 to .74
+B17002#4#.75 to .99
+B17002#5#1.00 to 1.24
+B17002#6#1.25 to 1.49
+B17002#7#1.50 to 1.74
+B17002#8#1.75 to 1.84
+B17002#9#1.85 to 1.99
+B17002#10#2.00 to 2.99
+B17002#11#3.00 to 3.99
+B17002#12#4.00 to 4.99
+B17002#13#5.00 and over
+B17006#T#B17006. POVERTY STATUS IN THE PAST 12 MONTHS OF RELATED CHILDREN UNDER 18 YEARS BY FAMILY TYPE BY AGE OF RELATED CHILDREN UNDER 18 YEARS - Universe:  RELATED CHILDREN UNDER 18 YEARS
+B17006#1#Total:
+B17006#2#Income in the past 12 months below poverty level:
+B17006#3#In married-couple family:
+B17006#4#Under 5 years
+B17006#5#5 years
+B17006#6#6 to 17 years
+B17006#7#In other family:
+B17006#8#Male householder, no wife present:
+B17006#9#Under 5 years
+B17006#10#5 years
+B17006#11#6 to 17 years
+B17006#12#Female householder, no husband present:
+B17006#13#Under 5 years
+B17006#14#5 years
+B17006#15#6 to 17 years
+B17006#16#Income in the past 12 months at or above poverty level:
+B17006#17#In married-couple family:
+B17006#18#Under 5 years
+B17006#19#5 years
+B17006#20#6 to 17 years
+B17006#21#In other family:
+B17006#22#Male householder, no wife present:
+B17006#23#Under 5 years
+B17006#24#5 years
+B17006#25#6 to 17 years
+B17006#26#Female householder, no husband present:
+B17006#27#Under 5 years
+B17006#28#5 years
+B17006#29#6 to 17 years
+B17007#T#B17007. POVERTY STATUS IN THE PAST 12 MONTHS OF UNRELATED INDIVIDUALS 15 YEARS AND OVER BY SEX BY AGE - Universe:  UNRELATED INDIVIDUALS 15 YEARS AND OVER FOR WHOM POVERTY STATUS IS DETERMINED
+B17007#1#Total:
+B17007#2#Income in the past 12 months below poverty level:
+B17007#3#Male:
+B17007#4#15 years
+B17007#5#16 and 17 years
+B17007#6#18 to 24 years
+B17007#7#25 to 34 years
+B17007#8#35 to 44 years
+B17007#9#45 to 54 years
+B17007#10#55 to 64 years
+B17007#11#65 to 74 years
+B17007#12#75 years and over
+B17007#13#Female:
+B17007#14#15 years
+B17007#15#16 and 17 years
+B17007#16#18 to 24 years
+B17007#17#25 to 34 years
+B17007#18#35 to 44 years
+B17007#19#45 to 54 years
+B17007#20#55 to 64 years
+B17007#21#65 to 74 years
+B17007#22#75 years and over
+B17007#23#Income in the past 12 months at or above poverty level:
+B17007#24#Male:
+B17007#25#15 years
+B17007#26#16 and 17 years
+B17007#27#18 to 24 years
+B17007#28#25 to 34 years
+B17007#29#35 to 44 years
+B17007#30#45 to 54 years
+B17007#31#55 to 64 years
+B17007#32#65 to 74 years
+B17007#33#75 years and over
+B17007#34#Female:
+B17007#35#15 years
+B17007#36#16 and 17 years
+B17007#37#18 to 24 years
+B17007#38#25 to 34 years
+B17007#39#35 to 44 years
+B17007#40#45 to 54 years
+B17007#41#55 to 64 years
+B17007#42#65 to 74 years
+B17007#43#75 years and over
+B17010#T#B17010. POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED CHILDREN - Universe:  FAMILIES
+B17010#1#Total:
+B17010#2#Income in the past 12 months below poverty level:
+B17010#3#Married-couple family:
+B17010#4#With related children under 18 years:
+B17010#5#Under 5 years only
+B17010#6#Under 5 years and 5 to 17 years
+B17010#7#5 to 17 years only
+B17010#8#No related children under 18 years
+B17010#9#Other family:
+B17010#10#Male householder, no wife present:
+B17010#11#With related children under 18 years:
+B17010#12#Under 5 years only
+B17010#13#Under 5 years and 5 to 17 years
+B17010#14#5 to 17 years only
+B17010#15#No related children under 18 years
+B17010#16#Female householder, no husband present:
+B17010#17#With related children under 18 years:
+B17010#18#Under 5 years only
+B17010#19#Under 5 years and 5 to 17 years
+B17010#20#5 to 17 years only
+B17010#21#No related children under 18 years
+B17010#22#Income in the past 12 months at or above poverty level:
+B17010#23#Married-couple family:
+B17010#24#With related children under 18 years:
+B17010#25#Under 5 years only
+B17010#26#Under 5 years and 5 to 17 years
+B17010#27#5 to 17 years only
+B17010#28#No related children under 18 years
+B17010#29#Other family:
+B17010#30#Male householder, no wife present:
+B17010#31#With related children under 18 years:
+B17010#32#Under 5 years only
+B17010#33#Under 5 years and 5 to 17 years
+B17010#34#5 to 17 years only
+B17010#35#No related children under 18 years
+B17010#36#Female householder, no husband present:
+B17010#37#With related children under 18 years:
+B17010#38#Under 5 years only
+B17010#39#Under 5 years and 5 to 17 years
+B17010#40#5 to 17 years only
+B17010#41#No related children under 18 years
+B17021#T#B17021. POVERTY STATUS IN THE PAST 12 MONTHS OF INDIVIDUALS BY HOUSEHOLD TYPE - Universe:  POPULATION FOR WHOM POVERTY STATUS IS DETERMINED
+B17021#1#Total:
+B17021#2#Income in the past 12 months below poverty level:
+B17021#3#In family households:
+B17021#4#In married couple families:
+B17021#5#All relatives
+B17021#6#Non-relatives
+B17021#7#In other families:
+B17021#8#In male householders, no wife present:
+B17021#9#All relatives
+B17021#10#Non-relatives
+B17021#11#In female householders, no husband present:
+B17021#12#All relatives
+B17021#13#Non-relatives
+B17021#14#In non-family households:
+B17021#15#Householder:
+B17021#16#Living alone
+B17021#17#Not living alone
+B17021#18#Not a householder
+B17021#19#Income in the last 12 months at or above poverty level:
+B17021#20#In family households:
+B17021#21#In married couple families:
+B17021#22#All relatives
+B17021#23#Non-relatives
+B17021#24#In other families:
+B17021#25#In male householders, no wife present:
+B17021#26#All relatives
+B17021#27#Non-relatives
+B17021#28#In female householders, no husband present:
+B17021#29#All relatives
+B17021#30#Non-relatives
+B17021#31#In non-family households:
+B17021#32#Householder:
+B17021#33#Living alone
+B17021#34#Not living alone
+B17021#35#Not a householder
+B18002#T#B18002. SEX BY AGE BY DISABILITY STATUS FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER
+B18002#1#Total:
+B18002#2#Male:
+B18002#3#5 to 15 years:
+B18002#4#With a disability
+B18002#5#No disability
+B18002#6#16 to 20 years:
+B18002#7#With a disability
+B18002#8#No disability
+B18002#9#21 to 64 years:
+B18002#10#With a disability
+B18002#11#No disability
+B18002#12#65 to 74 years:
+B18002#13#With a disability
+B18002#14#No disability
+B18002#15#75 years and over:
+B18002#16#With a disability
+B18002#17#No disability
+B18002#18#Female:
+B18002#19#5 to 15 years:
+B18002#20#With a disability
+B18002#21#No disability
+B18002#22#16 to 20 years:
+B18002#23#With a disability
+B18002#24#No disability
+B18002#25#21 to 64 years:
+B18002#26#With a disability
+B18002#27#No disability
+B18002#28#65 to 74 years:
+B18002#29#With a disability
+B18002#30#No disability
+B18002#31#75 years and over:
+B18002#32#With a disability
+B18002#33#No disability
+B19001#T#B19001. HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  HOUSEHOLDS
+B19001#1#Total:
+B19001#2#Less than $10,000
+B19001#3#$10,000 to $14,999
+B19001#4#$15,000 to $19,999
+B19001#5#$20,000 to $24,999
+B19001#6#$25,000 to $29,999
+B19001#7#$30,000 to $34,999
+B19001#8#$35,000 to $39,999
+B19001#9#$40,000 to $44,999
+B19001#10#$45,000 to $49,999
+B19001#11#$50,000 to $59,999
+B19001#12#$60,000 to $74,999
+B19001#13#$75,000 to $99,999
+B19001#14#$100,000 to $124,999
+B19001#15#$125,000 to $149,999
+B19001#16#$150,000 to $199,999
+B19001#17#$200,000 or more
+B19013#T#B19013. MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  HOUSEHOLDS
+B19013#1#Median household income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19025#T#B19025. AGGREGATE HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  HOUSEHOLDS
+B19025#1#Aggregate household income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19051#T#B19051. EARNINGS IN THE PAST 12 MONTHS FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19051#1#Total:
+B19051#2#With earnings
+B19051#3#No earnings
+B19053#T#B19053. SELF-EMPLOYMENT INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19053#1#Total:
+B19053#2#With self-employment income
+B19053#3#No self-employment income
+B19055#T#B19055. SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19055#1#Total:
+B19055#2#With Social Security income
+B19055#3#No Social Security income
+B19056#T#B19056. SUPPLEMENTAL SECURITY INCOME (SSI) IN THE PAST 12 MONTHS FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19056#1#Total:
+B19056#2#With Supplemental Security Income (SSI)
+B19056#3#No Supplemental Security Income (SSI)
+B19057#T#B19057. PUBLIC ASSISTANCE INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19057#1#Total:
+B19057#2#With public assistance income
+B19057#3#No public assistance income
+B19059#T#B19059. RETIREMENT INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19059#1#Total:
+B19059#2#With retirement income
+B19059#3#No retirement income
+B19061#T#B19061. AGGREGATE EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19061#1#Aggregate earnings in the past 12 months (in 2004 inflation-adjusted dollars)
+B19065#T#B19065. AGGREGATE SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19065#1#Aggregate Social Security income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19066#T#B19066. AGGREGATE SUPPLEMENTAL SECURITY INCOME (SSI) IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19066#1#Aggregate Supplemental Security Income (SSI) in the past 12 months (in 2004 inflation-adjusted dollars)
+B19067#T#B19067. AGGREGATE PUBLIC ASSISTANCE INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19067#1#Aggregate public assistance income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19069#T#B19069. AGGREGATE RETIREMENT INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B19069#1#Aggregate retirement income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19101#T#B19101. FAMILY INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  FAMILIES
+B19101#1#Total:
+B19101#2#Less than $10,000
+B19101#3#$10,000 to $14,999
+B19101#4#$15,000 to $19,999
+B19101#5#$20,000 to $24,999
+B19101#6#$25,000 to $29,999
+B19101#7#$30,000 to $34,999
+B19101#8#$35,000 to $39,999
+B19101#9#$40,000 to $44,999
+B19101#10#$45,000 to $49,999
+B19101#11#$50,000 to $59,999
+B19101#12#$60,000 to $74,999
+B19101#13#$75,000 to $99,999
+B19101#14#$100,000 to $124,999
+B19101#15#$125,000 to $149,999
+B19101#16#$150,000 to $199,999
+B19101#17#$200,000 or more
+B19113#T#B19113. MEDIAN FAMILY INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  FAMILIES
+B19113#1#Median family income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19119#T#B19119. MEDIAN FAMILY INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY FAMILY SIZE - Universe:  FAMILIES
+B19119#1#Total:
+B19119#2#2-person families
+B19119#3#3-person families
+B19119#4#4-person families
+B19119#5#5-person families
+B19119#6#6-person families
+B19119#7#7-or-more-person families
+B19121#T#B19121. MEDIAN FAMILY INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY NUMBER OF EARNERS IN FAMILY - Universe:  FAMILIES
+B19121#1#Total:
+B19121#2#No earners (dollars)
+B19121#3#1 earner (dollars)
+B19121#4#2 earners (dollars)
+B19121#5#3 or more earners (dollars)
+B19127#T#B19127. AGGREGATE FAMILY INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  FAMILIES
+B19127#1#Aggregate family income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19201#T#B19201. NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  NONFAMILY HOUSEHOLDS
+B19201#1#Total:
+B19201#2#Less than $10,000
+B19201#3#$10,000 to $14,999
+B19201#4#$15,000 to $19,999
+B19201#5#$20,000 to $24,999
+B19201#6#$25,000 to $29,999
+B19201#7#$30,000 to $34,999
+B19201#8#$35,000 to $39,999
+B19201#9#$40,000 to $44,999
+B19201#10#$45,000 to $49,999
+B19201#11#$50,000 to $59,999
+B19201#12#$60,000 to $74,999
+B19201#13#$75,000 to $99,999
+B19201#14#$100,000 to $124,999
+B19201#15#$125,000 to $149,999
+B19201#16#$150,000 to $199,999
+B19201#17#$200,000 or more
+B19202#T#B19202. MEDIAN NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  NONFAMILY HOUSEHOLDS
+B19202#1#Median nonfamily household income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19214#T#B19214. AGGREGATE NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  NONFAMILY HOUSEHOLDS
+B19214#1#Aggregate nonfamily household income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19301#T#B19301. PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  TOTAL POPULATION
+B19301#1#Per capita income in the past 12 months (in 2004 inflation-adjusted dollars)
+B19313#T#B19313. AGGREGATE INCOME IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) - Universe:  POPULATION 15 YEARS AND OVER
+B19313#1#Aggregate income in the past 12 months (in 2004 inflation-adjusted dollars)
+B20004#T#B20004. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER - Universe:  POPULATION 25 YEARS AND OVER WITH EARNINGS
+B20004#1#Total:
+B20004#2#Less than high school graduate
+B20004#3#High school graduate (includes equivalency)
+B20004#4#Some college or associate's degree
+B20004#5#Bachelor's degree
+B20004#6#Graduate or professional degree
+B20004#7#Male:
+B20004#8#Less than high school graduate
+B20004#9#High school graduate (includes equivalency)
+B20004#10#Some college or associate's degree
+B20004#11#Bachelor's degree
+B20004#12#Graduate or professional degree
+B20004#13#Female:
+B20004#14#Less than high school graduate
+B20004#15#High school graduate (includes equivalency)
+B20004#16#Some college or associate's degree
+B20004#17#Bachelor's degree
+B20004#18#Graduate or professional degree
+B20017#T#B20017. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS - Universe:  POPULATION 16 YEARS AND OVER W
+ITH EARNINGS
+B20017#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017#2#Total (dollars):
+B20017#3#Male --
+B20017#4#Total (dollars)
+B20017#5#Worked full-time, year-round in the past 12 months (dollars)
+B20017#6#Other (dollars)
+B20017#7#Female --
+B20017#8#Total (dollars)
+B20017#9#Worked full-time, year-round in the past 12 months (dollars)
+B20017#10#Other (dollars)
+B20017A#T#B20017A. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (WHITE ALONE) - Universe:  WHITE ALONE PO
+PULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017A#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017A#2#Total:
+B20017A#3#Male --
+B20017A#4#Total
+B20017A#5#Worked full-time, year-round in the past 12 months
+B20017A#6#Other
+B20017A#7#Female --
+B20017A#8#Total
+B20017A#9#Worked full-time, year-round in the past 12 months
+B20017A#10#Other
+B20017B#T#B20017B. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (BLACK OR AFRICAN AMERICAN ALONE) - Unive
+rse:  BLACK OR AFRICAN AMERICAN POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017B#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017B#2#Total:
+B20017B#3#Male --
+B20017B#4#Total
+B20017B#5#Worked full-time, year-round in the past 12 months
+B20017B#6#Other
+B20017B#7#Female --
+B20017B#8#Total
+B20017B#9#Worked full-time, year-round in the past 12 months
+B20017B#10#Other
+B20017C#T#B20017C. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (AMERICAN INDIAN AND ALASKA NATIVE ALONE)
+ - Universe:  AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017C#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017C#2#Total:
+B20017C#3#Male --
+B20017C#4#Total
+B20017C#5#Worked full-time, year-round in the past 12 months
+B20017C#6#Other
+B20017C#7#Female --
+B20017C#8#Total
+B20017C#9#Worked full-time, year-round in the past 12 months
+B20017C#10#Other
+B20017D#T#B20017D. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (ASIAN ALONE) - Universe:  ASIAN ALONE PO
+PULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017D#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017D#2#Total:
+B20017D#3#Male --
+B20017D#4#Total
+B20017D#5#Worked full-time, year-round in the past 12 months
+B20017D#6#Other
+B20017D#7#Female --
+B20017D#8#Total
+B20017D#9#Worked full-time, year-round in the past 12 months
+B20017D#10#Other
+B20017E#T#B20017E. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLAND
+ER ALONE) - Universe:  NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017E#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017E#2#Total:
+B20017E#3#Male --
+B20017E#4#Total
+B20017E#5#Worked full-time, year-round in the past 12 months
+B20017E#6#Other
+B20017E#7#Female --
+B20017E#8#Total
+B20017E#9#Worked full-time, year-round in the past 12 months
+B20017E#10#Other
+B20017F#T#B20017F. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (SOME OTHER RACE ALONE) - Universe:  SOME
+ OTHER RACE ALONE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017F#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017F#2#Total:
+B20017F#3#Male --
+B20017F#4#Total
+B20017F#5#Worked full-time, year-round in the past 12 months
+B20017F#6#Other
+B20017F#7#Female --
+B20017F#8#Total
+B20017F#9#Worked full-time, year-round in the past 12 months
+B20017F#10#Other
+B20017G#T#B20017G. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (TWO OR MORE RACES) - Universe:  TWO OR M
+ORE RACES POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017G#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017G#2#Total:
+B20017G#3#Male --
+B20017G#4#Total
+B20017G#5#Worked full-time, year-round in the past 12 months
+B20017G#6#Other
+B20017G#7#Female --
+B20017G#8#Total
+B20017G#9#Worked full-time, year-round in the past 12 months
+B20017G#10#Other
+B20017H#T#B20017H. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (WHITE ALONE, NOT HISPANIC OR LATINO) - U
+niverse:  WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017H#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017H#2#Total:
+B20017H#3#Male --
+B20017H#4#Total
+B20017H#5#Worked full-time, year-round in the past 12 months
+B20017H#6#Other
+B20017H#7#Female --
+B20017H#8#Total
+B20017H#9#Worked full-time, year-round in the past 12 months
+B20017H#10#Other
+B20017I#T#B20017I. MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS (HISPANIC OR LATINO) - Universe:  HISPANIC OR LATINO POPULATION
+ 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS
+B20017I#1#Median earnings in the past 12 months (in 2004 inflation-adjusted dollars) --
+B20017I#2#Total:
+B20017I#3#Male --
+B20017I#4#Total
+B20017I#5#Worked full-time, year-round in the past 12 months
+B20017I#6#Other
+B20017I#7#Female --
+B20017I#8#Total
+B20017I#9#Worked full-time, year-round in the past 12 months
+B20017I#10#Other
+B21001#T#B21001. SEX BY AGE BY ARMED FORCES STATUS BY VETERAN STATUS FOR THE POPULATION 18 YEARS AND OVER - Universe:  POPULATION 18 YEARS AND OVER
+B21001#1#Total:
+B21001#2#Male:
+B21001#3#18 to 64 years:
+B21001#4#In Armed Forces
+B21001#5#Civilian:
+B21001#6#Veteran
+B21001#7#Nonveteran
+B21001#8#65 to 74 years:
+B21001#9#Veteran
+B21001#10#Nonveteran
+B21001#11#75 years and over:
+B21001#12#Veteran
+B21001#13#Nonveteran
+B21001#14#Female:
+B21001#15#18 to 64 years:
+B21001#16#In Armed Forces
+B21001#17#Civilian:
+B21001#18#Veteran
+B21001#19#Nonveteran
+B21001#20#65 to 74 years:
+B21001#21#Veteran
+B21001#22#Nonveteran
+B21001#23#75 years and over:
+B21001#24#Veteran
+B21001#25#Nonveteran
+B22001#T#B22001. RECEIPT OF FOOD STAMPS IN THE PAST 12 MONTHS BY PRESENCE OF PEOPLE 60 YEARS AND OVER FOR HOUSEHOLDS - Universe:  HOUSEHOLDS
+B22001#1#Total:
+B22001#2#Household received Food Stamps in the past 12 months:
+B22001#3#At least one person in household 60 years or over
+B22001#4#No people in household 60 years or over
+B22001#5#Household did not receive Food Stamps in the past 12 months:
+B22001#6#At least one person in household 60 years or over
+B22001#7#No people in household 60 years or over
+B23001#T#B23001. SEX BY AGE BY EMPLOYMENT STATUS FOR THE POPULATION 16 YEARS AND OVER - Universe:  POPULATION 16 YEARS AND OVER
+B23001#1#Total:
+B23001#2#Male:
+B23001#3#16 to 19 years:
+B23001#4#In labor force:
+B23001#5#In Armed Forces
+B23001#6#Civilian:
+B23001#7#Employed
+B23001#8#Unemployed
+B23001#9#Not in labor force
+B23001#10#20 and 21 years:
+B23001#11#In labor force:
+B23001#12#In Armed Forces
+B23001#13#Civilian:
+B23001#14#Employed
+B23001#15#Unemployed
+B23001#16#Not in labor force
+B23001#17#22 to 24 years:
+B23001#18#In labor force:
+B23001#19#In Armed Forces
+B23001#20#Civilian:
+B23001#21#Employed
+B23001#22#Unemployed
+B23001#23#Not in labor force
+B23001#24#25 to 29 years:
+B23001#25#In labor force:
+B23001#26#In Armed Forces
+B23001#27#Civilian:
+B23001#28#Employed
+B23001#29#Unemployed
+B23001#30#Not in labor force
+B23001#31#30 to 34 years:
+B23001#32#In labor force:
+B23001#33#In Armed Forces
+B23001#34#Civilian:
+B23001#35#Employed
+B23001#36#Unemployed
+B23001#37#Not in labor force
+B23001#38#35 to 44 years:
+B23001#39#In labor force:
+B23001#40#In Armed Forces
+B23001#41#Civilian:
+B23001#42#Employed
+B23001#43#Unemployed
+B23001#44#Not in labor force
+B23001#45#45 to 54 years:
+B23001#46#In labor force:
+B23001#47#In Armed Forces
+B23001#48#Civilian:
+B23001#49#Employed
+B23001#50#Unemployed
+B23001#51#Not in labor force
+B23001#52#55 to 59 years:
+B23001#53#In labor force:
+B23001#54#In Armed Forces
+B23001#55#Civilian:
+B23001#56#Employed
+B23001#57#Unemployed
+B23001#58#Not in labor force
+B23001#59#60 and 61 years:
+B23001#60#In labor force:
+B23001#61#In Armed Forces
+B23001#62#Civilian:
+B23001#63#Employed
+B23001#64#Unemployed
+B23001#65#Not in labor force
+B23001#66#62 to 64 years:
+B23001#67#In labor force:
+B23001#68#In Armed Forces
+B23001#69#Civilian:
+B23001#70#Employed
+B23001#71#Unemployed
+B23001#72#Not in labor force
+B23001#73#65 to 69 years:
+B23001#74#In labor force:
+B23001#75#Employed
+B23001#76#Unemployed
+B23001#77#Not in labor force
+B23001#78#70 to 74 years:
+B23001#79#In labor force:
+B23001#80#Employed
+B23001#81#Unemployed
+B23001#82#Not in labor force
+B23001#83#75 years and over:
+B23001#84#In labor force:
+B23001#85#Employed
+B23001#86#Unemployed
+B23001#87#Not in labor force
+B23001#88#Female:
+B23001#89#16 to 19 years:
+B23001#90#In labor force:
+B23001#91#In Armed Forces
+B23001#92#Civilian:
+B23001#93#Employed
+B23001#94#Unemployed
+B23001#95#Not in labor force
+B23001#96#20 and 21 years:
+B23001#97#In labor force:
+B23001#98#In Armed Forces
+B23001#99#Civilian:
+B23001#100#Employed
+B23001#101#Unemployed
+B23001#102#Not in labor force
+B23001#103#22 to 24 years:
+B23001#104#In labor force:
+B23001#105#In Armed Forces
+B23001#106#Civilian:
+B23001#107#Employed
+B23001#108#Unemployed
+B23001#109#Not in labor force
+B23001#110#25 to 29 years:
+B23001#111#In labor force:
+B23001#112#In Armed Forces
+B23001#113#Civilian:
+B23001#114#Employed
+B23001#115#Unemployed
+B23001#116#Not in labor force
+B23001#117#30 to 34 years:
+B23001#118#In labor force:
+B23001#119#In Armed Forces
+B23001#120#Civilian:
+B23001#121#Employed
+B23001#122#Unemployed
+B23001#123#Not in labor force
+B23001#124#35 to 44 years:
+B23001#125#In labor force:
+B23001#126#In Armed Forces
+B23001#127#Civilian:
+B23001#128#Employed
+B23001#129#Unemployed
+B23001#130#Not in labor force
+B23001#131#45 to 54 years:
+B23001#132#In labor force:
+B23001#133#In Armed Forces
+B23001#134#Civilian:
+B23001#135#Employed
+B23001#136#Unemployed
+B23001#137#Not in labor force
+B23001#138#55 to 59 years:
+B23001#139#In labor force:
+B23001#140#In Armed Forces
+B23001#141#Civilian:
+B23001#142#Employed
+B23001#143#Unemployed
+B23001#144#Not in labor force
+B23001#145#60 and 61 years:
+B23001#146#In labor force:
+B23001#147#In Armed Forces
+B23001#148#Civilian:
+B23001#149#Employed
+B23001#150#Unemployed
+B23001#151#Not in labor force
+B23001#152#62 to 64 years:
+B23001#153#In labor force:
+B23001#154#In Armed Forces
+B23001#155#Civilian:
+B23001#156#Employed
+B23001#157#Unemployed
+B23001#158#Not in labor force
+B23001#159#65 to 69 years:
+B23001#160#In labor force:
+B23001#161#Employed
+B23001#162#Unemployed
+B23001#163#Not in labor force
+B23001#164#70 to 74 years:
+B23001#165#In labor force:
+B23001#166#Employed
+B23001#167#Unemployed
+B23001#168#Not in labor force
+B23001#169#75 years and over:
+B23001#170#In labor force:
+B23001#171#Employed
+B23001#172#Unemployed
+B23001#173#Not in labor force
+B23007#T#B23007. PRESENCE AND AGE OF OWN CHILDREN BY FAMILY TYPE BY EMPLOYMENT STATUS - Universe:  FAMILIES
+B23007#1#Total:
+B23007#2#With own children under 18 years:
+B23007#3#Married-couple family:
+B23007#4#Husband in labor force:
+B23007#5#Employed or in Armed Forces:
+B23007#6#Wife in labor force:
+B23007#7#Employed or in Armed Forces
+B23007#8#Unemployed
+B23007#9#Wife not in labor force
+B23007#10#Unemployed:
+B23007#11#Wife in labor force:
+B23007#12#Employed or in Armed Forces
+B23007#13#Unemployed
+B23007#14#Wife not in labor force
+B23007#15#Husband not in labor force:
+B23007#16#Wife in labor force:
+B23007#17#Employed or in Armed Forces
+B23007#18#Unemployed
+B23007#19#Wife not in labor force
+B23007#20#Other family:
+B23007#21#Male householder, no wife present:
+B23007#22#In labor force:
+B23007#23#Employed or in Armed Forces
+B23007#24#Unemployed
+B23007#25#Not in labor force
+B23007#26#Female householder, no husband present:
+B23007#27#In labor force:
+B23007#28#Employed or in Armed Forces
+B23007#29#Unemployed
+B23007#30#Not in labor force
+B23007#31#No children under 18 years:
+B23007#32#Married-couple family:
+B23007#33#Husband in labor force:
+B23007#34#Employed or in Armed Forces:
+B23007#35#Wife in labor force:
+B23007#36#Employed or in Armed Forces
+B23007#37#Unemployed
+B23007#38#Wife not in labor force
+B23007#39#Unemployed:
+B23007#40#Wife in labor force:
+B23007#41#Employed or in Armed Forces
+B23007#42#Unemployed
+B23007#43#Wife not in labor force
+B23007#44#Husband not in labor force:
+B23007#45#Wife in labor force:
+B23007#46#Employed or in Armed Forces
+B23007#47#Unemployed
+B23007#48#Wife not in labor force
+B23007#49#Other family:
+B23007#50#Male householder, no wife present:
+B23007#51#In labor force:
+B23007#52#Employed or in Armed Forces
+B23007#53#Unemployed
+B23007#54#Not in labor force
+B23007#55#Female householder, no husband present:
+B23007#56#In labor force:
+B23007#57#Employed or in Armed Forces
+B23007#58#Unemployed
+B23007#59#Not in labor force
+B23008#T#B23008. AGE OF OWN CHILDREN UNDER 18 YEARS IN FAMILIES AND SUBFAMILIES BY LIVING ARRANGEMENTS BY EMPLOYMENT STATUS OF PARENTS - Universe:  OWN CHILDREN UNDER 18 YEARS IN FAMILIES AND SUBFAMILIES
+B23008#1#Total:
+B23008#2#Under 6 years:
+B23008#3#Living with two parents:
+B23008#4#Both parents in labor force
+B23008#5#Father only in labor force
+B23008#6#Mother only in labor force
+B23008#7#Neither parent in labor force
+B23008#8#Living with one parent:
+B23008#9#Living with father:
+B23008#10#In labor force
+B23008#11#Not in labor force
+B23008#12#Living with mother:
+B23008#13#In labor force
+B23008#14#Not in labor force
+B23008#15#6 to 17 years:
+B23008#16#Living with two parents:
+B23008#17#Both parents in labor force
+B23008#18#Father only in labor force
+B23008#19#Mother only in labor force
+B23008#20#Neither parent in labor force
+B23008#21#Living with one parent:
+B23008#22#Living with father:
+B23008#23#In labor force
+B23008#24#Not in labor force
+B23008#25#Living with mother:
+B23008#26#In labor force
+B23008#27#Not in labor force
+B23011#T#B23011. SEX BY DISABILITY STATUS BY WORK STATUS IN THE PAST 12 MONTHS BY USUAL HOURS WORKED PER WEEK IN THE PAST 12 MONTHS BY WEEKS WORKED IN THE PAST 12 MONTHS FOR THE POPULATION 16 TO 64 YEARS - Universe:  POPULATION 16 TO 64 YEARS
+B23011#1#Total:
+B23011#2#Male:
+B23011#3#With a disability:
+B23011#4#Worked in the past 12 months:
+B23011#5#Usually worked 35 or more hours per week:
+B23011#6#50 to 52 weeks
+B23011#7#48 and 49 weeks
+B23011#8#40 to 47 weeks
+B23011#9#27 to 39 weeks
+B23011#10#14 to 26 weeks
+B23011#11#1 to 13 weeks
+B23011#12#Usually worked 15 to 34 hours per week:
+B23011#13#50 to 52 weeks
+B23011#14#48 and 49 weeks
+B23011#15#40 to 47 weeks
+B23011#16#27 to 39 weeks
+B23011#17#14 to 26 weeks
+B23011#18#1 to 13 weeks
+B23011#19#Usually worked 1 to 14 hours per week:
+B23011#20#50 to 52 weeks
+B23011#21#48 and 49 weeks
+B23011#22#40 to 47 weeks
+B23011#23#27 to 39 weeks
+B23011#24#14 to 26 weeks
+B23011#25#1 to 13 weeks
+B23011#26#Did not work in the past 12 months
+B23011#27#No disability:
+B23011#28#Worked in the past 12 months:
+B23011#29#Usually worked 35 or more hours per week:
+B23011#30#50 to 52 weeks
+B23011#31#48 and 49 weeks
+B23011#32#40 to 47 weeks
+B23011#33#27 to 39 weeks
+B23011#34#14 to 26 weeks
+B23011#35#1 to 13 weeks
+B23011#36#Usually worked 15 to 34 hours per week:
+B23011#37#50 to 52 weeks
+B23011#38#48 and 49 weeks
+B23011#39#40 to 47 weeks
+B23011#40#27 to 39 weeks
+B23011#41#14 to 26 weeks
+B23011#42#1 to 13 weeks
+B23011#43#Usually worked 1 to 14 hours per week:
+B23011#44#50 to 52 weeks
+B23011#45#48 and 49 weeks
+B23011#46#40 to 47 weeks
+B23011#47#27 to 39 weeks
+B23011#48#14 to 26 weeks
+B23011#49#1 to 13 weeks
+B23011#50#Did not work in the past 12 months
+B23011#51#Female:
+B23011#52#With a disability:
+B23011#53#Worked in the past 12 months:
+B23011#54#Usually worked 35 or more hours per week:
+B23011#55#50 to 52 weeks
+B23011#56#48 and 49 weeks
+B23011#57#40 to 47 weeks
+B23011#58#27 to 39 weeks
+B23011#59#14 to 26 weeks
+B23011#60#1 to 13 weeks
+B23011#61#Usually worked 15 to 34 hours per week:
+B23011#62#50 to 52 weeks
+B23011#63#48 and 49 weeks
+B23011#64#40 to 47 weeks
+B23011#65#27 to 39 weeks
+B23011#66#14 to 26 weeks
+B23011#67#1 to 13 weeks
+B23011#68#Usually worked 1 to 14 hours per week:
+B23011#69#50 to 52 weeks
+B23011#70#48 and 49 weeks
+B23011#71#40 to 47 weeks
+B23011#72#27 to 39 weeks
+B23011#73#14 to 26 weeks
+B23011#74#1 to 13 weeks
+B23011#75#Did not work in the past 12 months
+B23011#76#No disability:
+B23011#77#Worked in the past 12 months:
+B23011#78#Usually worked 35 or more hours per week:
+B23011#79#50 to 52 weeks
+B23011#80#48 and 49 weeks
+B23011#81#40 to 47 weeks
+B23011#82#27 to 39 weeks
+B23011#83#14 to 26 weeks
+B23011#84#1 to 13 weeks
+B23011#85#Usually worked 15 to 34 hours per week:
+B23011#86#50 to 52 weeks
+B23011#87#48 and 49 weeks
+B23011#88#40 to 47 weeks
+B23011#89#27 to 39 weeks
+B23011#90#14 to 26 weeks
+B23011#91#1 to 13 weeks
+B23011#92#Usually worked 1 to 14 hours per week:
+B23011#93#50 to 52 weeks
+B23011#94#48 and 49 weeks
+B23011#95#40 to 47 weeks
+B23011#96#27 to 39 weeks
+B23011#97#14 to 26 weeks
+B23011#98#1 to 13 weeks
+B23011#99#Did not work in the past 12 months
+B24010#T#B24010. SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B24010#1#Total:
+B24010#2#Male:
+B24010#3#Management, professional, and related occupations:
+B24010#4#Management, business, and financial occupations:
+B24010#5#Management occupations:
+B24010#6#Top executives
+B24010#7#Advertising, marketing, promotions, public relations, and sales managers
+B24010#8#Financial managers
+B24010#9#Operations specialties managers except financial managers
+B24010#10#Farmers and farm managers
+B24010#11#Other management occupations except farmers and farm managers
+B24010#12#Business and financial operations occupations:
+B24010#13#Business operations specialists
+B24010#14#Financial specialists:
+B24010#15#Accountants and auditors
+B24010#16#Other financial specialists
+B24010#17#Professional and related occupations:
+B24010#18#Computer and mathematical occupations:
+B24010#19#Computer specialists
+B24010#20#Mathematical science occupations
+B24010#21#Architecture and engineering occupations:
+B24010#22#Architects, surveyors, and cartographers
+B24010#23#Engineers
+B24010#24#Drafters, engineering, and mapping technicians
+B24010#25#Life, physical, and social science occupations:
+B24010#26#Life and physical scientists
+B24010#27#Social scientists and related workers
+B24010#28#Life, physical, and social science technicians
+B24010#29#Community and social services occupations:
+B24010#30#Counselors, social workers, and other community and social service specialists
+B24010#31#Religious workers
+B24010#32#Legal occupations:
+B24010#33#Lawyers
+B24010#34#Judges, magistrates, and other judicial workers
+B24010#35#Legal support workers
+B24010#36#Education, training, and library occupations:
+B24010#37#Postsecondary teachers
+B24010#38#Primary, secondary, and special education school teachers:
+B24010#39#Preschool, kindergarten, elementary and middle school teachers
+B24010#40#Secondary school teachers
+B24010#41#Special education teachers
+B24010#42#Librarians, curators, and archivists
+B24010#43#Other teachers and instructors, education, training, and library occupations
+B24010#44#Arts, design, entertainment, sports, and media occupations:
+B24010#45#Art and design workers
+B24010#46#Entertainers and performers, sports, and related workers
+B24010#47#Media and communication equipment workers
+B24010#48#Healthcare practitioner and technical occupations:
+B24010#49#Health diagnosing and treating practitioners and other technical occupations:
+B24010#50#Physicians and surgeons
+B24010#51#Registered nurses
+B24010#52#Therapists
+B24010#53#Other health diagnosing and treating practitioners and technical occupations
+B24010#54#Health technologists and technicians
+B24010#55#Service occupations:
+B24010#56#Healthcare support occupations:
+B24010#57#Nursing, psychiatric, and home health aides
+B24010#58#Occupational and physical therapist assistants and aides
+B24010#59#Other healthcare support occupations
+B24010#60#Protective service occupations:
+B24010#61#Fire fighting and prevention workers including supervisors
+B24010#62#Law enforcement workers including supervisors
+B24010#63#Other protective service workers including supervisors
+B24010#64#Food preparation and serving related occupations:
+B24010#65#Cooks and food preparation workers
+B24010#66#Waiters and waitresses
+B24010#67#Food and beverage serving workers except waiters/waitresses
+B24010#68#Other food preparation and serving workers including supervisors
+B24010#69#Building and grounds cleaning and maintenance occupations
+B24010#70#Personal care and service occupations:
+B24010#71#Personal appearance workers
+B24010#72#Transportation, tourism, and lodging attendants
+B24010#73#Child care workers
+B24010#74#Supervisors and other personal care and service workers except personal appearance, transportation, and child care workers
+B24010#75#Sales and office occupations:
+B24010#76#Sales and related occupations:
+B24010#77#Cashiers
+B24010#78#Retail sales workers except cashiers
+B24010#79#Sales representatives, services, wholesale and manufacturing
+B24010#80#Other sales and related workers including supervisors
+B24010#81#Office and administrative support occupations:
+B24010#82#Communications equipment operators
+B24010#83#Financial clerks except bookkeeping, accounting, and auditing clerks
+B24010#84#Bookkeeping, accounting, and auditing clerks
+B24010#85#Information and record clerks except customer service representatives
+B24010#86#Customer service representatives
+B24010#87#Material recording, scheduling, dispatching, and distributing workers
+B24010#88#Secretaries and administrative assistants
+B24010#89#Other office and administrative support workers including supervisors
+B24010#90#Farming, fishing, and forestry occupations:
+B24010#91#Agricultural workers including supervisors
+B24010#92#Fishing and hunting, and forest and logging workers
+B24010#93#Construction, extraction, maintenance, and repair occupations:
+B24010#94#Construction and extraction occupations:
+B24010#95#Supervisors, construction and extraction workers
+B24010#96#Carpenters
+B24010#97#Construction laborers
+B24010#98#Electricians
+B24010#99#Painters and paperhangers
+B24010#100#Pipelayers, plumbers, pipefitters, and steamfitters
+B24010#101#Construction trades workers except carpenters, electricians, painters, plumbers, and construction laborers
+B24010#102#Other construction workers and helpers
+B24010#103#Extraction workers
+B24010#104#Installation, maintenance, and repair occupations:
+B24010#105#Vehicle and mobile equipment mechanics, installers, and repairers
+B24010#106#Electrical equipment mechanics and other installation, maintenance, and repair occupations including supervisors
+B24010#107#Production, transportation, and material moving occupations:
+B24010#108#Production occupations:
+B24010#109#Assemblers and fabricators
+B24010#110#Food processing workers
+B24010#111#Metal workers and plastic workers
+B24010#112#Printing workers
+B24010#113#Textile, apparel, and furnishings workers
+B24010#114#Woodworkers
+B24010#115#Plant and system operators
+B24010#116#Other production occupations including supervisors
+B24010#117#Transportation and material moving occupations:
+B24010#118#Supervisors, transportation and material moving workers
+B24010#119#Air transportation workers
+B24010#120#Rail and water transportation workers
+B24010#121#Bus drivers
+B24010#122#Driver/sales workers and truck drivers
+B24010#123#Motor vehicle operators except bus and truck drivers
+B24010#124#Other transportation workers
+B24010#125#Material moving workers:
+B24010#126#Laborers and material movers, hand
+B24010#127#Material moving workers except laborers and material movers, hand
+B24010#128#Female:
+B24010#129#Management, professional, and related occupations:
+B24010#130#Management, business, and financial occupations:
+B24010#131#Management occupations:
+B24010#132#Top executives
+B24010#133#Advertising, marketing, promotions, public relations, and sales managers
+B24010#134#Financial managers
+B24010#135#Operations specialties managers except financial managers
+B24010#136#Farmers and farm managers
+B24010#137#Other management occupations except farmers and farm managers
+B24010#138#Business and financial operations occupations:
+B24010#139#Business operations specialists
+B24010#140#Financial specialists:
+B24010#141#Accountants and auditors
+B24010#142#Other financial specialists
+B24010#143#Professional and related occupations:
+B24010#144#Computer and mathematical occupations:
+B24010#145#Computer specialists
+B24010#146#Mathematical science occupations
+B24010#147#Architecture and engineering occupations:
+B24010#148#Architects, surveyors, and cartographers
+B24010#149#Engineers
+B24010#150#Drafters, engineering, and mapping technicians
+B24010#151#Life, physical, and social science occupations:
+B24010#152#Life and physical scientists
+B24010#153#Social scientists and related workers
+B24010#154#Life, physical, and social science technicians
+B24010#155#Community and social services occupations:
+B24010#156#Counselors, social workers, and other community and social service specialists
+B24010#157#Religious workers
+B24010#158#Legal occupations:
+B24010#159#Lawyers
+B24010#160#Judges, magistrates, and other judicial workers
+B24010#161#Legal support workers
+B24010#162#Education, training, and library occupations:
+B24010#163#Postsecondary teachers
+B24010#164#Primary, secondary, and special education school teachers:
+B24010#165#Preschool, kindergarten, elementary and middle school teachers
+B24010#166#Secondary school teachers
+B24010#167#Special education teachers
+B24010#168#Librarians, curators, and archivists
+B24010#169#Other teachers and instructors, education, training, and library occupations
+B24010#170#Arts, design, entertainment, sports, and media occupations:
+B24010#171#Art and design workers
+B24010#172#Entertainers and performers, sports, and related workers
+B24010#173#Media and communication equipment workers
+B24010#174#Healthcare practitioner and technical occupations:
+B24010#175#Health diagnosing and treating practitioners and other technical occupations:
+B24010#176#Physicians and surgeons
+B24010#177#Registered nurses
+B24010#178#Therapists
+B24010#179#Other health diagnosing and treating practitioners and technical occupations
+B24010#180#Health technologists and technicians
+B24010#181#Service occupations:
+B24010#182#Healthcare support occupations:
+B24010#183#Nursing, psychiatric, and home health aides
+B24010#184#Occupational and physical therapist assistants and aides
+B24010#185#Other healthcare support occupations
+B24010#186#Protective service occupations:
+B24010#187#Fire fighting and prevention workers including supervisors
+B24010#188#Law enforcement workers including supervisors
+B24010#189#Other protective service workers including supervisors
+B24010#190#Food preparation and serving related occupations:
+B24010#191#Cooks and food preparation workers
+B24010#192#Waiters and waitresses
+B24010#193#Food and beverage serving workers except waiters/waitresses
+B24010#194#Other food preparation and serving workers including supervisors
+B24010#195#Building and grounds cleaning and maintenance occupations
+B24010#196#Personal care and service occupations:
+B24010#197#Personal appearance workers
+B24010#198#Transportation, tourism, and lodging attendants
+B24010#199#Child care workers
+B24010#200#Supervisors and other personal care and service workers except personal appearance, transportation, and child care workers
+B24010#201#Sales and office occupations:
+B24010#202#Sales and related occupations:
+B24010#203#Cashiers
+B24010#204#Retail sales workers except cashiers
+B24010#205#Sales representatives, services, wholesale and manufacturing
+B24010#206#Other sales and related workers including supervisors
+B24010#207#Office and administrative support occupations:
+B24010#208#Communications equipment operators
+B24010#209#Financial clerks except bookkeeping, accounting, and auditing clerks
+B24010#210#Bookkeeping, accounting, and auditing clerks
+B24010#211#Information and record clerks except customer service representatives
+B24010#212#Customer service representatives
+B24010#213#Material recording, scheduling, dispatching, and distributing workers
+B24010#214#Secretaries and administrative assistants
+B24010#215#Other office and administrative support workers including supervisors
+B24010#216#Farming, fishing, and forestry occupations:
+B24010#217#Agricultural workers including supervisors
+B24010#218#Fishing and hunting, and forest and logging workers
+B24010#219#Construction, extraction, maintenance, and repair occupations:
+B24010#220#Construction and extraction occupations:
+B24010#221#Supervisors, construction and extraction workers
+B24010#222#Carpenters
+B24010#223#Construction laborers
+B24010#224#Electricians
+B24010#225#Painters and paperhangers
+B24010#226#Pipelayers, plumbers, pipefitters, and steamfitters
+B24010#227#Construction trades workers except carpenters, electricians, painters, plumbers, and construction laborers
+B24010#228#Other construction workers and helpers
+B24010#229#Extraction workers
+B24010#230#Installation, maintenance, and repair occupations:
+B24010#231#Vehicle and mobile equipment mechanics, installers, and repairers
+B24010#232#Electrical equipment mechanics and other installation, maintenance, and repair occupations including supervisors
+B24010#233#Production, transportation, and material moving occupations:
+B24010#234#Production occupations:
+B24010#235#Assemblers and fabricators
+B24010#236#Food processing workers
+B24010#237#Metal workers and plastic workers
+B24010#238#Printing workers
+B24010#239#Textile, apparel, and furnishings workers
+B24010#240#Woodworkers
+B24010#241#Plant and system operators
+B24010#242#Other production occupations including supervisors
+B24010#243#Transportation and material moving occupations:
+B24010#244#Supervisors, transportation and material moving workers
+B24010#245#Air transportation workers
+B24010#246#Rail and water transportation workers
+B24010#247#Bus drivers
+B24010#248#Driver/sales workers and truck drivers
+B24010#249#Motor vehicle operators except bus and truck drivers
+B24010#250#Other transportation workers
+B24010#251#Material moving workers:
+B24010#252#Laborers and material movers, hand
+B24010#253#Material moving workers except laborers and material movers, hand
+B24021#T#B24021. SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 1
+6 YEARS AND OVER WITH EARNINGS
+B24021#1#Total:
+B24021#2#Management, professional, and related occupations:
+B24021#3#Management, business, and financial occupations:
+B24021#4#Management occupations
+B24021#5#Business and financial operations occupations
+B24021#6#Professional and related occupations:
+B24021#7#Computer and mathematical occupations
+B24021#8#Architecture and engineering occupations
+B24021#9#Life, physical, and social science occupations
+B24021#10#Community and social services occupations
+B24021#11#Legal occupations
+B24021#12#Education, training, and library occupations
+B24021#13#Arts, design, entertainment, sports, and media occupations
+B24021#14#Healthcare practitioner and technical occupations:
+B24021#15#Health diagnosing and treating practitioners and other technical occupations
+B24021#16#Health technologists and technicians
+B24021#17#Service occupations:
+B24021#18#Healthcare support occupations
+B24021#19#Protective service occupations:
+B24021#20#Fire fighting and prevention, and other protective service workers including supervisors
+B24021#21#Law enforcement workers including supervisors
+B24021#22#Food preparation and serving related occupations
+B24021#23#Building and grounds cleaning and maintenance occupations
+B24021#24#Personal care and service occupations
+B24021#25#Sales and office occupations:
+B24021#26#Sales and related occupations
+B24021#27#Office and administrative support occupations
+B24021#28#Farming, fishing, and forestry occupations
+B24021#29#Construction, extraction, maintenance, and repair occupations:
+B24021#30#Construction and extraction occupations
+B24021#31#Installation, maintenance, and repair occupations
+B24021#32#Production, transportation, and material moving occupations:
+B24021#33#Production occupations
+B24021#34#Transportation and material moving occupations:
+B24021#35#Supervisors, transportation and material moving workers, and other transportation workers except motor vehicle operators
+B24021#36#Motor vehicle operators
+B24021#37#Material moving workers
+B24021#38#Male:
+B24021#39#Management, professional, and related occupations:
+B24021#40#Management, business, and financial occupations:
+B24021#41#Management occupations
+B24021#42#Business and financial operations occupations
+B24021#43#Professional and related occupations:
+B24021#44#Computer and mathematical occupations
+B24021#45#Architecture and engineering occupations
+B24021#46#Life, physical, and social science occupations
+B24021#47#Community and social services occupations
+B24021#48#Legal occupations
+B24021#49#Education, training, and library occupations
+B24021#50#Arts, design, entertainment, sports, and media occupations
+B24021#51#Healthcare practitioner and technical occupations:
+B24021#52#Health diagnosing and treating practitioners and other technical occupations
+B24021#53#Health technologists and technicians
+B24021#54#Service occupations:
+B24021#55#Healthcare support occupations
+B24021#56#Protective service occupations:
+B24021#57#Fire fighting and prevention, and other protective service workers including supervisors
+B24021#58#Law enforcement workers including supervisors
+B24021#59#Food preparation and serving related occupations
+B24021#60#Building and grounds cleaning and maintenance occupations
+B24021#61#Personal care and service occupations
+B24021#62#Sales and office occupations:
+B24021#63#Sales and related occupations
+B24021#64#Office and administrative support occupations
+B24021#65#Farming, fishing, and forestry occupations
+B24021#66#Construction, extraction, maintenance, and repair occupations:
+B24021#67#Construction and extraction occupations
+B24021#68#Installation, maintenance, and repair occupations
+B24021#69#Production, transportation, and material moving occupations:
+B24021#70#Production occupations
+B24021#71#Transportation and material moving occupations:
+B24021#72#Supervisors, transportation and material moving workers, and other transportation workers except motor vehicle operators
+B24021#73#Motor vehicle operators
+B24021#74#Material moving workers
+B24021#75#Female:
+B24021#76#Management, professional, and related occupations:
+B24021#77#Management, business, and financial occupations:
+B24021#78#Management occupations
+B24021#79#Business and financial operations occupations
+B24021#80#Professional and related occupations:
+B24021#81#Computer and mathematical occupations
+B24021#82#Architecture and engineering occupations
+B24021#83#Life, physical, and social science occupations
+B24021#84#Community and social services occupations
+B24021#85#Legal occupations
+B24021#86#Education, training, and library occupations
+B24021#87#Arts, design, entertainment, sports, and media occupations
+B24021#88#Healthcare practitioner and technical occupations:
+B24021#89#Health diagnosing and treating practitioners and other technical occupations
+B24021#90#Health technologists and technicians
+B24021#91#Service occupations:
+B24021#92#Healthcare support occupations
+B24021#93#Protective service occupations:
+B24021#94#Fire fighting and prevention, and other protective service workers including supervisors
+B24021#95#Law enforcement workers including supervisors
+B24021#96#Food preparation and serving related occupations
+B24021#97#Building and grounds cleaning and maintenance occupations
+B24021#98#Personal care and service occupations
+B24021#99#Sales and office occupations:
+B24021#100#Sales and related occupations
+B24021#101#Office and administrative support occupations
+B24021#102#Farming, fishing, and forestry occupations
+B24021#103#Construction, extraction, maintenance, and repair occupations:
+B24021#104#Construction and extraction occupations
+B24021#105#Installation, maintenance, and repair occupations
+B24021#106#Production, transportation, and material moving occupations:
+B24021#107#Production occupations
+B24021#108#Transportation and material moving occupations:
+B24021#109#Supervisors, transportation and material moving workers, and other transportation workers except motor vehicle operators
+B24021#110#Motor vehicle operators
+B24021#111#Material moving workers
+B24030#T#B24030. SEX BY INDUSTRY FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B24030#1#Total:
+B24030#2#Male:
+B24030#3#Agriculture, forestry, fishing and hunting, and mining:
+B24030#4#Agriculture, forestry, fishing and hunting
+B24030#5#Mining
+B24030#6#Construction
+B24030#7#Manufacturing:
+B24030#8#Food
+B24030#9#Beverage and tobacco products
+B24030#10#Textile mills and textile products
+B24030#11#Apparel
+B24030#12#Leather and allied products
+B24030#13#Wood products
+B24030#14#Paper
+B24030#15#Printing and related support activities
+B24030#16#Petroleum and coal products
+B24030#17#Chemicals
+B24030#18#Plastics and rubber products
+B24030#19#Nonmetallic mineral products
+B24030#20#Metal and metal products
+B24030#21#Machinery
+B24030#22#Computer and electronic products
+B24030#23#Electrical equipment, appliances, and components
+B24030#24#Transportation equipment
+B24030#25#Furniture and related products
+B24030#26#Miscellaneous manufacturing
+B24030#27#Wholesale trade:
+B24030#28#Motor vehicle, parts and supplies merchant wholesalers
+B24030#29#Furniture and home furnishing merchant wholesalers
+B24030#30#Lumber and other construction materials merchant wholesalers
+B24030#31#Professional and commercial equipment and supplies merchant wholesalers
+B24030#32#Metal and mineral, except petroleum, merchant wholesalers
+B24030#33#Electrical and electronic goods merchant wholesalers
+B24030#34#Hardware, plumbing and heating equipment and supplies merchant wholesalers
+B24030#35#Machinery, equipment, and supplies merchant wholesalers
+B24030#36#Recyclable material merchant wholesalers
+B24030#37#Miscellaneous durable goods merchant wholesalers
+B24030#38#Paper and paper product merchant wholesalers
+B24030#39#Drugs and druggists' sundries, and chemical and allied products merchant wholesalers
+B24030#40#Apparel, piece goods, and notions merchant wholesalers
+B24030#41#Grocery and related product merchant wholesalers
+B24030#42#Farm product raw material merchant wholesalers
+B24030#43#Petroleum and petroleum products merchant wholesalers
+B24030#44#Alcoholic beverage merchant wholesalers
+B24030#45#Farm supplies merchant wholesalers
+B24030#46#Miscellaneous nondurable goods merchant wholesalers
+B24030#47#Wholesale electronic markets and agents and brokers
+B24030#48#Retail trade:
+B24030#49#Motor vehicle and parts dealers
+B24030#50#Furniture and home furnishings, and household appliance stores
+B24030#51#Radio, TV, and computer and software, and other electronic stores
+B24030#52#Building material and garden equipment and supplies dealers
+B24030#53#Food and beverage stores
+B24030#54#Pharmacies and drug stores
+B24030#55#Other health and personal care stores
+B24030#56#Gasoline stations
+B24030#57#Clothing and clothing accessories, including shoe, stores
+B24030#58#Jewelry, luggage, and leather goods stores
+B24030#59#Sporting goods, camera, and hobby and toy stores
+B24030#60#Sewing, needlework, and piece goods stores
+B24030#61#Music stores
+B24030#62#Book stores and news dealers
+B24030#63#Department and other general merchandise stores
+B24030#64#Florists
+B24030#65#Office supplies and stationery stores
+B24030#66#Used merchandise, gift, novelty, and souvenir, and other miscellaneous stores
+B24030#67#Electronic shopping and mail-order houses
+B24030#68#Vending machine operators
+B24030#69#Fuel dealers
+B24030#70#Other direct selling establishments
+B24030#71#Transportation and warehousing, and utilities:
+B24030#72#Transportation and warehousing:
+B24030#73#Air transportation
+B24030#74#Rail transportation
+B24030#75#Water transportation
+B24030#76#Truck transportation
+B24030#77#U. S. Postal service
+B24030#78#Other transportation, and support activities, and couriers
+B24030#79#Warehousing and storage
+B24030#80#Utilities
+B24030#81#Information:
+B24030#82#Publishing, and motion picture and sound recording industries
+B24030#83#Broadcasting and telecommunications
+B24030#84#Internet publishing and internet service providers
+B24030#85#Data processing and other information services
+B24030#86#Finance and insurance, and real estate and rental and leasing:
+B24030#87#Finance and insurance
+B24030#88#Real estate and rental and leasing
+B24030#89#Professional, scientific, and management, and administrative and waste management services:
+B24030#90#Professional, scientific, and technical services
+B24030#91#Management of companies and enterprises
+B24030#92#Administrative and support and waste management services
+B24030#93#Educational services, and health care and social assistance:
+B24030#94#Educational services
+B24030#95#Health care and social assistance:
+B24030#96#Health care
+B24030#97#Social assistance
+B24030#98#Arts, entertainment, and recreation, and accommodation and food services:
+B24030#99#Arts, entertainment, and recreation
+B24030#100#Accommodation and food services
+B24030#101#Other services, except public administration:
+B24030#102#Repair and maintenance
+B24030#103#Personal and laundry services
+B24030#104#Religious, grantmaking, civic, professional, and similar organizations
+B24030#105#Private households
+B24030#106#Public administration
+B24030#107#Female:
+B24030#108#Agriculture, forestry, fishing and hunting, and mining:
+B24030#109#Agriculture, forestry, fishing and hunting
+B24030#110#Mining
+B24030#111#Construction
+B24030#112#Manufacturing:
+B24030#113#Food
+B24030#114#Beverage and tobacco products
+B24030#115#Textile mills and textile products
+B24030#116#Apparel
+B24030#117#Leather and allied products
+B24030#118#Wood products
+B24030#119#Paper
+B24030#120#Printing and related support activities
+B24030#121#Petroleum and coal products
+B24030#122#Chemicals
+B24030#123#Plastics and rubber products
+B24030#124#Nonmetallic mineral products
+B24030#125#Metal and metal products
+B24030#126#Machinery
+B24030#127#Computer and electronic products
+B24030#128#Electrical equipment, appliances, and components
+B24030#129#Transportation equipment
+B24030#130#Furniture and related products
+B24030#131#Miscellaneous manufacturing
+B24030#132#Wholesale trade:
+B24030#133#Motor vehicle, parts and supplies merchant wholesalers
+B24030#134#Furniture and home furnishing merchant wholesalers
+B24030#135#Lumber and other construction materials merchant wholesalers
+B24030#136#Professional and commercial equipment and supplies merchant wholesalers
+B24030#137#Metal and mineral, except petroleum, merchant wholesalers
+B24030#138#Electrical and electronic goods merchant wholesalers
+B24030#139#Hardware, plumbing and heating equipment and supplies merchant wholesalers
+B24030#140#Machinery, equipment, and supplies merchant wholesalers
+B24030#141#Recyclable material merchant wholesalers
+B24030#142#Miscellaneous durable goods merchant wholesalers
+B24030#143#Paper and paper product merchant wholesalers
+B24030#144#Drugs and druggists' sundries, and chemical and allied products merchant wholesalers
+B24030#145#Apparel, piece goods, and notions merchant wholesalers
+B24030#146#Grocery and related product merchant wholesalers
+B24030#147#Farm product raw material merchant wholesalers
+B24030#148#Petroleum and petroleum products merchant wholesalers
+B24030#149#Alcoholic beverage merchant wholesalers
+B24030#150#Farm supplies merchant wholesalers
+B24030#151#Miscellaneous nondurable goods merchant wholesalers
+B24030#152#Wholesale electronic markets and agents and brokers
+B24030#153#Retail trade:
+B24030#154#Motor vehicle and parts dealers
+B24030#155#Furniture and home furnishings, and household appliance stores
+B24030#156#Radio, TV, and computer and software, and other electronic stores
+B24030#157#Building material and garden equipment and supplies dealers
+B24030#158#Food and beverage stores
+B24030#159#Pharmacies and drug stores
+B24030#160#Other health and personal care stores
+B24030#161#Gasoline stations
+B24030#162#Clothing and clothing accessories, including shoe, stores
+B24030#163#Jewelry, luggage, and leather goods stores
+B24030#164#Sporting goods, camera, and hobby and toy stores
+B24030#165#Sewing, needlework, and piece goods stores
+B24030#166#Music stores
+B24030#167#Book stores and news dealers
+B24030#168#Department and other general merchandise stores
+B24030#169#Florists
+B24030#170#Office supplies and stationery stores
+B24030#171#Used merchandise, gift, novelty, and souvenir, and other miscellaneous stores
+B24030#172#Electronic shopping and mail-order houses
+B24030#173#Vending machine operators
+B24030#174#Fuel dealers
+B24030#175#Other direct selling establishments
+B24030#176#Transportation and warehousing, and utilities:
+B24030#177#Transportation and warehousing:
+B24030#178#Air transportation
+B24030#179#Rail transportation
+B24030#180#Water transportation
+B24030#181#Truck transportation
+B24030#182#U. S. Postal service
+B24030#183#Other transportation, and support activities, and couriers
+B24030#184#Warehousing and storage
+B24030#185#Utilities
+B24030#186#Information:
+B24030#187#Publishing, and motion picture and sound recording industries
+B24030#188#Broadcasting and telecommunications
+B24030#189#Internet publishing and internet service providers
+B24030#190#Data processing and other information services
+B24030#191#Finance and insurance, and real estate and rental and leasing:
+B24030#192#Finance and insurance
+B24030#193#Real estate and rental and leasing
+B24030#194#Professional, scientific, and management, and administrative and waste management services:
+B24030#195#Professional, scientific, and technical services
+B24030#196#Management of companies and enterprises
+B24030#197#Administrative and support and waste management services
+B24030#198#Educational services, and health care and social assistance:
+B24030#199#Educational services
+B24030#200#Health care and social assistance:
+B24030#201#Health care
+B24030#202#Social assistance
+B24030#203#Arts, entertainment, and recreation, and accommodation and food services:
+B24030#204#Arts, entertainment, and recreation
+B24030#205#Accommodation and food services
+B24030#206#Other services, except public administration:
+B24030#207#Repair and maintenance
+B24030#208#Personal and laundry services
+B24030#209#Religious, grantmaking, civic, professional, and similar organizations
+B24030#210#Private households
+B24030#211#Public administration
+B24041#T#B24041. SEX BY INDUSTRY AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 
+YEARS AND OVER WITH EARNINGS
+B24041#1#Total:
+B24041#2#Agriculture, forestry, fishing and hunting, and mining:
+B24041#3#Agriculture, forestry, fishing and hunting
+B24041#4#Mining
+B24041#5#Construction
+B24041#6#Manufacturing
+B24041#7#Wholesale trade
+B24041#8#Retail trade
+B24041#9#Transportation and warehousing, and utilities:
+B24041#10#Transportation and warehousing
+B24041#11#Utilities
+B24041#12#Information
+B24041#13#Finance and insurance, and real estate and rental and leasing:
+B24041#14#Finance and insurance
+B24041#15#Real estate and rental and leasing
+B24041#16#Professional, scientific, and management, and administrative and waste management services:
+B24041#17#Professional, scientific, and technical services
+B24041#18#Management of companies and enterprises
+B24041#19#Administrative and support and waste management services
+B24041#20#Educational services, and health care and social assistance:
+B24041#21#Educational services
+B24041#22#Health care and social assistance
+B24041#23#Arts, entertainment, and recreation, and accommodation and food services:
+B24041#24#Arts, entertainment, and recreation
+B24041#25#Accommodation and food services
+B24041#26#Other services, except public administration
+B24041#27#Public administration
+B24041#28#Male:
+B24041#29#Agriculture, forestry, fishing and hunting, and mining:
+B24041#30#Agriculture, forestry, fishing and hunting
+B24041#31#Mining
+B24041#32#Construction
+B24041#33#Manufacturing
+B24041#34#Wholesale trade
+B24041#35#Retail trade
+B24041#36#Transportation and warehousing, and utilities:
+B24041#37#Transportation and warehousing
+B24041#38#Utilities
+B24041#39#Information
+B24041#40#Finance and insurance, and real estate and rental and leasing:
+B24041#41#Finance and insurance
+B24041#42#Real estate and rental and leasing
+B24041#43#Professional, scientific, and management, and administrative and waste management services:
+B24041#44#Professional, scientific, and technical services
+B24041#45#Management of companies and enterprises
+B24041#46#Administrative and support and waste management services
+B24041#47#Educational services, and health care and social assistance:
+B24041#48#Educational services
+B24041#49#Health care and social assistance
+B24041#50#Arts, entertainment, and recreation, and accommodation and food services:
+B24041#51#Arts, entertainment, and recreation
+B24041#52#Accommodation and food services
+B24041#53#Other services, except public administration
+B24041#54#Public administration
+B24041#55#Female:
+B24041#56#Agriculture, forestry, fishing and hunting, and mining:
+B24041#57#Agriculture, forestry, fishing and hunting
+B24041#58#Mining
+B24041#59#Construction
+B24041#60#Manufacturing
+B24041#61#Wholesale trade
+B24041#62#Retail trade
+B24041#63#Transportation and warehousing, and utilities:
+B24041#64#Transportation and warehousing
+B24041#65#Utilities
+B24041#66#Information
+B24041#67#Finance and insurance, and real estate and rental and leasing:
+B24041#68#Finance and insurance
+B24041#69#Real estate and rental and leasing
+B24041#70#Professional, scientific, and management, and administrative and waste management services:
+B24041#71#Professional, scientific, and technical services
+B24041#72#Management of companies and enterprises
+B24041#73#Administrative and support and waste management services
+B24041#74#Educational services, and health care and social assistance:
+B24041#75#Educational services
+B24041#76#Health care and social assistance
+B24041#77#Arts, entertainment, and recreation, and accommodation and food services:
+B24041#78#Arts, entertainment, and recreation
+B24041#79#Accommodation and food services
+B24041#80#Other services, except public administration
+B24041#81#Public administration
+B24080#T#B24080. SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B24080#1#Total:
+B24080#2#Male:
+B24080#3#Private for-profit wage and salary workers:
+B24080#4#Employee of private company workers
+B24080#5#Self-employed in own incorporated business workers
+B24080#6#Private not-for-profit wage and salary workers
+B24080#7#Local government workers
+B24080#8#State government workers
+B24080#9#Federal government workers
+B24080#10#Self-employed in own not incorporated business workers
+B24080#11#Unpaid family workers
+B24080#12#Female:
+B24080#13#Private for-profit wage and salary workers:
+B24080#14#Employee of private company workers
+B24080#15#Self-employed in own incorporated business workers
+B24080#16#Private not-for-profit wage and salary workers
+B24080#17#Local government workers
+B24080#18#State government workers
+B24080#19#Federal government workers
+B24080#20#Self-employed in own not incorporated business workers
+B24080#21#Unpaid family workers
+B24081#T#B24081. SEX BY CLASS OF WORKER AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2004 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULAT
+ION 16 YEARS AND OVER WITH EARNINGS
+B24081#1#Total:
+B24081#2#Private for-profit wage and salary workers
+B24081#3#Employee of private company workers
+B24081#4#Self-employed in own incorporated business workers
+B24081#5#Private not-for-profit wage and salary workers
+B24081#6#Local government workers
+B24081#7#State government workers
+B24081#8#Federal government workers
+B24081#9#Self-employed in own not incorporated business workers
+B24081#10#Unpaid family workers
+B24081#11#Male
+B24081#12#Private for-profit wage and salary workers
+B24081#13#Employee of private company workers
+B24081#14#Self-employed in own incorporated business workers
+B24081#15#Private not-for-profit wage and salary workers
+B24081#16#Local government workers
+B24081#17#State government workers
+B24081#18#Federal government workers
+B24081#19#Self-employed in own not incorporated business workers
+B24081#20#Unpaid family workers
+B24081#21#Female
+B24081#22#Private for-profit wage and salary workers
+B24081#23#Employee of private company workers
+B24081#24#Self-employed in own incorporated business workers
+B24081#25#Private not-for-profit wage and salary workers
+B24081#26#Local government workers
+B24081#27#State government workers
+B24081#28#Federal government workers
+B24081#29#Self-employed in own not incorporated business
+B24081#30#Unpaid family workers
+B25001#T#B25001. HOUSING UNITS - Universe:  HOUSING UNITS
+B25001#1#Total
+B25002#T#B25002. OCCUPANCY STATUS - Universe:  HOUSING UNITS
+B25002#1#Total:
+B25002#2#Occupied
+B25002#3#Vacant
+B25003#T#B25003. TENURE - Universe:  OCCUPIED HOUSING UNITS
+B25003#1#Total:
+B25003#2#Owner occupied
+B25003#3#Renter occupied
+B25004#T#B25004. VACANCY STATUS - Universe:  VACANT HOUSING UNITS
+B25004#1#Total:
+B25004#2#For rent
+B25004#3#For sale only
+B25004#4#Rented or sold, not occupied
+B25004#5#For seasonal, recreational, or occasional use
+B25004#6#For migrant workers
+B25004#7#Other vacant
+B25008#T#B25008. TOTAL POPULATION IN OCCUPIED HOUSING UNITS BY TENURE - Universe:  TOTAL POPULATION IN OCCUPIED HOUSING UNITS
+B25008#1#Total:
+B25008#2#Owner occupied
+B25008#3#Renter occupied
+B25010#T#B25010. AVERAGE HOUSEHOLD SIZE OF OCCUPIED HOUSING UNITS BY TENURE - Universe:  OCCUPIED HOUSING UNITS
+B25010#1#Average household size --
+B25010#2#Total:
+B25010#3#Owner occupied
+B25010#4#Renter occupied
+B25014#T#B25014. TENURE BY OCCUPANTS PER ROOM - Universe:  OCCUPIED HOUSING UNITS
+B25014#1#Total:
+B25014#2#Owner occupied:
+B25014#3#0.50 or less occupants per room
+B25014#4#0.51 to 1.00 occupants per room
+B25014#5#1.01 to 1.50 occupants per room
+B25014#6#1.51 to 2.00 occupants per room
+B25014#7#2.01 or more occupants per room
+B25014#8#Renter occupied:
+B25014#9#0.50 or less occupants per room
+B25014#10#0.51 to 1.00 occupants per room
+B25014#11#1.01 to 1.50 occupants per room
+B25014#12#1.51 to 2.00 occupants per room
+B25014#13#2.01 or more occupants per room
+B25017#T#B25017. ROOMS - Universe:  HOUSING UNITS
+B25017#1#Total:
+B25017#2#1 room
+B25017#3#2 rooms
+B25017#4#3 rooms
+B25017#5#4 rooms
+B25017#6#5 rooms
+B25017#7#6 rooms
+B25017#8#7 rooms
+B25017#9#8 rooms
+B25017#10#9 or more rooms
+B25018#T#B25018. MEDIAN NUMBER OF ROOMS - Universe:  HOUSING UNITS
+B25018#1#Median number of rooms
+B25020#T#B25020. TENURE BY ROOMS - Universe:  OCCUPIED HOUSING UNITS
+B25020#1#Total:
+B25020#2#Owner occupied:
+B25020#3#1 room
+B25020#4#2 rooms
+B25020#5#3 rooms
+B25020#6#4 rooms
+B25020#7#5 rooms
+B25020#8#6 rooms
+B25020#9#7 rooms
+B25020#10#8 rooms
+B25020#11#9 or more rooms
+B25020#12#Renter occupied:
+B25020#13#1 room
+B25020#14#2 rooms
+B25020#15#3 rooms
+B25020#16#4 rooms
+B25020#17#5 rooms
+B25020#18#6 rooms
+B25020#19#7 rooms
+B25020#20#8 rooms
+B25020#21#9 or more rooms
+B25024#T#B25024. UNITS IN STRUCTURE - Universe:  HOUSING UNITS
+B25024#1#Total:
+B25024#2#1, detached
+B25024#3#1, attached
+B25024#4#2
+B25024#5#3 or 4
+B25024#6#5 to 9
+B25024#7#10 to 19
+B25024#8#20 to 49
+B25024#9#50 or more
+B25024#10#Mobile home
+B25024#11#Boat, RV, van, etc.
+B25034#T#B25034. YEAR STRUCTURE BUILT - Universe:  HOUSING UNITS
+B25034#1#Total:
+B25034#2#Built 2000 or later
+B25034#3#Built 1995 to 1999
+B25034#4#Built 1990 to 1994
+B25034#5#Built 1980 to 1989
+B25034#6#Built 1970 to 1979
+B25034#7#Built 1960 to 1969
+B25034#8#Built 1950 to 1959
+B25034#9#Built 1940 to 1949
+B25034#10#Built 1939 or earlier
+B25038#T#B25038. TENURE BY YEAR HOUSEHOLDER MOVED INTO UNIT - Universe:  OCCUPIED HOUSING UNITS
+B25038#1#Total:
+B25038#2#Owner occupied:
+B25038#3#Moved in 2000 or later
+B25038#4#Moved in 1995 to 1999
+B25038#5#Moved in 1990 to 1994
+B25038#6#Moved in 1980 to 1989
+B25038#7#Moved in 1970 to 1979
+B25038#8#Moved in 1969 or earlier
+B25038#9#Renter occupied:
+B25038#10#Moved in 2000 or later
+B25038#11#Moved in 1995 to 1999
+B25038#12#Moved in 1990 to 1994
+B25038#13#Moved in 1980 to 1989
+B25038#14#Moved in 1970 to 1979
+B25038#15#Moved in 1969 or earlier
+B25040#T#B25040. HOUSE HEATING FUEL - Universe:  OCCUPIED HOUSING UNITS
+B25040#1#Total:
+B25040#2#Utility gas
+B25040#3#Bottled, tank, or LP gas
+B25040#4#Electricity
+B25040#5#Fuel oil, kerosene, etc.
+B25040#6#Coal or coke
+B25040#7#Wood
+B25040#8#Solar energy
+B25040#9#Other fuel
+B25040#10#No fuel used
+B25041#T#B25041. BEDROOMS - Universe:  HOUSING UNITS
+B25041#1#Total:
+B25041#2#No bedroom
+B25041#3#1 bedroom
+B25041#4#2 bedrooms
+B25041#5#3 bedrooms
+B25041#6#4 bedrooms
+B25041#7#5 or more bedrooms
+B25043#T#B25043. TENURE BY TELEPHONE SERVICE AVAILABLE BY AGE OF HOUSEHOLDER - Universe:  OCCUPIED HOUSING UNITS
+B25043#1#Total:
+B25043#2#Owner occupied:
+B25043#3#With telephone service available:
+B25043#4#Householder 15 to 34 years
+B25043#5#Householder 35 to 64 years
+B25043#6#Householder 65 years and over
+B25043#7#No telephone service available:
+B25043#8#Householder 15 to 34 years
+B25043#9#Householder 35 to 64 years
+B25043#10#Householder 65 years and over
+B25043#11#Renter occupied:
+B25043#12#With telephone service available:
+B25043#13#Householder 15 to 34 years
+B25043#14#Householder 35 to 64 years
+B25043#15#Householder 65 years and over
+B25043#16#No telephone service available:
+B25043#17#Householder 15 to 34 years
+B25043#18#Householder 35 to 64 years
+B25043#19#Householder 65 years and over
+B25044#T#B25044. TENURE BY VEHICLES AVAILABLE - Universe:  OCCUPIED HOUSING UNITS
+B25044#1#Total:
+B25044#2#Owner occupied:
+B25044#3#No vehicle available
+B25044#4#1 vehicle available
+B25044#5#2 vehicles available
+B25044#6#3 vehicles available
+B25044#7#4 vehicles available
+B25044#8#5 or more vehicles available
+B25044#9#Renter occupied:
+B25044#10#No vehicle available
+B25044#11#1 vehicle available
+B25044#12#2 vehicles available
+B25044#13#3 vehicles available
+B25044#14#4 vehicles available
+B25044#15#5 or more vehicles available
+B25048#T#B25048. PLUMBING FACILITIES FOR OCCUPIED HOUSING UNITS - Universe:  OCCUPIED HOUSING UNITS
+B25048#1#Total:
+B25048#2#Complete plumbing facilities
+B25048#3#Lacking complete plumbing facilities
+B25050#T#B25050. PLUMBING FACILITIES BY OCCUPANTS PER ROOM BY YEAR STRUCTURE BUILT - Universe:  OCCUPIED HOUSING UNITS
+B25050#1#Total:
+B25050#2#Complete plumbing facilities:
+B25050#3#1.00 or less occupants per room:
+B25050#4#Built 1950 or later
+B25050#5#Built 1940 to 1949
+B25050#6#Built 1939 or earlier
+B25050#7#1.01 or more occupants per room:
+B25050#8#Built 1950 or later
+B25050#9#Built 1940 to 1949
+B25050#10#Built 1939 or earlier
+B25050#11#Lacking complete plumbing facilities:
+B25050#12#1.00 or less occupants per room:
+B25050#13#Built 1950 or later
+B25050#14#Built 1940 to 1949
+B25050#15#Built 1939 or earlier
+B25050#16#1.01 or more occupants per room:
+B25050#17#Built 1950 or later
+B25050#18#Built 1940 to 1949
+B25050#19#Built 1939 or earlier
+B25052#T#B25052. KITCHEN FACILITIES FOR OCCUPIED HOUSING UNITS - Universe:  OCCUPIED HOUSING UNITS
+B25052#1#Total:
+B25052#2#Complete kitchen facilities
+B25052#3#Lacking complete kitchen facilities
+B25063#T#B25063. GROSS RENT - Universe:  RENTER-OCCUPIED HOUSING UNITS
+B25063#1#Total:
+B25063#2#With cash rent:
+B25063#3#Less than $100
+B25063#4#$100 to $149
+B25063#5#$150 to $199
+B25063#6#$200 to $249
+B25063#7#$250 to $299
+B25063#8#$300 to $349
+B25063#9#$350 to $399
+B25063#10#$400 to $449
+B25063#11#$450 to $499
+B25063#12#$500 to $549
+B25063#13#$550 to $599
+B25063#14#$600 to $649
+B25063#15#$650 to $699
+B25063#16#$700 to $749
+B25063#17#$750 to $799
+B25063#18#$800 to $899
+B25063#19#$900 to $999
+B25063#20#$1,000 to $1,249
+B25063#21#$1,250 to $1,499
+B25063#22#$1,500 to $1,999
+B25063#23#$2,000 or more
+B25063#24#No cash rent
+B25064#T#B25064. MEDIAN GROSS RENT (DOLLARS) - Universe:  RENTER-OCCUPIED HOUSING UNITS PAYING CASH RENT
+B25064#1#Median gross rent
+B25070#T#B25070. GROSS RENT AS A PERCENTAGE OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS - Universe:  RENTER-OCCUPIED HOUSING UNITS
+B25070#1#Total:
+B25070#2#Less than 10.0 percent
+B25070#3#10.0 to 14.9 percent
+B25070#4#15.0 to 19.9 percent
+B25070#5#20.0 to 24.9 percent
+B25070#6#25.0 to 29.9 percent
+B25070#7#30.0 to 34.9 percent
+B25070#8#35.0 to 39.9 percent
+B25070#9#40.0 to 49.9 percent
+B25070#10#50.0 percent or more
+B25070#11#Not computed
+B25075#T#B25075. VALUE - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B25075#1#Total:
+B25075#2#Less than $10,000
+B25075#3#$10,000 to $14,999
+B25075#4#$15,000 to $19,999
+B25075#5#$20,000 to $24,999
+B25075#6#$25,000 to $29,999
+B25075#7#$30,000 to $34,999
+B25075#8#$35,000 to $39,999
+B25075#9#$40,000 to $49,999
+B25075#10#$50,000 to $59,999
+B25075#11#$60,000 to $69,999
+B25075#12#$70,000 to $79,999
+B25075#13#$80,000 to $89,999
+B25075#14#$90,000 to $99,999
+B25075#15#$100,000 to $124,999
+B25075#16#$125,000 to $149,999
+B25075#17#$150,000 to $174,999
+B25075#18#$175,000 to $199,999
+B25075#19#$200,000 to $249,999
+B25075#20#$250,000 to $299,999
+B25075#21#$300,000 to $399,999
+B25075#22#$400,000 to $499,999
+B25075#23#$500,000 to $749,999
+B25075#24#$750,000 to $999,999
+B25075#25#$1,000,000 or more
+B25077#T#B25077. MEDIAN VALUE (DOLLARS) - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B25077#1#Median value (dollars)
+B25087#T#B25087. MORTGAGE STATUS AND SELECTED MONTHLY OWNER COSTS - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B25087#1#Total:
+B25087#2#Housing units with a mortgage:
+B25087#3#Less than $200
+B25087#4#$200 to $299
+B25087#5#$300 to $399
+B25087#6#$400 to $499
+B25087#7#$500 to $599
+B25087#8#$600 to $699
+B25087#9#$700 to $799
+B25087#10#$800 to $899
+B25087#11#$900 to $999
+B25087#12#$1,000 to $1,249
+B25087#13#$1,250 to $1,499
+B25087#14#$1,500 to $1,999
+B25087#15#$2,000 to $2,499
+B25087#16#$2,500 to $2,999
+B25087#17#$3,000 or more
+B25087#18#Housing units without a mortgage:
+B25087#19#Less than $100
+B25087#20#$100 to $149
+B25087#21#$150 to $199
+B25087#22#$200 to $249
+B25087#23#$250 to $299
+B25087#24#$300 to $349
+B25087#25#$350 to $399
+B25087#26#$400 to $499
+B25087#27#$500 to $599
+B25087#28#$600 to $699
+B25087#29#$700 or more
+B25088#T#B25088. MEDIAN SELECTED MONTHLY OWNER COSTS (DOLLARS) BY MORTGAGE STATUS - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B25088#1#Median selected monthly owner costs (dollars) --
+B25088#2#Total:
+B25088#3#Housing units with a mortgage (dollars)
+B25088#4#Housing units without a mortgage (dollars)
+B25091#T#B25091. MORTGAGE STATUS BY SELECTED MONTHLY OWNER COSTS AS A PERCENTAGE OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B25091#1#Total:
+B25091#2#Housing units with a mortgage:
+B25091#3#Less than 10.0 percent
+B25091#4#10.0 to 14.9 percent
+B25091#5#15.0 to 19.9 percent
+B25091#6#20.0 to 24.9 percent
+B25091#7#25.0 to 29.9 percent
+B25091#8#30.0 to 34.9 percent
+B25091#9#35.0 to 39.9 percent
+B25091#10#40.0 to 49.9 percent
+B25091#11#50.0 percent or more
+B25091#12#Not computed
+B25091#13#Housing units without a mortgage:
+B25091#14#Less than 10.0 percent
+B25091#15#10.0 to 14.9 percent
+B25091#16#15.0 to 19.9 percent
+B25091#17#20.0 to 24.9 percent
+B25091#18#25.0 to 29.9 percent
+B25091#19#30.0 to 34.9 percent
+B25091#20#35.0 to 39.9 percent
+B25091#21#40.0 to 49.9 percent
+B25091#22#50.0 percent or more
+B25091#23#Not computed
+B25115#T#B25115. TENURE BY HOUSEHOLD TYPE AND PRESENCE AND AGE OF OWN CHILDREN - Universe:  OCCUPIED HOUSING UNITS
+B25115#1#Total:
+B25115#2#Owner occupied:
+B25115#3#Family households:
+B25115#4#Married-couple family:
+B25115#5#With own children under 18 years
+B25115#6#No own children under 18 years
+B25115#7#Other family:
+B25115#8#Male householder, no wife present:
+B25115#9#With own children under 18 years
+B25115#10#No own children under 18 years
+B25115#11#Female householder, no husband present:
+B25115#12#With own children under 18 years
+B25115#13#No own children under 18 years
+B25115#14#Nonfamily households
+B25115#15#Renter occupied:
+B25115#16#Family households:
+B25115#17#Married-couple family:
+B25115#18#With own children under 18 years
+B25115#19#No own children under 18 years
+B25115#20#Other family:
+B25115#21#Male householder, no wife present:
+B25115#22#With own children under 18 years
+B25115#23#No own children under 18 years
+B25115#24#Female householder, no husband present:
+B25115#25#With own children under 18 years
+B25115#26#No own children under 18 years
+B25115#27#Nonfamily households
+B99011#T#B99011. IMPUTATION OF SEX - Universe:  TOTAL POPULATION
+B99011#1#Total:
+B99011#2#Imputed
+B99011#3#Not imputed
+B99012#T#B99012. IMPUTATION OF AGE - Universe:  TOTAL POPULATION
+B99012#1#Total:
+B99012#2#Imputed
+B99012#3#Not imputed
+B99021#T#B99021. IMPUTATION OF RACE - Universe:  TOTAL POPULATION
+B99021#1#Total:
+B99021#2#Imputed
+B99021#3#Not imputed
+B99031#T#B99031. IMPUTATION OF HISPANIC OR LATINO ORIGIN - Universe:  TOTAL POPULATION
+B99031#1#Total:
+B99031#2#Imputed
+B99031#3#Not imputed
+B99051#T#B99051. IMPUTATION OF CITIZENSHIP STATUS - Universe:  TOTAL POPULATION
+B99051#1#Total:
+B99051#2#Native:
+B99051#3#Imputed
+B99051#4#Not imputed
+B99051#5#Foreign born:
+B99051#6#Imputed
+B99051#7#Not imputed
+B99052#T#B99052. IMPUTATION OF YEAR OF ENTRY - Universe:  POPULATION BORN OUTSIDE THE UNITED STATES
+B99052#1#Total:
+B99052#2#Native:
+B99052#3#Imputed
+B99052#4#Not imputed
+B99052#5#Foreign born:
+B99052#6#Imputed
+B99052#7#Not imputed
+B99061#T#B99061. IMPUTATION OF PLACE OF BIRTH - Universe:  TOTAL POPULATION
+B99061#1#Total:
+B99061#2#Imputed
+B99061#3#Not imputed
+B99071#T#B99071. IMPUTATION OF MOBILITY STATUS FOR THE POPULATION 1 YEAR AND OVER - Universe:  POPULATION 1 YEAR AND OVER
+B99071#1#Total:
+B99071#2#Imputed
+B99071#3#Not imputed
+B99072#T#B99072. IMPUTATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION 1 YEAR AND OVER - Universe:  POPULATION 1 YEAR AND OVER
+B99072#1#Total:
+B99072#2#Different house:
+B99072#3#Imputed:
+B99072#4#One or more but not all geographic parts imputed
+B99072#5#All geographic parts imputed
+B99072#6#Not imputed
+B99072#7#Same house
+B99081#T#B99081. IMPUTATION OF MEANS OF TRANSPORTATION TO WORK WORKERS 16 YEARS AND OVER - Universe:  WORKERS 16 YEARS AND OVER
+B99081#1#Total:
+B99081#2#Imputed
+B99081#3#Not imputed
+B99082#T#B99082. IMPUTATION OF PLACE OF WORK FOR WORKERS 16 YEARS AND OVER - Universe:  WORKERS 16 YEARS AND OVER
+B99082#1#Total:
+B99082#2#Imputed:
+B99082#3#One or more but not all geographic parts imputed
+B99082#4#All geographic parts imputed
+B99082#5#Not imputed
+B99083#T#B99083. IMPUTATION OF PRIVATE VEHICLE OCCUPANCY FOR WORKERS 16 YEARS AND OVER - Universe:  WORKERS 16 YEARS AND OVER
+B99083#1#Total:
+B99083#2#Car, truck, or van:
+B99083#3#Imputed
+B99083#4#Not imputed
+B99083#5#Other means (including those who worked at home)
+B99084#T#B99084. IMPUTATION OF TIME LEAVING HOME TO GO TO WORK FOR WORKERS 16 YEARS AND OVER - Universe:  WORKERS 16 YEARS AND OVER
+B99084#1#Total:
+B99084#2#Did not work at home:
+B99084#3#Time leaving home to go to work --
+B99084#4#Imputed
+B99084#5#Not imputed
+B99084#6#Worked at home
+B99085#T#B99085. IMPUTATION OF TRAVEL TIME TO WORK FOR WORKERS 16 YEARS AND OVER - Universe:  WORKERS 16 YEARS AND OVER
+B99085#1#Total:
+B99085#2#Did not work at home:
+B99085#3#Travel time to work --
+B99085#4#Imputed
+B99085#5#Not imputed
+B99085#6#Worked at home
+B99086#T#B99086. IMPUTATION OF VEHICLES AVAILABLE FOR WORKERS - Universe:  WORKERS 16 YEARS AND OVER IN HOUSEHOLDS
+B99086#1#Total:
+B99086#2#Imputed
+B99086#3#Not imputed
+B99092#T#B99092. IMPUTATION OF RELATIONSHIP - Universe:  POPULATION IN HOUSEHOLDS
+B99092#1#Total:
+B99092#2#Imputed
+B99092#3#Not imputed
+B99093#T#B99093. IMPUTATION OF AGE FOR TEENAGERS 15 TO 18 YEARS - Universe:  POPULATION 15 TO 18 YEARS
+B99093#1#Total:
+B99093#2#Imputed
+B99093#3#Not imputed
+B99102#T#B99102. IMPUTATION OF GRANDPARENTS LIVING WITH GRANDCHILDREN UNDER 18 YEARS - Universe:  POPULATION 30 YEARS AND OVER IN HOUSEHOLDS
+B99102#1#Total:
+B99102#2#Imputed
+B99102#3#Not imputed
+B99103#T#B99103. IMPUTATION OF GRANDPARENTS RESPONSIBLE FOR GRANDCHILDREN UNDER 18 YEARS - Universe:  GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS IN HOUSEHOLD
+B99103#1#Total:
+B99103#2#Imputed
+B99103#3#Not imputed
+B99104#T#B99104. IMPUTATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER IN HOUSEHOLDS - Universe:  POPULATION 30 YEARS AND OVER IN HOUSEHOLDS
+B99104#1#Total:
+B99104#2#Living with own grandchildren under 18 years:
+B99104#3#Grandparent responsible for own grandchildren under 18 years:
+B99104#4#Length of time --
+B99104#5#Imputed
+B99104#6#Not imputed
+B99104#7#Grandparent not responsible for own grandchildren under 18 years
+B99104#8#Not living with own grandchildren under 18 years
+B99121#T#B99121. IMPUTATION OF MARITAL STATUS FOR THE POPULATION 15 YEARS AND OVER - Universe:  POPULATION 15 YEARS AND OVER
+B99121#1#Total:
+B99121#2#Imputed
+B99121#3#Not imputed
+B99131#T#B99131. IMPUTATION OF MARITAL STATUS FOR FEMALES 15 TO 50 YEARS - Universe:  WOMEN 15 TO 50 YEARS
+B99131#1#Total:
+B99131#2#Imputed
+B99131#3#Not imputed
+B99132#T#B99132. IMPUTATION OF FERTILITY OF WOMEN 15 TO 50 YEARS OLD - Universe:  WOMEN 15 TO 50 YEARS
+B99132#1#Total:
+B99132#2#Imputed
+B99132#3#Not imputed
+B99141#T#B99141. IMPUTATION OF SCHOOL ENROLLMENT FOR THE POPULATION 3 YEARS AND OVER - Universe:  POPULATION 3 YEARS AND OVER
+B99141#1#Total:
+B99141#2#Imputed
+B99141#3#Not imputed
+B99142#T#B99142. IMPUTATION OF GRADE ENROLLED FOR THE POPULATION 3 YEARS AND OVER ENROLLED IN SCHOOL - Universe:  POPULATION 3 YEARS AND OVER ENROLLED IN SCHOOL
+B99142#1#Total:
+B99142#2#Imputed
+B99142#3#Not imputed
+B99151#T#B99151. IMPUTATION OF EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER - Universe:  POPULATION 25 YEARS AND OVER
+B99151#1#Total:
+B99151#2#Imputed
+B99151#3#Not imputed
+B99161#T#B99161. IMPUTATION OF LANGUAGE STATUS FOR THE POPULATION 5 YEARS AND OVER - Universe:  POPULATION 5 YEARS AND OVER
+B99161#1#Total:
+B99161#2#Imputed
+B99161#3#Not imputed
+B99162#T#B99162. IMPUTATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION 5 YEARS AND OVER - Universe:  POPULATION 5 YEARS AND OVER
+B99162#1#Total:
+B99162#2#Speak only English
+B99162#3#Speak other languages:
+B99162#4#Specific languages spoken --
+B99162#5#Imputed:
+B99162#6#Language status imputed
+B99162#7#Language status not imputed
+B99162#8#Not imputed
+B99163#T#B99163. IMPUTATION OF ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER - Universe:  POPULATION 5 YEARS AND OVER
+B99163#1#Total:
+B99163#2#Speak only English
+B99163#3#Speak other languages:
+B99163#4#Ability to speak English --
+B99163#5#Imputed
+B99163#6#Not imputed
+B99171#T#B99171. IMPUTATION OF POVERTY STATUS IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS - Universe:  UNRELATED INDIVIDUALS 15 YEARS AND OVER FOR WHOM POVERTY STATUS IS DETERMINED
+B99171#1#Total:
+B99171#2#Percent of income imputed for individuals with income in the past 12 months below poverty level --
+B99171#3#No income imputed
+B99171#4#Dollar value of zero imputed
+B99171#5#More than 0 to less than 10 percent of total income for individual imputed
+B99171#6#10 to less than 25 percent of total income for individual imputed
+B99171#7#25 to less than 50 percent of total income for individual imputed
+B99171#8#50 to less than 100 percent of total income for individual imputed
+B99171#9#100 percent of total income for individual imputed
+B99171#10#Percent of income imputed for individuals with income in the past 12 months at or above poverty level --
+B99171#11#No income imputed
+B99171#12#Dollar value of zero imputed
+B99171#13#More than 0 to less than 10 percent of total income for individual imputed
+B99171#14#10 to less than 25 percent of total income for individual imputed
+B99171#15#25 to less than 50 percent of total income for individual imputed
+B99171#16#50 to less than 100 percent of total income for individual imputed
+B99171#17#100 percent of total income for individual imputed
+B99172#T#B99172. IMPUTATION OF POVERTY STATUS IN THE PAST 12 MONTHS FOR FAMILIES - Universe:  FAMILIES
+B99172#1#Total:
+B99172#2#Percent of family income imputed for families with income in the past 12 months below poverty level --
+B99172#3#No income imputed
+B99172#4#Dollar value of zero imputed
+B99172#5#More than 0 to less than 10 percent of total income for family imputed
+B99172#6#10 to less than 25 percent of total income for family imputed
+B99172#7#25 to less than 50 percent of total income for family imputed
+B99172#8#50 to less than 100 percent of total income for family imputed
+B99172#9#100 percent of total income for family imputed
+B99172#10#Percent of family income imputed for families with income in the past 12 months at or above poverty level --
+B99172#11#No income imputed
+B99172#12#Dollar value of zero imputed
+B99172#13#More than 0 to less than 10 percent of total income for family imputed
+B99172#14#10 to less than 25 percent of total income for family imputed
+B99172#15#25 to less than 50 percent of total income for family imputed
+B99172#16#50 to less than 100 percent of total income for family imputed
+B99172#17#100 percent of total income for family imputed
+B99181#T#B99181. IMPUTATION OF DISABILITY ITEMS FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER
+B99181#1#Total:
+B99181#2#One or more disability items imputed
+B99181#3#No disability items imputed
+B99182#T#B99182. IMPUTATION OF SENSORY DISABILITY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER
+B99182#1#Total:
+B99182#2#Imputed
+B99182#3#Not imputed
+B99183#T#B99183. IMPUTATION OF PHYSICAL DISABILITY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER
+B99183#1#Total:
+B99183#2#Imputed
+B99183#3#Not imputed
+B99184#T#B99184. IMPUTATION OF MENTAL DISABILITY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER
+B99184#1#Total:
+B99184#2#Imputed
+B99184#3#Not imputed
+B99185#T#B99185. IMPUTATION OF SELF-CARE DISABILITY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER
+B99185#1#Total:
+B99185#2#Imputed
+B99185#3#Not imputed
+B99186#T#B99186. IMPUTATION OF GO-OUTSIDE-HOME DISABILITY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER
+B99186#1#Total:
+B99186#2#Imputed
+B99186#3#Not imputed
+B99187#T#B99187. IMPUTATION OF EMPLOYMENT DISABILITY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 TO 64 YEARS - Universe:  CIVILIAN NONINSTITUTIONALIZED POPULATION 16 TO 64 YEARS
+B99187#1#Total:
+B99187#2#Imputed
+B99187#3#Not imputed
+B99191#T#B99191. IMPUTATION OF INDIVIDUALS' INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME IMPUTED - Universe:  POPULATION 15 YEARS AND OVER
+B99191#1#Total:
+B99191#2#Percent of income imputed --
+B99191#3#No income imputed
+B99191#4#Dollar value of zero imputed
+B99191#5#More than 0 to less than 10 percent of total income for individual imputed
+B99191#6#10 to less than 25 percent of total income for individual imputed
+B99191#7#25 to less than 50 percent of total income for individual imputed
+B99191#8#50 to less than 100 percent of total income for individual imputed
+B99191#9#100 percent of total income for individual imputed
+B99192#T#B99192. IMPUTATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS - PERCENT OF INCOME IMPUTED - Universe:  HOUSEHOLDS
+B99192#1#Total:
+B99192#2#Percent of income imputed --
+B99192#3#No income imputed
+B99192#4#Dollar value of zero imputed
+B99192#5#More than 0 to less than 10 percent of total income for household imputed
+B99192#6#10 to less than 25 percent of total income for household imputed
+B99192#7#25 to less than 50 percent of total income for household imputed
+B99192#8#50 to less than 100 percent of total income for household imputed
+B99192#9#100 percent of total income for household imputed
+B99193#T#B99193. IMPUTATION OF FAMILY INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME IMPUTED - Universe:  FAMILIES
+B99193#1#Total:
+B99193#2#Percent of income imputed --
+B99193#3#No income imputed
+B99193#4#Dollar value of zero imputed
+B99193#5#More than 0 to less than 10 percent of total income for family imputed
+B99193#6#10 to less than 25 percent of total income for family imputed
+B99193#7#25 to less than 50 percent of total income for family imputed
+B99193#8#50 to less than 100 percent of total income for family imputed
+B99193#9#100 percent of total income for family imputed
+B99194#T#B99194. IMPUTATION OF NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME IMPUTED - Universe:  NONFAMILY HOUSEHOLDS
+B99194#1#Total:
+B99194#2#Percent of income imputed --
+B99194#3#No income imputed
+B99194#4#Dollar value of zero imputed
+B99194#5#More than 0 to less than 10 percent of total income for household imputed
+B99194#6#10 to less than 25 percent of total income for household imputed
+B99194#7#25 to less than 50 percent of total income for household imputed
+B99194#8#50 to less than 100 percent of total income for household imputed
+B99194#9#100 percent of total income for household imputed
+B99201#T#B99201. IMPUTATION OF EARNINGS IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS IMPUTED - Universe:  POPULATION 16 YEARS AND OVER
+B99201#1#Total:
+B99201#2#Percent of earnings imputed --
+B99201#3#No earnings imputed
+B99201#4#Dollar value of zero imputed
+B99201#5#More than 0 to less than 10 percent of total earnings for individual imputed
+B99201#6#10 to less than 25 percent of total earnings for individual imputed
+B99201#7#25 to less than 50 percent of total earnings for individual imputed
+B99201#8#50 to less than 100 percent of total earnings for individual imputed
+B99201#9#100 percent of total earnings for individual imputed
+B99211#T#B99211. IMPUTATION OF VETERAN STATUS FOR THE POPULATION 18 YEARS AND OVER - Universe:  POPULATION 18 YEARS AND OVER
+B99211#1#Total:
+B99211#2#Imputed
+B99211#3#Not imputed
+B99212#T#B99212. IMPUTATION OF PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS 18 YEARS AND OVER - Universe:  CIVILIAN VETERANS 18 YEARS AND OVER
+B99212#1#Total:
+B99212#2#Imputed
+B99212#3#Not imputed
+B99213#T#B99213. IMPUTATION OF LENGTH OF MILITARY SERVICE FOR CIVILIAN VETERANS 18 YEARS AND OVER - Universe:  CIVILIAN VETERANS 18 YEARS AND OVER
+B99213#1#Total:
+B99213#2#Imputed
+B99213#3#Not imputed
+B99214#T#B99214. IMPUTATION OF EMPLOYMENT STATUS FOR THE POPULATION 16 YEARS AND OVER - Universe:  POPULATION 16 YEARS AND OVER
+B99214#1#Total:
+B99214#2#Imputed
+B99214#3#Not imputed
+B99215#T#B99215. IMPUTATION OF WHEN PERSON LAST WORKED FOR THE POPULATION 16 YEARS AND OVER - Universe:  POPULATION 16 YEARS AND OVER
+B99215#1#Total:
+B99215#2#Imputed
+B99215#3#Not imputed
+B99216#T#B99216. IMPUTATION OF USUAL HOURS WORKED PER WEEK IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - Universe:  POPULATION 16 YEARS AND OVER
+B99216#1#Total:
+B99216#2#Worked in the past 12 months:
+B99216#3#Usual hours worked per week in the past 12 months --
+B99216#4#Imputed
+B99216#5#Not imputed
+B99216#6#Did not work in the past 12 months
+B99217#T#B99217. IMPUTATION OF WEEKS WORKED IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - Universe:  POPULATION 16 YEARS AND OVER
+B99217#1#Total:
+B99217#2#Worked in the past 12 months:
+B99217#3#Weeks worked in the past 12 months --
+B99217#4#Imputed
+B99217#5#Not imputed
+B99217#6#Did not work in the past 12 months
+B99218#T#B99218. IMPUTATION OF FOOD STAMPS RECEIPT - Universe:  HOUSEHOLDS
+B99218#1#Total:
+B99218#2#Imputed
+B99218#3#Not imputed
+B99241#T#B99241. IMPUTATION OF INDUSTRY FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B99241#1#Total:
+B99241#2#Imputed
+B99241#3#Not Imputed
+B99242#T#B99242. IMPUTATION OF OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B99242#1#Total:
+B99242#2#Imputed
+B99242#3#Not Imputed
+B99243#T#B99243. IMPUTATION OF CLASS OF WORKER FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER - Universe:  CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B99243#1#Total:
+B99243#2#Imputed
+B99243#3#Not Imputed
+B99244#T#B99244. IMPUTATION OF INDUSTRY FOR THE FULL-TIME, YEAR-ROUND EMPLOYED CIVILIAN POPULATION 16 YEARS AND OVER - Universe:  FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B99244#1#Total:
+B99244#2#Imputed
+B99244#3#Not imputed
+B99245#T#B99245. IMPUTATION OF OCCUPATION FOR THE FULL-TIME, YEAR-ROUND EMPLOYED CIVILIAN POPULATION 16 YEARS AND OVER - Universe:  FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B99245#1#Total:
+B99245#2#Imputed
+B99245#3#Not imputed
+B99246#T#B99246. IMPUTATION OF CLASS OF WORKER FOR THE FULL-TIME, YEAR-ROUND EMPLOYED CIVILIAN POPULATION 16 YEARS AND OVER - Universe:  FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
+B99246#1#Total:
+B99246#2#Imputed
+B99246#3#Not imputed
+B992510#T#B992510. IMPUTATION OF KITCHEN FACILITIES - Universe:  HOUSING UNITS
+B992510#1#Total:
+B992510#2#Imputed
+B992510#3#Not imputed
+B992511#T#B992511. IMPUTATION OF HOUSE HEATING FUEL - Universe:  OCCUPIED HOUSING UNITS
+B992511#1#Total:
+B992511#2#Imputed
+B992511#3#Not imputed
+B992512#T#B992512. IMPUTATION OF VEHICLES AVAILABLE - Universe:  OCCUPIED HOUSING UNITS
+B992512#1#Total:
+B992512#2#Imputed
+B992512#3#Not imputed
+B992513#T#B992513. IMPUTATION OF TELEPHONE SERVICE AVAILABLE - Universe:  OCCUPIED HOUSING UNITS
+B992513#1#Total:
+B992513#2#Imputed
+B992513#3#Not imputed
+B992514#T#B992514. IMPUTATION OF MEALS INCLUDED IN RENT - Universe:  RENTER-OCCUPIED HOUSING UNITS PAYING CASH RENT
+B992514#1#Total:
+B992514#2#Imputed
+B992514#3#Not imputed
+B992515#T#B992515. IMPUTATION OF CONTRACT RENT - Universe:  RENTER-OCCUPIED HOUSING UNITS
+B992515#1#Total:
+B992515#2#Imputed
+B992515#3#Not imputed
+B992516#T#B992516. IMPUTATION OF RENT ASKED - Universe:  VACANT-FOR-RENT HOUSING UNITS
+B992516#1#Total:
+B992516#2#Imputed
+B992516#3#Not imputed
+B992518#T#B992518. IMPUTATION OF GROSS RENT - Universe:  RENTER-OCCUPIED HOUSING UNITS
+B992518#1#Total:
+B992518#2#Imputed
+B992518#3#Not imputed
+B992519#T#B992519. IMPUTATION OF VALUE - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B992519#1#Total:
+B992519#2#Imputed
+B992519#3#Not imputed
+B99252#T#B99252. IMPUTATION OF TENURE - Universe:  OCCUPIED HOUSING UNITS
+B99252#1#Total:
+B99252#2#Imputed
+B99252#3#Not imputed
+B992520#T#B992520. IMPUTATION OF PRICE ASKED - Universe:  VACANT-FOR-SALE-ONLY HOUSING UNITS
+B992520#1#Total:
+B992520#2#Imputed
+B992520#3#Not imputed
+B992521#T#B992521. IMPUTATION OF MORTGAGE STATUS - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B992521#1#Total:
+B992521#2#Imputed
+B992521#3#Not imputed
+B992522#T#B992522. IMPUTATION OF MORTGAGE STATUS AND SELECTED MONTHLY OWNER COSTS - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B992522#1#Total:
+B992522#2#Housing units with a mortgage:
+B992522#3#Selected monthly owner costs --
+B992522#4#One or more items imputed
+B992522#5#No items imputed
+B992522#6#Housing units without a mortgage:
+B992522#7#Selected monthly owner costs --
+B992522#8#One or more items imputed
+B992522#9#No items imputed
+B992523#T#B992523. IMPUTATION OF SELECTED MONTHLY OWNER COSTS FOR OWNER-OCCUPIED HOUSING UNITS - Universe:  OWNER-OCCUPIED HOUSING UNITS
+B992523#1#Total:
+B992523#2#1 or more items imputed
+B992523#3#Not imputed
+B99253#T#B99253. IMPUTATION OF VACANCY STATUS - Universe:  VACANT HOUSING UNITS
+B99253#1#Total:
+B99253#2#Imputed
+B99253#3#Not imputed
+B99254#T#B99254. IMPUTATION OF ROOMS - Universe:  HOUSING UNITS
+B99254#1#Total:
+B99254#2#Imputed
+B99254#3#Not imputed
+B99255#T#B99255. IMPUTATION OF UNITS IN STRUCTURE - Universe:  HOUSING UNITS
+B99255#1#Total:
+B99255#2#Imputed
+B99255#3#Not imputed
+B99256#T#B99256. IMPUTATION OF YEAR STRUCTURE BUILT - Universe:  HOUSING UNITS
+B99256#1#Total:
+B99256#2#Imputed
+B99256#3#Not imputed
+B99257#T#B99257. IMPUTATION OF YEAR HOUSEHOLDER MOVED INTO UNIT - Universe:  OCCUPIED HOUSING UNITS
+B99257#1#Total:
+B99257#2#Imputed
+B99257#3#Not imputed
+B99258#T#B99258. IMPUTATION OF BEDROOMS - Universe:  HOUSING UNITS
+B99258#1#Total:
+B99258#2#Imputed
+B99258#3#Not imputed
+B99259#T#B99259. IMPUTATION OF PLUMBING FACILITIES - Universe:  HOUSING UNITS
+B99259#1#Total:
+B99259#2#Imputed
+B99259#3#Not imputed
