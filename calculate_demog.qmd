@@ -72,7 +72,9 @@ vars<-load_variables(year=2010, dataset="sf1", cache = TRUE)
 #P005006 Asian
 #P005010 Hispanic
 vars2<-load_variables(year=2010, dataset="sf1", cache = TRUE)
-write.csv(vars2, "demo_vars.csv")
+write.csv(vars2, "demo_vars_Dec00.csv")
+vars3 <- load_variables(year=2000, dataset = 'sf2', cache = TRUE)
+vars4 <- load_variables(year=2010, dataset = 'acs1', cache = TRUE)
 
 ```
 
@@ -83,6 +85,10 @@ Query variables
 targetvars<-c("P005001","P005003", "P005004","P005005","P005006","P005010")
 race<-get_decennial(year = 2010, geography = "block", variables=targetvars, 
                     state="TX", county="Harris County", output="wide")
+
+
+transportation_vars <- c('B08101_025','B08101_009','B08101_017')
+transportation <- get_acs(geography = 'tract', variables = transportation_vars, state = 'TX', county = 'Harris County',year = 2010, output = 'wide')
 ```
 
 Rename columns
@@ -91,6 +97,8 @@ Rename columns
 racename<-race %>%
   rename(total=P005001, white=P005003, black=P005004, native=P005005, 
          asian=P005006, hisp=P005010)
+transname<-transportation %>%
+  rename(Public_Transportation = B08101_025E, Drove_Alone = B08101_009E, Drove_carpooled = B08101_017E)
 ```
 
 # Calculate affected demographic group
@@ -125,6 +133,16 @@ blockracedf<-as.data.frame(blockrace)
 summary(blockracedf)
 
 #100 percent match
+```
+
+```{r}
+tract_trans <- merge(shapevect, transname, by.x = "GEOID10", byy = "GEOID")
+
+tract_trans$blockarea <- exapnse(block_trans, unit = 'm')
+
+tract_trans_df <- as.data.frame(tract_trans)
+
+summary(tract_trans_df)
 ```
 
 Intersect blocks with buffers
