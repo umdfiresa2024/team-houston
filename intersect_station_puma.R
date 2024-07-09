@@ -102,7 +102,8 @@ plot(buff2,
      type="interval",
      breaks=c(-0.35, -0.3, -0.25, -0.2, -0.15),
      col=map.pal("inferno"),
-     main="Average PM2.5 Reductions (in Percents) at Each Light Rail Station")
+     main="Average PM2.5 Reductions (in Percents) at Each Light Rail Station",
+     cex.main=2.125)
 plot(buff, add=TRUE)
 dev.off()
 

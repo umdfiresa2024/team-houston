@@ -62,7 +62,8 @@ plot(shape_coef,
      type="interval",
      breaks=c(-2,-1,-0.999,-0.996, -0.995),
      col=map.pal("reds"),
-     main="Average Bicycle Use Changes (in Percents) After Light Rail Openings")
+     main="Average Bicycle Use Changes (in Percents) After Light Rail Openings",
+     cex.main =2.125)
 plot(buff, add=TRUE)
 dev.off()
 
@@ -73,7 +74,8 @@ plot(shape_coef,
      type="interval",
      breaks=c(-1, -0.99,-9.95,-0.985, -0.98),
      col=map.pal("greens"),
-     main="Average Walking Use Changes (in Percents) After Light Rail Openings")
+     main="Average Walking Use Changes (in Percents) After Light Rail Openings",
+     cex.main = 2.125)
 plot(buff, add=TRUE)
 dev.off()
 
@@ -84,7 +86,8 @@ plot(shape_coef,
      type="interval",
      breaks=c(-1,-0.985,-0.980,-0.9785,-0.978,-0.975),
      col=map.pal("blues"),
-     main="Average Bus Use Changes (in Percents) After Light Rail Openings")
+     main="Average Bus Use Changes (in Percents) After Light Rail Openings",
+     cex.main=2.125)
 plot(buff, add=TRUE)
 dev.off()
 
@@ -95,7 +98,8 @@ plot(shape_coef,
      type="interval",
      breaks=c(1,0.13,0.037,0.0256,0.0255),
      col=map.pal("oranges"),
-     main="Average Car Use Changes (in Percents) After Light Rail Openings")
+     main="Average Car Use Changes (in Percents) After Light Rail Openings",
+     cex.main=2.215)
 plot(buff, add=TRUE)
 dev.off()
 
