@@ -42,6 +42,8 @@ summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(PUMACE10) + construction +
                    lag_humidity_4 + 
                    as.factor(month) + as.factor(dow) + holiday + 
                    t + t2 + t3 + t4, data = df4))
+library('broom')
+write.csv(tidy(m1), 'PM2.5PollutionByPumaRegressionModel.csv')
 n<-length(coef(m1))
 coef<-coef(m1)[42:44]
 PUMACE10<-c("04602", "04603", "04604")
@@ -84,4 +86,23 @@ pum<-merge(pum4, pum8, by="PUMACE10") |>
 pum_2 <-pum %>%
   select(PUMACE10, change_car,change_bus,change_subway,change_taxicab,change_motorcycle,change_walked,change_worked_at_home, change_bicycle)
 
-p
+########plot station-level reduction###################
+
+output4<-output2 |>
+  mutate(FID=city_num-1)
+
+output5<-merge(output4, coefdf, by="PUMACE10") |>
+  mutate(coef=as.numeric(coef))
+
+buff2<-merge(buff, output5, by="FID")
+
+png(filename="PM2.5PerStationmap.png", width=1000, height=700, units="px")
+plot(buff2, 
+     "coef",
+     type="interval",
+     breaks=c(-0.35, -0.3, -0.25, -0.2, -0.15),
+     col=map.pal("inferno"),
+     main="Average PM2.5 Reductions (in Percents) at Each Light Rail Station")
+plot(buff, add=TRUE)
+dev.off()
+

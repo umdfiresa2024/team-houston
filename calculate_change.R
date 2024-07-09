@@ -60,8 +60,8 @@ png(filename="Bicyclemap.png", width=1000, height=700, units="px")
 plot(shape_coef, 
      "change_bicycle",
      type="interval",
-     breaks=c(-1, -0.999,-0.996, -0.995),
-     col=map.pal("grass"),
+     breaks=c(-2,-1,-0.999,-0.996, -0.995),
+     col=map.pal("reds"),
      main="Average Bicycle Use Changes (in Percents) After Light Rail Openings")
 plot(buff, add=TRUE)
 dev.off()
@@ -72,7 +72,7 @@ plot(shape_coef,
      "change_walked",
      type="interval",
      breaks=c(-1, -0.99,-9.95,-0.985, -0.98),
-     col=map.pal("plasma"),
+     col=map.pal("greens"),
      main="Average Walking Use Changes (in Percents) After Light Rail Openings")
 plot(buff, add=TRUE)
 dev.off()
@@ -82,9 +82,9 @@ png(filename="Busmap.png", width=1000, height=700, units="px")
 plot(shape_coef, 
      "change_bus",
      type="interval",
-     breaks=c(-1, -0.98,-0.978,-0.975),
-     col=map.pal("gyr"),
-     main="Average Walking Use Changes (in Percents) After Light Rail Openings")
+     breaks=c(-1,-0.985,-0.980,-0.9785,-0.978,-0.975),
+     col=map.pal("blues"),
+     main="Average Bus Use Changes (in Percents) After Light Rail Openings")
 plot(buff, add=TRUE)
 dev.off()
 
@@ -93,9 +93,9 @@ png(filename="Carmap.png", width=1000, height=700, units="px")
 plot(shape_coef, 
      "change_car",
      type="interval",
-     breaks=c(1,0.13,0.037,0.0256),
-     col=map.pal("viridis"),
-     main="Average Walking Use Changes (in Percents) After Light Rail Openings")
+     breaks=c(1,0.13,0.037,0.0256,0.0255),
+     col=map.pal("oranges"),
+     main="Average Car Use Changes (in Percents) After Light Rail Openings")
 plot(buff, add=TRUE)
 dev.off()
 
