@@ -7,7 +7,7 @@ library('tigris')
 shape<-tigris::pumas(state="TX",class="sp", year=2012)
 shapevect<-vect(shape) 
 shapevect$pumnum<-as.numeric(shapevect$PUMACE10)
-shapevect<-subset(shapevect, shapevect$pumnum>4600 & shapevect$pumnum<4606)
+shapevect<-subset(shapevect, shapevect$pumnum>4600 & shapevect$pumnum<4604)
 
 output<-c()
 
@@ -92,18 +92,37 @@ output4<-output2 |>
   mutate(FID=city_num-1)
 
 output5<-merge(output4, coefdf, by="PUMACE10") |>
-  mutate(coef=as.numeric(coef))
+  mutate(coef=as.numeric(coef)*100)
 
 buff2<-merge(buff, output5, by="FID")
 
-png(filename="PM2.5PerStationmap.png", width=1000, height=700, units="px")
+
+
+library("maptiles")
+
+osmpos <- create_provider(name = "CARTO.POSITRON",
+                          url = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+                          sub = c("a", "b", "c", "d"),
+                          citation = "© OpenStreetMap contributors © CARTO ")
+
+buff3<-buffer(buff2, width=2000)
+bg <- get_tiles(ext(buff3),provider = osmpos, crop = TRUE)
+
+png(filename="PM2.5PerStationmap.png", width=800, height=800, units="px")
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
 plot(buff2, 
      "coef",
      type="interval",
-     breaks=c(-0.35, -0.3, -0.25, -0.2, -0.15),
+     breaks=c(-35, -30, -25, -20, -15),
      col=map.pal("inferno"),
-     main="Average PM2.5 Reductions (in Percents) at Each Light Rail Station",
-     cex.main=2.125)
-plot(buff, add=TRUE)
+     cex.main=2.125,
+     main="Average PM2.5 Change \n at Each Light Rail Station",
+     plg=list( # parameters for drawing legend
+       title = "Change in PM2.5 \n (in Percents)",
+       title.cex = 1.5, # Legend title size
+       cex = 2),
+     add=TRUE) #legend text size
+
 dev.off()
 
