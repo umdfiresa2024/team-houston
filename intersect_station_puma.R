@@ -42,11 +42,11 @@ summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(PUMACE10) + construction +
                    lag_humidity_4 + 
                    as.factor(month) + as.factor(dow) + holiday + 
                    t + t2 + t3 + t4, data = df4))
-library('broom')
-write.csv(tidy(m1), 'PM2.5PollutionByPumaRegressionModel.csv')
+#library('broom')
+#write.csv(tidy(m1), 'PM2.5PollutionByPumaRegressionModel.csv')
 n<-length(coef(m1))
-coef<-coef(m1)[42:44]
-PUMACE10<-c("04602", "04603", "04604")
+coef<-coef(m1)[42:43]
+PUMACE10<-c("04602", "04603")
 coefdf<-as.data.frame(cbind(coef, PUMACE10))
   
 pum4<-read.csv("puma2004.csv") |>
@@ -95,8 +95,6 @@ output5<-merge(output4, coefdf, by="PUMACE10") |>
   mutate(coef=as.numeric(coef)*100)
 
 buff2<-merge(buff, output5, by="FID")
-
-
 
 library("maptiles")
 
