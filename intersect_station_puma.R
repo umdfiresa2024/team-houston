@@ -7,7 +7,10 @@ library('tigris')
 shape<-tigris::pumas(state="TX",class="sp", year=2012)
 shapevect<-vect(shape) 
 shapevect$pumnum<-as.numeric(shapevect$PUMACE10)
-shapevect<-subset(shapevect, shapevect$pumnum>4600 & shapevect$pumnum<4604)
+shapevect<-subset(shapevect, shapevect$pumnum>4600 & shapevect$pumnum<=4604)
+
+plot(shapevect)
+lines(buff, col="red")
 
 output<-c()
 
@@ -45,8 +48,8 @@ summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(PUMACE10) + construction +
 #library('broom')
 #write.csv(tidy(m1), 'PM2.5PollutionByPumaRegressionModel.csv')
 n<-length(coef(m1))
-coef<-coef(m1)[42:43]
-PUMACE10<-c("04602", "04603")
+coef<-coef(m1)[42:44]
+PUMACE10<-c("04602", "04603", "04604")
 coefdf<-as.data.frame(cbind(coef, PUMACE10))
   
 pum4<-read.csv("puma2004.csv") |>
@@ -112,7 +115,7 @@ plot(shapevect, add=TRUE)
 plot(buff2, 
      "coef",
      type="interval",
-     breaks=c(-35, -30, -25, -20, -15),
+     breaks=c(-34,-33.42,-30,-29.95, -23.94),
      col=map.pal("inferno"),
      cex.main=2.125,
      main="Average PM2.5 Change \n at Each Light Rail Station",

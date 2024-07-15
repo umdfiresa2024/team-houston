@@ -38,8 +38,8 @@ pum_2 <-pum %>%
   select(PUMACE10, change_car,change_bus,change_subway,change_taxicab,change_motorcycle,change_walked,change_worked_at_home, change_bicycle)
 
 pum_coef<-merge(pum_2, coefdf, by="PUMACE10") |>
-  mutate(coef=as.numeric(coef))
-write.csv(pum_coef,'pum2.csv')
+  mutate(coef=as.numeric(coef), change_bicycle = change_bicycle*100, change_walked=change_walked*100, change_bus = change_bus*100, change_car=change_car*100)
+write.csv(pum_coef,'pum_coef.csv')
 
 
 shape<-tigris::pumas(state="TX",class="sp", year=2012)
@@ -56,51 +56,74 @@ plot(shape_coef,
 plot(buff, add=TRUE)
 
 #save plot as image file
-png(filename="Bicyclemap.png", width=1000, height=700, units="px")
+png(filename="Bicyclemap.png", width=900, height=800, units="px")
 
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
 plot(shape_coef, 
      "change_bicycle",
      type="interval",
-     breaks=c(-2,-1,-0.999,-0.996, -0.995),
+     breaks=c(-101,-100,-99.7,-99.5,-99.6),
      col=map.pal("reds"),
-     main="Average Bicycle Use Changes (in Percents) After Light Rail Openings",
-     cex.main =2.125)
+     cex.main =2.125,
+     plg=list( # parameters for drawing legend
+       title = "Change in Bicycle Use \n (in Percents)",
+       title.cex = 1.5, # Legend title size
+       cex = 2),
+     add=TRUE)
+title("Average Bicycle Use Changes\n (in Percents) After Light Rail Openings", line=-50, adj=0.45,cex.main=2)
 plot(buff, add=TRUE)
 dev.off()
 
-png(filename="Walkedmap.png", width=1000, height=700, units="px")
-
+png(filename="Walkedmap.png", width=900, height=800, units="px")
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
 plot(shape_coef, 
      "change_walked",
      type="interval",
-     breaks=c(-1, -0.99,-9.95,-0.985, -0.98),
-     col=map.pal("greens"),
-     main="Average Walking Use Changes (in Percents) After Light Rail Openings",
-     cex.main = 2.125)
+     breaks=c(-100, -99,-99.65,-98.5, -98),
+     col=map.pal("grass"),
+     plg=list( # parameters for drawing legend
+       title = "Change in Walking Use \n (in Percents)",
+       title.cex = 1.5, # Legend title size
+       cex = 2),
+     add=TRUE)
+title("Average Walking Use Changes\n (in Percents) After Light Rail Openings", line=-50, adj=0.45,cex.main=2)
 plot(buff, add=TRUE)
 dev.off()
 
-png(filename="Busmap.png", width=1000, height=700, units="px")
+png(filename="Busmap.png", width=900, height=800, units="px")
 
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
 plot(shape_coef, 
      "change_bus",
      type="interval",
-     breaks=c(-1,-0.985,-0.980,-0.9785,-0.978,-0.975),
+     breaks=c(-100,-99,-98,-97.8,-97.5),
      col=map.pal("blues"),
-     main="Average Bus Use Changes (in Percents) After Light Rail Openings",
-     cex.main=2.125)
+     plg=list( # parameters for drawing legend
+       title = "Change in Bus Use \n (in Percents)",
+       title.cex = 1.5, # Legend title size
+       cex = 2),
+     add=TRUE)
+title("Average Bus Use Changes\n (in Percents) After Light Rail Openings", line=-50, adj=0.45,cex.main=2)
 plot(buff, add=TRUE)
 dev.off()
 
-png(filename="Carmap.png", width=1000, height=700, units="px")
-
+png(filename="Carmap.png", width=900, height=800, units="px")
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
 plot(shape_coef, 
      "change_car",
      type="interval",
-     breaks=c(1,0.13,0.037,0.0256,0.0255),
+     breaks=c(100,13,3.7,2.56,2.55),
      col=map.pal("oranges"),
-     main="Average Car Use Changes (in Percents) After Light Rail Openings",
-     cex.main=2.215)
+     plg=list( # parameters for drawing legend
+       title = "Change in Car Use \n (in Percents)",
+       title.cex = 1.5, # Legend title size
+       cex = 2),
+     add=TRUE)
+title("Average Car Use Changes\n (in Percents) After Light Rail Openings", line=-50, adj=0.45,cex.main=2)
 plot(buff, add=TRUE)
 dev.off()
 
