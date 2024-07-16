@@ -7,7 +7,7 @@ editor: visual
 
 ## Research Question
 
-Which demographic groups are impacted by light rail openings in the United States.
+Following Houston’s Red Line MetroRail opening, how did the means of transportation parallel PM2.5 emissions surrounding stations?
 
 ## Research Context
 
@@ -17,13 +17,17 @@ Which demographic groups are impacted by light rail openings in the United State
 
 -   Timeline: 2000-2008
 
+    -   The Red Line opened in 2004.
+
 -   Hypothesis: Light rail openings increase pollution around stations
 
     -   Reasoning: Light rail stations aggregate commuters throughout Houston, resulting in a concentration of pollution around these stations.
 
     -   Confounding Factors
 
-        -   Power Plants: Houston has several power plants that produce PM2.5
+        -   Power Plants: Houston has several power plants that produce PM2.5.
+
+            -   The primary pollutant along the Red Line is the UH Central Power Station
 
         -   Roads/Highways/Intersections: Houston has some of the most congested roads in the U.S.
 
@@ -36,6 +40,16 @@ Which demographic groups are impacted by light rail openings in the United State
             -   Humidity
 
 ### Power Plants
+
+We used a Google API key to identify the coordinates for all power plants and stations along the Red Line.
+
+-   Three main polluters along the Red Line
+
+    -   UH Central Power Station: Primary polluter and provides energy to the University of Houston.
+
+    -   Friendswood Energy Center: Supports the reliability of the local grid by generating energy during power fluctuations.
+
+    -   Houston Holmes Ready-Mix Concrete Plant: A cement mixing plant that pollutes particulate matter.
 
 ```{r}
 #| message: false
@@ -63,7 +77,7 @@ kable(t)
 
 -   Buffers: Red Circles
 
-    -   Radius: 125 km
+    -   Radius: 125 m
 
 -   Highways: Yellow Lines
 
@@ -98,12 +112,19 @@ lines(tsp, col = "yellow", lwd = 2)
 
 ## Linear Regression Model for PM2.5
 
-This regression models shows how the combined PM2.5 data and meteorological data reveal trends in PM2.5 levels. The regression model includes the relevant policies NAAQS and Texas Emissions Reduction Policy (TERP) which ocurred during the time of our study. The regression model also includes the influence of metro stations opening with the MetroOpen variable and the influence of construction with the construction variable.
+We gathered PM2.5 data from NASA's Socioeconomic Data and Application Center. We combined the PM2.5 data with meteorological data from NASA's Global Land Data Assimilation System used use and DB-OLS model to identify connections. The regression model includes the relevant policies NAAQS and Texas Emissions Reduction Policy (TERP) which occurred during the time of our study. The model also includes the influence of metro stations opening with the MetroOpen variable and the influence of construction with the construction variable. Additionally we include time trend variables to account for continuous confounding factors. The model also includes the use of two dummy variables for construction and holiday days. By isolating these factors, the model serves to predict PM2.5 levels by each factor with a key focus on the influence of the MetroOpen variable.
 
 ```{r}
 m <- read.csv('regression_model.csv')
 m
 ```
+
+## Spatial Data Mapping
+### PM2.5 Data by PUMA
+
+We identify pollution reductions per station by organizing stations into the PUMAs they reside in and identify the PM2.5 reduction by PUMAs. PUMAs are Public Use Microdata Areas provided by the U.S. census. We identify the pollution reduction by PUMA by creating a new linear regression model including the MetroOpen:as.factor(PUMACE10) as a variable. We then identify the methods of transportation
+### Transportation by PUMA
+
 
 ## References
 
