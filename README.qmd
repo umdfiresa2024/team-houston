@@ -27,20 +27,33 @@ Which demographic groups are impacted by light rail openings in the United State
 
         -   Roads/Highways/Intersections: Houston has some of the most congested roads in the U.S.
 
-        -   Meteorological Factors
+        -   Meteorological Factors: Various weather and climate influences on PM2.5 levels
 
-    ### Table of Power Plants
+            -   Temperature
+
+            -   Wind
+
+            -   Humidity
+
+### Power Plants
 
 ```{r}
+#| message: false
 library('knitr')
+#| message: false
+library('tidyverse')
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
 kable(t)
 ```
 
-### Table of Red Line Stations
+### Red Line Stations
+
+Below is a table of the 26 stations on Houston's Red Line
 
 ```{r}
-t <- read.csv('Houston Data Collection - Charlotte.csv')
+t <- read.csv('Houston Data Collection.csv')
+t <- t %>%
+  select(Station, Opening.Dates, Address, Parking)
 kable(t)
 ```
 
@@ -62,7 +75,6 @@ kable(t)
 
 library('terra')
 library('maptiles')
-library('tidyverse')
 library('ggmap')
 
 x <- vect('bg_x_vect.shp')
@@ -84,17 +96,25 @@ lines(tsp, col = "yellow", lwd = 2)
 
 ```
 
-### Combining PM2.5 Data and Meteorological Data
+## Linear Regression Model for PM2.5
 
-```{r}
-t <- read.csv('stations_data.csv')
-head(t)
-#kable(t)
-```
-
-### Linear Regression Model for PM2.5
+This regression models shows how the combined PM2.5 data and meteorological data reveal trends in PM2.5 levels. The regression model includes the relevant policies NAAQS and Texas Emissions Reduction Policy (TERP) which ocurred during the time of our study. The regression model also includes the influence of metro stations opening with the MetroOpen variable and the influence of construction with the construction variable.
 
 ```{r}
 m <- read.csv('regression_model.csv')
 m
 ```
+
+## References
+
+### Data References
+
+-   Di, Q., Y. Wei, A. Shtein, C. Hultquist, X. Xing, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, and J. Schwartz. Daily and Annual PM2.5 Concentrations for the Contiguous United States, 1-km Grids, v1 (2000 - 2016). Palisades, New York: NASA Socioeconomic Data and Applications Center (SEDAC). Accessed 07/16/2024, <https://doi.org/10.7927/0rvr-4538>.
+
+-   Di, Q., H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, and J. Schwartz. 2019. An Ensemble-based Model of PM2.5 Concentration Across the Contiguous United States with High Spatiotemporal Resolution. Environment International 130: 104909. Accessed 07/16/2024, <https://doi.org/10.1016/j.envint.2019.104909>.
+
+-   Li, B., H. Beaudoing, and M. Rodell, NASA/GSFC/HSL (2020), GLDAS Catchment Land Surface Model L4 daily 0.25 x 0.25 degree GRACE-DA1 V2.2, Greenbelt, Maryland, USA, Goddard Earth Sciences Data and Information Services Center (GES DISC), Accessed: 07/16/2024, [10.5067/TXBMLX370XX8](https://doi.org/10.5067/TXBMLX370XX8)
+
+### Policy References
+
+-   
