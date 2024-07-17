@@ -123,7 +123,7 @@ m
 
 ### PM2.5 Data by PUMA
 
-We identify pollution reductions per station by organizing stations into the PUMAs they reside in and identify the PM2.5 reduction by PUMAs. PUMAs are Public Use Microdata Areas provided by the U.S. census. We identify the pollution reduction by PUMA by creating a new linear regression model including the MetroOpen:as.factor(PUMACE10) as a variable.
+We identify pollution reductions per station by organizing stations into the PUMAs they reside in and identify the PM2.5 reduction by PUMAs. PUMAs are Public Use Microdata Areas provided by the U.S. census. Here we use PUMAS 4602, 4603, and 4604. We identify the pollution reduction by PUMA by creating a new linear regression model including the MetroOpen:as.factor(PUMACE10) as a variable.
 
 ```{r}
 mPM2.5 <- read.csv('PM2.5PollutionByPumaRegressionModel.csv')
@@ -154,11 +154,86 @@ plot(buff2,
        title.cex = 1, 
        cex = 1),
      add=TRUE)
+
 ```
 
 ### Transportation by PUMA
 
-We identify the methods of transportation
+We identify the change in method of commute transportation by separating PUMA census data from the years 2004 and 2008 and tracking the percentage change for each of the three PUMAS. We tracked the percentage change in those who bike, walk, bus, or drive to work.
+
+```{r}
+
+
+pum_coef <- read.csv('pum_coef.csv', colClass=c("PUMACE10"="character"))
+buff<-vect("buff_sta.shp")
+shapevect<-vect('shapevect.shp')
+shape_coef<-merge(shapevect, pum_coef, by="PUMACE10")
+
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
+plot(shape_coef,
+     "change_bicycle",
+     type="interval",
+     breaks=c(-101,-100,-99.7,-99.5,-99.6),
+     col=map.pal("reds"),
+     plg=list( # parameters for drawing legend
+       title = "Change in Bicycle Use \n (in Percents)",
+       title.cex = 1, # Legend title size
+       cex = 1),
+     add=TRUE)
+title("Average Bicycle Use Changes\n (in Percents) After Light Rail Openings", line = -20, adj=0.45,cex.main=1)
+
+plot(buff, add=TRUE)
+
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
+plot(shape_coef,
+     "change_walked",
+     type="interval",
+     breaks=c(-100, -99,-99.65,-98.5, -98),
+     col=map.pal("grass"),
+     plg=list( # parameters for drawing legend
+       title = "Change in Walking Use \n (in Percents)",
+       title.cex = 1, # Legend title size
+       cex = 1),
+     add=TRUE)
+title("Average Walking Use Changes\n (in Percents) After Light Rail Openings", line = -20, adj=0.45,cex.main=1)
+plot(buff, add=TRUE)
+
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
+plot(shape_coef, 
+     "change_bus",
+     type="interval",
+     breaks=c(-100,-99,-98,-97.8,-97.5),
+     col=map.pal("blues"),
+     plg=list( # parameters for drawing legend
+       title = "Change in Bus Use \n (in Percents)",
+       title.cex = 1, # Legend title size
+       cex = 1),
+     add=TRUE)
+title("Average Bus Use Changes\n (in Percents) After Light Rail Openings", line=-20, adj=0.45,cex.main=1)
+plot(buff, add=TRUE)
+
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
+plot(shape_coef, 
+     "change_car",
+     type="interval",
+     breaks=c(100,13,3.7,2.56,2.55),
+     col=map.pal("oranges"),
+     plg=list( # parameters for drawing legend
+       title = "Change in Car Use \n (in Percents)",
+       title.cex = 1, # Legend title size
+       cex = 1),
+     add=TRUE)
+title("Average Car Use Changes\n (in Percents) After Light Rail Openings", line=-20, adj=0.45,cex.main=1)
+plot(buff, add=TRUE)
+```
+## Conclusion
+Light rail opening led to an average PM2.5 reduction of 12-29%. Areas with the most increase in car use saw the least reduction.
+After the 2004 opening of the red line, the use of buses, biking, and walking decreased between 98-100%, but car usage increased between 2-13%
+Stations with increased car use correlated with weaker reductions in PM2.5 levels compared to the overall reduction seen after the light rail opening
 
 ## References
 
@@ -172,4 +247,4 @@ We identify the methods of transportation
 
 ### Policy References
 
--   
+-   Texas Commission on Environmental Quality. (2024, July 12). Texas Emissions Reduction Plan. Texas Commission on Environmental Quality. https://www.tceq.texas.gov/airquality/terp  
