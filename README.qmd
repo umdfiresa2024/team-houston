@@ -120,11 +120,45 @@ m
 ```
 
 ## Spatial Data Mapping
+
 ### PM2.5 Data by PUMA
 
-We identify pollution reductions per station by organizing stations into the PUMAs they reside in and identify the PM2.5 reduction by PUMAs. PUMAs are Public Use Microdata Areas provided by the U.S. census. We identify the pollution reduction by PUMA by creating a new linear regression model including the MetroOpen:as.factor(PUMACE10) as a variable. We then identify the methods of transportation
+We identify pollution reductions per station by organizing stations into the PUMAs they reside in and identify the PM2.5 reduction by PUMAs. PUMAs are Public Use Microdata Areas provided by the U.S. census. We identify the pollution reduction by PUMA by creating a new linear regression model including the MetroOpen:as.factor(PUMACE10) as a variable.
+
+```{r}
+mPM2.5 <- read.csv('PM2.5PollutionByPumaRegressionModel.csv')
+mPM2.5
+```
+
+```{r}
+shapevect <- vect('shapevect.shp')
+buff3 <- vect('buff3.shp')
+buff2 <- vect('Buff2.shp')
+
+osmpos <- create_provider(name = "CARTO.POSITRON",
+                          url = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+                          sub = c("a", "b", "c", "d"),
+                          citation = "© OpenStreetMap contributors © CARTO ")
+bg <- get_tiles(ext(buff3),provider = osmpos, crop = TRUE)
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
+plot(buff2, 
+     "coef",
+     type="interval",
+     breaks=c(-34,-33.42,-30,-29.95, -23.94),
+     col=map.pal("inferno"),
+     cex.main=1.125,
+     main="Average PM2.5 Change \n at Each Light Rail Station",
+     plg=list( 
+       title = "Change in PM2.5 \n (in Percents)",
+       title.cex = 1, 
+       cex = 1),
+     add=TRUE)
+```
+
 ### Transportation by PUMA
 
+We identify the methods of transportation
 
 ## References
 

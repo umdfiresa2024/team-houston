@@ -3,8 +3,8 @@
 
 ## Research Question
 
-Which demographic groups are impacted by light rail openings in the
-United States.
+Following Houston’s Red Line MetroRail opening, how did the means of
+transportation parallel PM2.5 emissions surrounding stations?
 
 ## Research Context
 
@@ -14,6 +14,8 @@ United States.
 
 - Timeline: 2000-2008
 
+  - The Red Line opened in 2004.
+
 - Hypothesis: Light rail openings increase pollution around stations
 
   - Reasoning: Light rail stations aggregate commuters throughout
@@ -22,20 +24,51 @@ United States.
 
   - Confounding Factors
 
-    - Power Plants: Houston has several power plants that produce PM2.5
+    - Power Plants: Houston has several power plants that produce PM2.5.
+
+      - The primary pollutant along the Red Line is the UH Central Power
+        Station
 
     - Roads/Highways/Intersections: Houston has some of the most
       congested roads in the U.S.
 
-    - Meteorological Factors
+    - Meteorological Factors: Various weather and climate influences on
+      PM2.5 levels
 
-  ### Table of Power Plants
+      - Temperature
+
+      - Wind
+
+      - Humidity
+
+### Power Plants
+
+We used a Google API key to identify the coordinates for all power
+plants and stations along the Red Line.
+
+- Three main polluters along the Red Line
+
+  - UH Central Power Station: Primary polluter and provides energy to
+    the University of Houston.
+
+  - Friendswood Energy Center: Supports the reliability of the local
+    grid by generating energy during power fluctuations.
+
+  - Houston Holmes Ready-Mix Concrete Plant: A cement mixing plant that
+    pollutes particulate matter.
 
 ``` r
 library('knitr')
 ```
 
     Warning: package 'knitr' was built under R version 4.3.3
+
+``` r
+#| message: false
+library('tidyverse')
+```
+
+    Warning: package 'tidyverse' was built under R version 4.3.3
 
 ``` r
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
@@ -52,41 +85,45 @@ kable(t)
 | Smith Power Systems             | 256 N Sam Houston Pkwy E, Houston, TX 77060     | NA     |
 | Calpine Deer Park Energy Center | 5665 Hwy 225, Deer Park, TX 77536               | NA     |
 
-### Table of Red Line Stations
+### Red Line Stations
+
+Below is a table of the 26 stations on Houston’s Red Line
 
 ``` r
-t <- read.csv('Houston Data Collection - Charlotte.csv')
+t <- read.csv('Houston Data Collection.csv')
+t <- t %>%
+  select(Station, Opening.Dates, Address, Parking)
 kable(t)
 ```
 
-| Station                                           | Opening.Dates   | Address                                     | Coordinate | Parking |
-|:--------------------------------------------------|:----------------|:--------------------------------------------|:-----------|:--------|
-| UH-Downtown                                       | 1/1/2004        | 6 N Main St, Houston, TX 77002              | NA         | FALSE   |
-| Preston Northbound                                | 1/1/2004        | 367 Main St, Houston, TX 77002              | NA         | FALSE   |
-| Preston Southbound                                | 1/1/2004        | 414 Main St, Houston, TX 77002              | NA         | FALSE   |
-| Central Station Main                              | 2/18/2015       | 714 Main St, Houston, TX 77002              | NA         | FALSE   |
-| Main Street Square Northbound                     | 1/1/2004        | 960 Main St, Houston, TX 77002              | NA         | FALSE   |
-| Main Street Square Southbound                     | 1/1/2004        | 1131 Main St, Houston, TX 77002             | NA         | FALSE   |
-| Bell Northbound                                   | January 1, 2004 | 1453 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Bell Southbound                                   | January 1, 2004 | 1523 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Downtown Transit Center Northbound                | 1/1/2004        | 1840 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Downtown Transit Center Southbound                | 1/1/2004        | 1914 Main St., Houston, TX 77002            | NA         | FALSE   |
-| McGowen Northbound                                | 1/1/2004        | 2560 Main St., Houston, TX 77002            | NA         | FALSE   |
-| McGowen Southbound                                | 1/1/2004        | 2606 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Ensemble / HCC Northbound                         | 1/1/2004        | 3509 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Ensemble / HCC Southbound                         | 1/1/2004        | 3604 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Wheeler                                           | 1/1/2004        | 4590 Main St., Houston, TX 77002            | NA         | FALSE   |
-| Museum District Northbound                        | 1/1/2004        | 5640 San Jacinto St, Houston, TX 77004      | NA         | FALSE   |
-| Museum District Southbound                        | 1/1/2004        | 5660 Fannin St., Houston, TX 77004          | NA         | FALSE   |
-| Hermann Park / Rice U                             | 1/1/2004        | 6050 Fannin St., Houston, TX 77030          | NA         | FALSE   |
-| Memorial Hermann Hospital /Houston Zoo Northbound | 1/1/2004        | 6413 Fannin St., Houston, TX 77030          | NA         | FALSE   |
-| Memorial Hermann Hospital /Houston Zoo Southbound | 1/1/2004        | 6407 Fannin St., Houston, TX 77030          | NA         | FALSE   |
-| Dryden/TMC Northbound                             | 1/1/2004        | 6607 Fannin St., Houston, TX 77021          | NA         | FALSE   |
-| Dryden/TMC Southbound                             | 1/1/2004        | 6614 Fannin St., Houston, TX 77030          | NA         | FALSE   |
-| TMC Transit Center                                | 1/1/2004        | 5640 San Jacinto St., Houston, TX 77004Will | NA         | FALSE   |
-| Smith Lands                                       | 1/1/2004        | 7834 Greenbriar Drive, Houston, TX 77054    | NA         | FALSE   |
-| Stadium Park / Astrodome                          | 1/1/2004        | 8168 Fannin St., Houston, TX 77054          | NA         | FALSE   |
-| Fannin South                                      | 1/1/2004        | 1604 West Bellfort Ave., Houston, TX 77054  | NA         | TRUE    |
+| Station                                           | Opening.Dates | Address                                     | Parking |
+|:--------------------------------------------------|:--------------|:--------------------------------------------|:--------|
+| UH-Downtown                                       | 1/1/2004      | 6 N Main St, Houston, TX 77002              | FALSE   |
+| Preston Northbound                                | 1/1/2004      | 367 Main St, Houston, TX 77002              | FALSE   |
+| Preston Southbound                                | 1/1/2004      | 414 Main St, Houston, TX 77002              | FALSE   |
+| Central Station Main                              | 2/18/2015     | 714 Main St, Houston, TX 77002              | FALSE   |
+| Main Street Square Northbound                     | 1/1/2004      | 960 Main St, Houston, TX 77002              | FALSE   |
+| Main Street Square Southbound                     | 1/1/2004      | 1131 Main St, Houston, TX 77002             | FALSE   |
+| Bell Northbound                                   | 1/1/2004      | 1453 Main St., Houston, TX 77002            | FALSE   |
+| Bell Southbound                                   | 1/1/2004      | 1523 Main St., Houston, TX 77002            | FALSE   |
+| Downtown Transit Center Northbound                | 1/1/2004      | 1840 Main St., Houston, TX 77002            | FALSE   |
+| Downtown Transit Center Southbound                | 1/1/2004      | 1914 Main St., Houston, TX 77002            | FALSE   |
+| McGowen Northbound                                | 1/1/2004      | 2560 Main St., Houston, TX 77002            | FALSE   |
+| McGowen Southbound                                | 1/1/2004      | 2606 Main St., Houston, TX 77002            | FALSE   |
+| Ensemble / HCC Northbound                         | 1/1/2004      | 3509 Main St., Houston, TX 77002            | FALSE   |
+| Ensemble / HCC Southbound                         | 1/1/2004      | 3604 Main St., Houston, TX 77002            | FALSE   |
+| Wheeler                                           | 1/1/2004      | 4590 Main St., Houston, TX 77002            | FALSE   |
+| Museum District Northbound                        | 1/1/2004      | 5640 San Jacinto St, Houston, TX 77004      | FALSE   |
+| Museum District Southbound                        | 1/1/2004      | 5660 Fannin St., Houston, TX 77004          | FALSE   |
+| Hermann Park / Rice U                             | 1/1/2004      | 6050 Fannin St., Houston, TX 77030          | FALSE   |
+| Memorial Hermann Hospital /Houston Zoo Northbound | 1/1/2004      | 6413 Fannin St., Houston, TX 77030          | FALSE   |
+| Memorial Hermann Hospital /Houston Zoo Southbound | 1/1/2004      | 6407 Fannin St., Houston, TX 77030          | FALSE   |
+| Dryden/TMC Northbound                             | 1/1/2004      | 6607 Fannin St., Houston, TX 77021          | FALSE   |
+| Dryden/TMC Southbound                             | 1/1/2004      | 6614 Fannin St., Houston, TX 77030          | FALSE   |
+| TMC Transit Center                                | 1/1/2004      | 5640 San Jacinto St., Houston, TX 77004Will | FALSE   |
+| Smith Lands                                       | 1/1/2004      | 7834 Greenbriar Drive, Houston, TX 77054    | FALSE   |
+| Stadium Park / Astrodome                          | 1/1/2004      | 8168 Fannin St., Houston, TX 77054          | FALSE   |
+| Fannin South                                      | 1/1/2004      | 1604 West Bellfort Ave., Houston, TX 77054  | TRUE    |
 
 ### Map of Houston
 
@@ -94,7 +131,7 @@ kable(t)
 
 - Buffers: Red Circles
 
-  - Radius: 125 km
+  - Radius: 125 m
 
 - Highways: Yellow Lines
 
@@ -103,7 +140,6 @@ kable(t)
 ``` r
 library('terra')
 library('maptiles')
-library('tidyverse')
 library('ggmap')
 
 x <- vect('bg_x_vect.shp')
@@ -126,54 +162,21 @@ lines(tsp, col = "yellow", lwd = 2)
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
-### Combining PM2.5 Data and Meteorological Data
+## Linear Regression Model for PM2.5
 
-``` r
-t <- read.csv('stations_data.csv')
-head(t)
-```
-
-      X     Station city_num date_parse   pm25.y Tair_f_tavg Wind_f_tavg
-    1 1 UH-Downtown        1   20070606 18.09169    300.0631    3.152199
-    2 2 UH-Downtown        1   20031018 18.92850    295.6240    4.312547
-    3 3 UH-Downtown        1   20030731 28.39712    301.5336    1.857964
-    4 4 UH-Downtown        1   20030924 32.69661    298.6476    2.772936
-    5 5 UH-Downtown        1   20030419 16.35215    296.5158    5.005250
-    6 6 UH-Downtown        1   20021021 13.58177    296.0952    3.418124
-      Qair_f_tavg Swnet_tavg Lwnet_tavg Qle_tavg  Qh_tavg     Qg_tavg   Rainf_tavg
-    1  0.01820959   175.8085  -58.87698 63.58242 52.06745  1.28607237 0.000000e+00
-    2  0.01390711   153.7672  -48.85344 84.08550 19.23183  1.59069490 6.226079e-04
-    3  0.02092853   196.6315  -52.28700 72.03625 65.13770  7.16767359 1.031377e-05
-    4  0.01676618   131.1580  -30.78349 67.24549 33.07461  0.05478838 5.304586e-05
-    5  0.01464971   153.5152  -41.79403 85.57352 24.12227  2.02892733 1.439977e-04
-    6  0.01588336   118.1107  -43.18064 42.62752 33.30393 -1.00141191 2.303306e-06
-          Qsb_tavg AvgSurfT_tavg SoilMoist_S_tavg SoilMoist_RZ_tavg
-    1 7.922070e-10      301.0076         7.130842          362.2582
-    2 0.000000e+00      295.7036         8.847394          369.9988
-    3 0.000000e+00      303.7087         7.372685          368.4690
-    4 5.936561e-10      299.4848         7.535685          364.8384
-    5 1.130284e-09      296.7788         8.085110          371.8716
-    6 1.478257e-09      296.8988         7.796390          393.4534
-      SoilMoist_P_tavg    TVeg_tavg   ESoil_tavg ACond_tavg Rainf_f_tavg
-    1         1675.651 4.960877e-06 2.081741e-05 0.02019928 0.000000e+00
-    2         1651.855 1.833586e-06 2.590503e-05 0.02388821 6.226080e-04
-    3         1653.718 6.568407e-06 2.118947e-05 0.01734417 1.031377e-05
-    4         1654.721 2.892142e-06 1.795057e-05 0.01781925 5.304586e-05
-    5         1711.885 2.385599e-06 2.548229e-05 0.02923577 1.439977e-04
-    6         1751.740 1.677072e-06 1.317038e-05 0.02178558 2.303306e-06
-      Psurf_f_tavg SWdown_f_tavg month       DOW holiday
-    1     101444.0      198.9910     6 Wednesday   FALSE
-    2     101826.2      172.8554    10  Saturday   FALSE
-    3     101881.5      223.2050     7  Thursday   FALSE
-    4     101372.7      148.3467     9 Wednesday   FALSE
-    5     101194.8      174.4067     4  Saturday   FALSE
-    6     101416.2      132.8056    10    Monday   FALSE
-
-``` r
-#kable(t)
-```
-
-### Linear Regression Model for PM2.5
+We gathered PM2.5 data from NASA’s Socioeconomic Data and Application
+Center. We combined the PM2.5 data with meteorological data from NASA’s
+Global Land Data Assimilation System used use and DB-OLS model to
+identify connections. The regression model includes the relevant
+policies NAAQS and Texas Emissions Reduction Policy (TERP) which
+occurred during the time of our study. The model also includes the
+influence of metro stations opening with the MetroOpen variable and the
+influence of construction with the construction variable. Additionally
+we include time trend variables to account for continuous confounding
+factors. The model also includes the use of two dummy variables for
+construction and holiday days. By isolating these factors, the model
+serves to predict PM2.5 levels by each factor with a key focus on the
+influence of the MetroOpen variable.
 
 ``` r
 m <- read.csv('regression_model.csv')
@@ -223,3 +226,171 @@ m
     40 40                 t2  7.261783e-07 5.046115e-08  14.3908397  6.709424e-47
     41 41                 t3 -3.896620e-10 2.133349e-11 -18.2652753  2.173276e-74
     42 42                 t4  5.718178e-14 3.023975e-15  18.9094753  1.390127e-79
+
+## Spatial Data Mapping
+
+### PM2.5 Data by PUMA
+
+We identify pollution reductions per station by organizing stations into
+the PUMAs they reside in and identify the PM2.5 reduction by PUMAs.
+PUMAs are Public Use Microdata Areas provided by the U.S. census. We
+identify the pollution reduction by PUMA by creating a new linear
+regression model including the MetroOpen:as.factor(PUMACE10) as a
+variable.
+
+``` r
+mPM2.5 <- read.csv('PM2.5PollutionByPumaRegressionModel.csv')
+mPM2.5
+```
+
+        X                               term      estimate    std.error   statistic
+    1   1                        (Intercept) -1.723005e+04 4.404824e+03  -3.9116320
+    2   2                       construction -1.134362e-01 9.920559e-03 -11.4344603
+    3   3                               TERP -1.798481e-01 6.484005e-03 -27.7371846
+    4   4                              NAAQS -5.245409e-02 8.363244e-03  -6.2719784
+    5   5                               temp  3.190619e-02 1.141494e-03  27.9512549
+    6   6                           lag_temp  2.381658e+02 6.072029e+01   3.9223422
+    7   7                         lag_temp_2 -1.233710e+00 3.137976e-01  -3.9315458
+    8   8                         lag_temp_3  2.837685e-03 7.205396e-04   3.9382782
+    9   9                         lag_temp_4 -2.445528e-06 6.202539e-07  -3.9427855
+    10 10                               wind -9.703620e-02 1.416930e-03 -68.4834131
+    11 11                           lag_wind -2.022140e-01 5.588989e-02  -3.6180778
+    12 12                         lag_wind_2  2.050768e-02 2.016327e-02   1.0170809
+    13 13                         lag_wind_3  2.729397e-03 3.024755e-03   0.9023532
+    14 14                         lag_wind_4 -4.050568e-04 1.602560e-04  -2.5275602
+    15 15                           humidity -1.381986e+01 1.286587e+00 -10.7414860
+    16 16                       lag_humidity -1.865525e+02 2.732736e+01  -6.8265848
+    17 17                     lag_humidity_2  2.737541e+04 3.487960e+03   7.8485462
+    18 18                     lag_humidity_3 -1.603056e+06 1.861291e+05  -8.6125997
+    19 19                     lag_humidity_4  3.171332e+07 3.535541e+06   8.9698651
+    20 20                  as.factor(month)2  9.048775e-03 6.984756e-03   1.2955034
+    21 21                  as.factor(month)3 -2.784362e-02 7.740471e-03  -3.5971478
+    22 22                  as.factor(month)4 -2.612697e-02 9.453890e-03  -2.7636210
+    23 23                  as.factor(month)5 -1.213649e-02 1.141304e-02  -1.0633880
+    24 24                  as.factor(month)6 -2.026952e-01 1.317209e-02 -15.3882382
+    25 25                  as.factor(month)7 -1.750920e-01 1.382521e-02 -12.6646899
+    26 26                  as.factor(month)8 -2.092155e-01 1.411698e-02 -14.8201383
+    27 27                  as.factor(month)9 -1.543882e-01 1.246763e-02 -12.3831241
+    28 28                 as.factor(month)10 -1.865986e-01 1.006687e-02 -18.5359124
+    29 29                 as.factor(month)11 -8.582433e-02 7.755667e-03 -11.0660153
+    30 30                 as.factor(month)12 -5.436059e-02 6.790127e-03  -8.0058286
+    31 31                    as.factor(dow)2  8.662999e-02 5.183460e-03  16.7127738
+    32 32                    as.factor(dow)3  1.061896e-01 5.118581e-03  20.7459028
+    33 33                    as.factor(dow)4  1.032636e-01 5.127887e-03  20.1376479
+    34 34                    as.factor(dow)5  9.811517e-02 5.124506e-03  19.1462675
+    35 35                    as.factor(dow)6  1.251045e-01 5.122315e-03  24.4234379
+    36 36                    as.factor(dow)7  5.547096e-02 5.125024e-03  10.8235524
+    37 37                        holidayTRUE -1.028137e-01 7.943880e-03 -12.9425049
+    38 38                                  t -9.989363e-06 4.675211e-05  -0.2136666
+    39 39                                 t2  7.333835e-07 5.126544e-08  14.3056123
+    40 40                                 t3 -3.974988e-10 2.167352e-11 -18.3403000
+    41 41                                 t4  5.864857e-14 3.072174e-15  19.0902535
+    42 42 MetroOpen:as.factor(PUMACE10)04602 -2.394733e-01 1.311149e-02 -18.2643784
+    43 43 MetroOpen:as.factor(PUMACE10)04603 -3.342031e-01 1.311149e-02 -25.4893271
+    44 44 MetroOpen:as.factor(PUMACE10)04604 -2.995036e-01 1.343011e-02 -22.3008995
+             p.value
+    1   9.174868e-05
+    2   2.966186e-30
+    3  1.514134e-168
+    4   3.582674e-10
+    5  4.097841e-171
+    6   8.776402e-05
+    7   8.447102e-05
+    8   8.213654e-05
+    9   8.060781e-05
+    10  0.000000e+00
+    11  2.969783e-04
+    12  3.091180e-01
+    13  3.668719e-01
+    14  1.148768e-02
+    15  6.773926e-27
+    16  8.756475e-12
+    17  4.259642e-15
+    18  7.266788e-18
+    19  3.029667e-19
+    20  1.951503e-01
+    21  3.219157e-04
+    22  5.717670e-03
+    23  2.876092e-01
+    24  2.333431e-53
+    25  1.004804e-36
+    26  1.259801e-49
+    27  3.469152e-35
+    28  1.522974e-76
+    29  1.921268e-28
+    30  1.202133e-15
+    31  1.345080e-62
+    32  2.355691e-95
+    33  5.719302e-90
+    34  1.570766e-81
+    35 2.862095e-131
+    36  2.778694e-27
+    37  2.825436e-38
+    38  8.308076e-01
+    39  2.297158e-46
+    40  5.586467e-75
+    41  4.574879e-81
+    42  2.238334e-74
+    43 9.403559e-143
+    44 7.724047e-110
+
+``` r
+shapevect <- vect('shapevect.shp')
+buff3 <- vect('buff3.shp')
+buff2 <- vect('Buff2.shp')
+
+osmpos <- create_provider(name = "CARTO.POSITRON",
+                          url = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+                          sub = c("a", "b", "c", "d"),
+                          citation = "© OpenStreetMap contributors © CARTO ")
+bg <- get_tiles(ext(buff3),provider = osmpos, crop = TRUE)
+plot(bg, alpha=0.05)
+plot(shapevect, add=TRUE)
+plot(buff2, 
+     "coef",
+     type="interval",
+     breaks=c(-34,-33.42,-30,-29.95, -23.94),
+     col=map.pal("inferno"),
+     cex.main=1.125,
+     main="Average PM2.5 Change \n at Each Light Rail Station",
+     plg=list( 
+       title = "Change in PM2.5 \n (in Percents)",
+       title.cex = 1, 
+       cex = 1),
+     add=TRUE)
+```
+
+![](README_files/figure-commonmark/unnamed-chunk-6-1.png)
+
+### Transportation by PUMA
+
+We identify the methods of transportation
+
+## References
+
+### Data References
+
+- Di, Q., Y. Wei, A. Shtein, C. Hultquist, X. Xing, H. Amini, L. Shi, I.
+  Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P.
+  Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, and J. Schwartz.
+  Daily and Annual PM2.5 Concentrations for the Contiguous United
+  States, 1-km Grids, v1 (2000 - 2016). Palisades, New York: NASA
+  Socioeconomic Data and Applications Center (SEDAC). Accessed
+  07/16/2024, <https://doi.org/10.7927/0rvr-4538>.
+
+- Di, Q., H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B.
+  Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J.
+  Mickley, and J. Schwartz. 2019. An Ensemble-based Model of PM2.5
+  Concentration Across the Contiguous United States with High
+  Spatiotemporal Resolution. Environment International 130: 104909.
+  Accessed 07/16/2024, <https://doi.org/10.1016/j.envint.2019.104909>.
+
+- Li, B., H. Beaudoing, and M. Rodell, NASA/GSFC/HSL (2020), GLDAS
+  Catchment Land Surface Model L4 daily 0.25 x 0.25 degree GRACE-DA1
+  V2.2, Greenbelt, Maryland, USA, Goddard Earth Sciences Data and
+  Information Services Center (GES DISC), Accessed: 07/16/2024,
+  [10.5067/TXBMLX370XX8](https://doi.org/10.5067/TXBMLX370XX8)
+
+### Policy References
+
+- 

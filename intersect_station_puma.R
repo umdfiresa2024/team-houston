@@ -127,3 +127,11 @@ plot(buff2,
 
 dev.off()
 
+outfile <-'shapevect.shp'
+writeVector(shapevect, outfile, overwrite=TRUE)
+
+outfile <- 'buff3.shp'
+writeVector(buff3, outfile, overwrite = TRUE)
+
+outfile <- 'buff2.shp'
+writeVector(buff2, outfile, overwrite = TRUE)
