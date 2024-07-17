@@ -51,6 +51,7 @@ n<-length(coef(m1))
 coef<-coef(m1)[42:44]
 PUMACE10<-c("04602", "04603", "04604")
 coefdf<-as.data.frame(cbind(coef, PUMACE10))
+
   
 pum4<-read.csv("puma2004.csv") |>
   mutate(PUMACE10=substr(Selected.Geographies, 6, 10)) |>

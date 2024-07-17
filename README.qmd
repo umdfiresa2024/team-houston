@@ -123,8 +123,49 @@ lines(tsp, col = "yellow", lwd = 2)
 We gathered PM2.5 data from NASA's Socioeconomic Data and Application Center. We combined the PM2.5 data with meteorological data from NASA's Global Land Data Assimilation System used use and DB-OLS model to identify connections. The regression model includes the relevant policies NAAQS and Texas Emissions Reduction Policy (TERP) which occurred during the time of our study. The model also includes the influence of metro stations opening with the MetroOpen variable and the influence of construction with the construction variable. Additionally we include time trend variables to account for continuous confounding factors. The model also includes the use of two dummy variables for construction and holiday days. By isolating these factors, the model serves to predict PM2.5 levels by each factor with a key focus on the influence of the MetroOpen variable.
 
 ```{r}
-m <- read.csv('regression_model.csv')
-m
+df <- read.csv('stations_data.csv')
+df2 <- df %>%
+  mutate(date = as.Date(date_parse, format = '%Y%m%d'))
+
+startDate <- as.Date('2000-1-1', format = '%Y-%m-%d')
+endDate <- as.Date('2008-12-31', format = '%Y-%m-%d')
+openDate <- as.Date('2004-1-1', format = '%Y-%m-%d')
+consDate <- as.Date('2001-3-13', format = '%Y-%m-%d')
+
+TERPstart <- as.Date('2001-11-14', format = '%Y-%m-%d')
+TERPinactive <- as.Date('2002-2-1', format = '%Y-%m-%d')
+TERPreactive <- as.Date('2003-6-26', format = '%Y-%m-%d')
+
+NAAQS <- as.Date('2006-10-17', format = '%Y-%m-%d')
+
+## ERROR here. It appears like the code is running but then returns an error I've never seen before: Error in `[[<-`. 
+df3 <- df2 %>%
+  filter(date >=startDate & date <= endDate) %>%
+  mutate(MetroOpen = ifelse(date >= openDate,1,0)) %>%
+  mutate(dow = wday(date))%>%
+  mutate(construction = ifelse(date>consDate & date < openDate, 1 , 0)) %>%
+  group_by(city_num)%>%
+  #rename(pm25 = pm25.y)%>%
+  arrange(city_num, date)%>%
+  mutate(lpm25 = lag(pm25)) %>%
+  mutate(lpm25_2 = lpm25^2, lpm25_3 = lpm25^3, lpm25_4= lpm25^4)%>%
+  mutate(t = as.numeric(date - startDate)) %>%
+  mutate(t2 = t^2, t3 = t^3, t4 = t^4)%>%
+  mutate(temp = Tair_f_tavg)%>%
+  mutate(lag_temp = lag(Tair_f_tavg))%>%
+  mutate(lag_temp_2 = lag_temp^2, lag_temp_3 = lag_temp^3, lag_temp_4 = lag_temp^4) %>%
+  mutate(wind = Wind_f_tavg)%>%
+  mutate(lag_wind = lag(Wind_f_tavg))%>%
+  mutate(lag_wind_2 = lag_wind^2, lag_wind_3 = lag_wind^3, lag_wind_4 = lag_wind^4)%>%
+  mutate(humidity = Qair_f_tavg)%>%
+  mutate(lag_humidity = lag(Qair_f_tavg))%>%
+  mutate(lag_humidity_2 = lag_humidity^2, lag_humidity_3 = lag_humidity^3, lag_humidity_4 = lag_humidity^4)%>%
+  mutate(TERP = ifelse(date > TERPstart & date < TERPinactive | date > TERPreactive,1,0)) %>%
+  mutate(NAAQS = ifelse(date>NAAQS,1,0))
+```
+
+```{r}
+summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4, data = df3))
 ```
 
 ## Spatial Data Mapping
@@ -136,6 +177,52 @@ We identify pollution reductions per station by organizing stations into the PUM
 ```{r}
 mPM2.5 <- read.csv('PM2.5PollutionByPumaRegressionModel.csv')
 mPM2.5
+
+```
+
+```{r}
+buff<-vect("buff_sta.shp") #stations shapefile
+
+shape<-tigris::pumas(state="TX",class="sp", year=2012)
+shapevect<-vect(shape) 
+shapevect$pumnum<-as.numeric(shapevect$PUMACE10)
+shapevect<-subset(shapevect, shapevect$pumnum>4600 & shapevect$pumnum<=4604)
+
+output<-c()
+
+for(i in 0:24){
+  print(i)
+  buff2 <-subset(buff, buff$FID ==i)
+  int<-crop(shapevect, buff2)
+  intdf<-as.data.frame(int) %>%
+    mutate(city_num=i+1) %>%
+    mutate(intarea=expanse(int, unit="m"))
+    
+  output<-rbind(output, intdf)
+}
+
+output2<-output %>%
+  group_by(city_num) %>%
+  mutate(maxarea=max(intarea)) %>%
+  filter(intarea==maxarea) %>%
+  select(PUMACE10, city_num)
+
+#run regressions with pum
+
+df3 <- read.csv('regression_analysis_data') 
+df4<-merge(df3, output2, by="city_num")
+
+## ERROR here with summary() function
+summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(PUMACE10) + construction + 
+                   TERP + NAAQS +
+                   temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + 
+                   wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + 
+                   humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 +
+                   lag_humidity_4 + 
+                   as.factor(month) + as.factor(dow) + holiday + 
+                   t + t2 + t3 + t4, data = df4))
+
+
 ```
 
 ```{r}

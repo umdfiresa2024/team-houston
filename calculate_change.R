@@ -39,13 +39,20 @@ pum_2 <-pum %>%
 
 pum_coef<-merge(pum_2, coefdf, by="PUMACE10") |>
   mutate(coef=as.numeric(coef), change_bicycle = change_bicycle*100, change_walked=change_walked*100, change_bus = change_bus*100, change_car=change_car*100)
-write.csv(pum_coef,'pum_coef.csv')
+#write.csv(pum_coef,'pum_coef.csv')
+#write.csv(coefdf,'coefdf.csv')
+#write.csv(pum_2, 'pum_2.csv')
 
 
 shape<-tigris::pumas(state="TX",class="sp", year=2012)
 shapevect<-vect(shape) 
 
+outfile <- 'shapevect.shp'
+writeVector(shapevect,outfile, overwrite=TRUE)
+
 shape_coef<-merge(shapevect, pum_coef, by="PUMACE10")
+#outfile <- 'shape_coef.shp'
+#writeVector(shape_coef, outfile, overwrite=TRUE)
 
 plot(shape_coef, 
      "change_bicycle",

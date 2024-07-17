@@ -14,7 +14,7 @@ library('broom')
 
 ```{r}
 
-df <- stat_data
+df <- read.csv('stations_data.csv') #From combining PM2.5 and Meteorlogical Data.qmd
 df2 <- df %>%
   mutate(date = as.Date(date_parse, format = '%Y%m%d'))
 ```
@@ -40,7 +40,7 @@ df3 <- df2 %>%
   mutate(dow = wday(date))%>%
   mutate(construction = ifelse(date>consDate & date < openDate, 1 , 0)) %>%
   group_by(city_num)%>%
-  rename(pm25 = pm25.y)%>%
+  #rename(pm25 = pm25.y)%>%
   arrange(city_num, date)%>%
   mutate(lpm25 = lag(pm25)) %>%
   mutate(lpm25_2 = lpm25^2, lpm25_3 = lpm25^3, lpm25_4= lpm25^4)%>%
