@@ -3,8 +3,8 @@
 
 ## Research Question
 
-Following Houston’s Red Line MetroRail opening, how did the means of
-transportation parallel PM2.5 emissions surrounding stations?
+How does the opening of Houston’s Red Line Light Rail correlate to
+changes in transportation choice and PM2.5 pollution?
 
 ## Research Context
 
@@ -16,30 +16,36 @@ transportation parallel PM2.5 emissions surrounding stations?
 
   - The Red Line opened in 2004.
 
-- Hypothesis: Light rail openings increase pollution around stations
+- Hypothesis: Light rail openings increase pollution around stations,
 
   - Reasoning: Light rail stations aggregate commuters throughout
     Houston, resulting in a concentration of pollution around these
     stations.
 
-  - Confounding Factors
+- Confounding Factors
 
-    - Power Plants: Houston has several power plants that produce PM2.5.
+  - Power Plants: Houston has several power plants that produce PM2.5
 
-      - The primary pollutant along the Red Line is the UH Central Power
-        Station
+    - The primary pollutant along the Red Line is the UH Central Power
+      Station
 
-    - Roads/Highways/Intersections: Houston has some of the most
-      congested roads in the U.S.
+  - Roads/Highways/Intersections: Houston has some of the most congested
+    roads in the U.S.
 
-    - Meteorological Factors: Various weather and climate influences on
-      PM2.5 levels
+  - Meteorological Factors: Various weather and climate influences on
+    PM2.5 levels
 
-      - Temperature
+    - Temperature
 
-      - Wind
+    - Wind
 
-      - Humidity
+    - Humidity
+
+  - Policies
+
+    - NAAQS
+
+    - TERP: Texas Emission Reduction Plan
 
 ### Power Plants
 
@@ -59,18 +65,9 @@ plants and stations along the Red Line.
 
 ``` r
 library('knitr')
-```
-
-    Warning: package 'knitr' was built under R version 4.3.3
-
-``` r
 #| message: false
+#| warning: false
 library('tidyverse')
-```
-
-    Warning: package 'tidyverse' was built under R version 4.3.3
-
-``` r
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
 kable(t)
 ```

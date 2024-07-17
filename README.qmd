@@ -7,7 +7,7 @@ editor: visual
 
 ## Research Question
 
-Following Houston’s Red Line MetroRail opening, how did the means of transportation parallel PM2.5 emissions surrounding stations?
+How does the opening of Houston's Red Line Light Rail correlate to changes in transportation choice and PM2.5 pollution?
 
 ## Research Context
 
@@ -19,25 +19,31 @@ Following Houston’s Red Line MetroRail opening, how did the means of transport
 
     -   The Red Line opened in 2004.
 
--   Hypothesis: Light rail openings increase pollution around stations
+-   Hypothesis: Light rail openings increase pollution around stations,
 
     -   Reasoning: Light rail stations aggregate commuters throughout Houston, resulting in a concentration of pollution around these stations.
 
-    -   Confounding Factors
+-   Confounding Factors
 
-        -   Power Plants: Houston has several power plants that produce PM2.5.
+    -   Power Plants: Houston has several power plants that produce PM2.5
 
-            -   The primary pollutant along the Red Line is the UH Central Power Station
+        -   The primary pollutant along the Red Line is the UH Central Power Station
 
-        -   Roads/Highways/Intersections: Houston has some of the most congested roads in the U.S.
+    -   Roads/Highways/Intersections: Houston has some of the most congested roads in the U.S.
 
-        -   Meteorological Factors: Various weather and climate influences on PM2.5 levels
+    -   Meteorological Factors: Various weather and climate influences on PM2.5 levels
 
-            -   Temperature
+        -   Temperature
 
-            -   Wind
+        -   Wind
 
-            -   Humidity
+        -   Humidity
+
+    -   Policies
+
+        -   NAAQS
+
+        -   TERP: Texas Emission Reduction Plan
 
 ### Power Plants
 
@@ -53,8 +59,10 @@ We used a Google API key to identify the coordinates for all power plants and st
 
 ```{r}
 #| message: false
+#| warning: false
 library('knitr')
 #| message: false
+#| warning: false
 library('tidyverse')
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
 kable(t)
@@ -230,10 +238,10 @@ plot(shape_coef,
 title("Average Car Use Changes\n (in Percents) After Light Rail Openings", line=-20, adj=0.45,cex.main=1)
 plot(buff, add=TRUE)
 ```
+
 ## Conclusion
-Light rail opening led to an average PM2.5 reduction of 12-29%. Areas with the most increase in car use saw the least reduction.
-After the 2004 opening of the red line, the use of buses, biking, and walking decreased between 98-100%, but car usage increased between 2-13%
-Stations with increased car use correlated with weaker reductions in PM2.5 levels compared to the overall reduction seen after the light rail opening
+
+Light rail opening led to an average PM2.5 reduction of 12-29%. Areas with the most increase in car use saw the least reduction. After the 2004 opening of the red line, the use of buses, biking, and walking decreased between 98-100%, but car usage increased between 2-13% Stations with increased car use correlated with weaker reductions in PM2.5 levels compared to the overall reduction seen after the light rail opening
 
 ## References
 
@@ -247,4 +255,4 @@ Stations with increased car use correlated with weaker reductions in PM2.5 level
 
 ### Policy References
 
--   Texas Commission on Environmental Quality. (2024, July 12). Texas Emissions Reduction Plan. Texas Commission on Environmental Quality. https://www.tceq.texas.gov/airquality/terp  
+-   Texas Commission on Environmental Quality. (2024, July 12). Texas Emissions Reduction Plan. Texas Commission on Environmental Quality. https://www.tceq.texas.gov/airquality/terp
