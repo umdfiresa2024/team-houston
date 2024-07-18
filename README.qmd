@@ -61,8 +61,6 @@ We used a Google API key to identify the coordinates for all power plants and st
 #| message: false
 #| warning: false
 library('knitr')
-#| message: false
-#| warning: false
 library('tidyverse')
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
 kable(t)
@@ -97,7 +95,6 @@ kable(t)
 
 library('terra')
 library('maptiles')
-library('ggmap')
 
 x <- vect('bg_x_vect.shp')
 buff_sta <- vect('buff_sta.shp')
@@ -125,7 +122,7 @@ We gathered PM2.5 data from NASA's Socioeconomic Data and Application Center. We
 ```{r}
 df <- read.csv('stations_data.csv')
 df2 <- df %>%
-  mutate(date = as.Date(date_parse, format = '%Y%m%d'))
+  mutate(date = as.Date(as.character(date_parse), format = '%Y%m%d'))
 
 startDate <- as.Date('2000-1-1', format = '%Y-%m-%d')
 endDate <- as.Date('2008-12-31', format = '%Y-%m-%d')
@@ -138,14 +135,13 @@ TERPreactive <- as.Date('2003-6-26', format = '%Y-%m-%d')
 
 NAAQS <- as.Date('2006-10-17', format = '%Y-%m-%d')
 
-## ERROR here. It appears like the code is running but then returns an error I've never seen before: Error in `[[<-`. 
 df3 <- df2 %>%
   filter(date >=startDate & date <= endDate) %>%
   mutate(MetroOpen = ifelse(date >= openDate,1,0)) %>%
   mutate(dow = wday(date))%>%
   mutate(construction = ifelse(date>consDate & date < openDate, 1 , 0)) %>%
   group_by(city_num)%>%
-  #rename(pm25 = pm25.y)%>%
+  rename(pm25 = pm25.y)%>%
   arrange(city_num, date)%>%
   mutate(lpm25 = lag(pm25)) %>%
   mutate(lpm25_2 = lpm25^2, lpm25_3 = lpm25^3, lpm25_4= lpm25^4)%>%
@@ -153,19 +149,37 @@ df3 <- df2 %>%
   mutate(t2 = t^2, t3 = t^3, t4 = t^4)%>%
   mutate(temp = Tair_f_tavg)%>%
   mutate(lag_temp = lag(Tair_f_tavg))%>%
-  mutate(lag_temp_2 = lag_temp^2, lag_temp_3 = lag_temp^3, lag_temp_4 = lag_temp^4) %>%
+  mutate(lag_temp_2 = lag_temp^2, 
+         lag_temp_3 = lag_temp^3, 
+         lag_temp_4 = lag_temp^4) %>%
   mutate(wind = Wind_f_tavg)%>%
   mutate(lag_wind = lag(Wind_f_tavg))%>%
-  mutate(lag_wind_2 = lag_wind^2, lag_wind_3 = lag_wind^3, lag_wind_4 = lag_wind^4)%>%
+  mutate(lag_wind_2 = lag_wind^2, 
+         lag_wind_3 = lag_wind^3, 
+         lag_wind_4 = lag_wind^4)%>%
   mutate(humidity = Qair_f_tavg)%>%
   mutate(lag_humidity = lag(Qair_f_tavg))%>%
-  mutate(lag_humidity_2 = lag_humidity^2, lag_humidity_3 = lag_humidity^3, lag_humidity_4 = lag_humidity^4)%>%
-  mutate(TERP = ifelse(date > TERPstart & date < TERPinactive | date > TERPreactive,1,0)) %>%
+  mutate(lag_humidity_2 = lag_humidity^2, 
+         lag_humidity_3 = lag_humidity^3, 
+         lag_humidity_4 = lag_humidity^4)%>%
+  mutate(TERP = ifelse(date > TERPstart & 
+                         date < TERPinactive | date > TERPreactive,1,0)) %>%
   mutate(NAAQS = ifelse(date>NAAQS,1,0))
 ```
 
+The DB-OLS regression results are shown below.
+
 ```{r}
-summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 + lag_humidity_4 + as.factor(month) + as.factor(dow) + holiday + t + t2 + t3 + t4, data = df3))
+summary(m2 <- lm(log(pm25) ~ MetroOpen + construction + as.factor(dow)
+                 , data = df3))
+
+summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +
+                   temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + 
+                   wind + lag_wind + lag_wind_2 + lag_wind_3 + lag_wind_4 + 
+                   humidity + lag_humidity + lag_humidity_2 + lag_humidity_3 +
+                   lag_humidity_4 + 
+                   as.factor(month) + as.factor(dow) + holiday + 
+                   t + t2 + t3 + t4, data = df3))
 ```
 
 ## Spatial Data Mapping
@@ -176,11 +190,12 @@ We identify pollution reductions per station by organizing stations into the PUM
 
 ```{r}
 mPM2.5 <- read.csv('PM2.5PollutionByPumaRegressionModel.csv')
-mPM2.5
 
 ```
 
 ```{r}
+#| eval: false
+
 buff<-vect("buff_sta.shp") #stations shapefile
 
 shape<-tigris::pumas(state="TX",class="sp", year=2012)
@@ -191,7 +206,6 @@ shapevect<-subset(shapevect, shapevect$pumnum>4600 & shapevect$pumnum<=4604)
 output<-c()
 
 for(i in 0:24){
-  print(i)
   buff2 <-subset(buff, buff$FID ==i)
   int<-crop(shapevect, buff2)
   intdf<-as.data.frame(int) %>%
@@ -212,7 +226,6 @@ output2<-output %>%
 df3 <- read.csv('regression_analysis_data') 
 df4<-merge(df3, output2, by="city_num")
 
-## ERROR here with summary() function
 summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(PUMACE10) + construction + 
                    TERP + NAAQS +
                    temp + lag_temp + lag_temp_2 + lag_temp_3 + lag_temp_4 + 
@@ -222,11 +235,14 @@ summary(m1 <- lm(log(pm25) ~ MetroOpen:as.factor(PUMACE10) + construction +
                    as.factor(month) + as.factor(dow) + holiday + 
                    t + t2 + t3 + t4, data = df4))
 
-
+coef<-coef(m1)[42:44]
+PUMACE10<-c("04602", "04603", "04604")
+coefdf<-as.data.frame(cbind(coef, PUMACE10))
 ```
 
 ```{r}
 shapevect <- vect('shapevect.shp')
+
 buff3 <- vect('buff3.shp')
 buff2 <- vect('Buff2.shp')
 
@@ -256,10 +272,18 @@ plot(buff2,
 
 We identify the change in method of commute transportation by separating PUMA census data from the years 2004 and 2008 and tracking the percentage change for each of the three PUMAS. We tracked the percentage change in those who bike, walk, bus, or drive to work.
 
+The table below shows the change in transportation mode of each PUMA.
+
 ```{r}
+pum_coef <- read.csv('pum_coef.csv', colClass=c("PUMACE10"="character")) %>%
+  dplyr::select(-X, -coef, -change_subway, -change_motorcycle, -change_taxicab)
 
+kable(pum_coef)
+```
 
+```{r}
 pum_coef <- read.csv('pum_coef.csv', colClass=c("PUMACE10"="character"))
+
 buff<-vect("buff_sta.shp")
 shapevect<-vect('shapevect.shp')
 shape_coef<-merge(shapevect, pum_coef, by="PUMACE10")
