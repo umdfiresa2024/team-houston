@@ -45,7 +45,10 @@ changes in transportation choice and PM2.5 pollution?
 
     - NAAQS
 
-    - TERP: Texas Emission Reduction Plan
+    - Texas Emissions Reduction Plan (TERP): Aims to reduce pollution
+      from vehicles by offering grants for the use of “newer, cleaner
+      technology, and retiring outdated pieces of machinery” (Texas
+      Emissions Reduction Plan 2024).
 
 ### Power Plants
 
@@ -67,18 +70,20 @@ plants and stations along the Red Line.
 library('knitr')
 library('tidyverse')
 t <- read.csv('Untitled spreadsheet - Sheet1.csv')
+t <- t %>%
+  select(Name, Address)
 kable(t)
 ```
 
-| Name                            | Address                                         | Coords |
-|:--------------------------------|:------------------------------------------------|:-------|
-| UH Central Power Plant          | 4738 Calhoun Rd, Houston, TX 77004              | NA     |
-| NRG T.H. Wharton Plant          | 16301 Texas 249 Access Rd, Houston, TX 77064    | NA     |
-| Friendswood Energy Center       | 12100 Hiram Clarke Rd bldg-d, Houston, TX 77045 | NA     |
-| W.A. Parish Generating Station  | 2500 Y. U. Jones Rd, Richmond, TX 77469         | NA     |
-| EIF Channelview Cogeneration    | 8580 Sheldon Rd, Houston, TX 77049              | NA     |
-| Smith Power Systems             | 256 N Sam Houston Pkwy E, Houston, TX 77060     | NA     |
-| Calpine Deer Park Energy Center | 5665 Hwy 225, Deer Park, TX 77536               | NA     |
+| Name                            | Address                                         |
+|:--------------------------------|:------------------------------------------------|
+| UH Central Power Plant          | 4738 Calhoun Rd, Houston, TX 77004              |
+| NRG T.H. Wharton Plant          | 16301 Texas 249 Access Rd, Houston, TX 77064    |
+| Friendswood Energy Center       | 12100 Hiram Clarke Rd bldg-d, Houston, TX 77045 |
+| W.A. Parish Generating Station  | 2500 Y. U. Jones Rd, Richmond, TX 77469         |
+| EIF Channelview Cogeneration    | 8580 Sheldon Rd, Houston, TX 77049              |
+| Smith Power Systems             | 256 N Sam Houston Pkwy E, Houston, TX 77060     |
+| Calpine Deer Park Energy Center | 5665 Hwy 225, Deer Park, TX 77536               |
 
 ### Red Line Stations
 
@@ -333,12 +338,15 @@ summary(m3 <- lm(log(pm25) ~ MetroOpen + construction + TERP + NAAQS +
 
 ### PM2.5 Data by PUMA
 
-We identify pollution reductions per station by organizing stations into
-the PUMAs they reside in and identify the PM2.5 reduction by PUMAs.
-PUMAs are Public Use Microdata Areas provided by the U.S. census. Here
-we use PUMAS 4602, 4603, and 4604. We identify the pollution reduction
-by PUMA by creating a new linear regression model including the
-MetroOpen:as.factor(PUMACE10) as a variable.
+Public Use Microdata Areas (PUMAs) are statistical geographic areas that
+partition each state into regions containing at least 100,000 people.
+These areas are used for tabulating and disseminating census and
+American Community Survey (ACS). We queried ACS data for the year 2004
+and 2008. We identify pollution reductions per station by organizing
+stations into the PUMAs they reside in and identify the PM2.5 reduction
+by PUMA.Here we use PUMAS 4602, 4603, and 4604. We identify the
+pollution reduction by PUMA by creating a new linear regression model
+including the MetroOpen:as.factor(PUMACE10) as a variable.
 
 ``` r
 mPM2.5 <- read.csv('PM2.5PollutionByPumaRegressionModel.csv')
@@ -558,8 +566,12 @@ opening
   Information Services Center (GES DISC), Accessed: 07/16/2024,
   [10.5067/TXBMLX370XX8](https://doi.org/10.5067/TXBMLX370XX8)
 
+- U.S. Census Bureau, 2010, DP03, Retrieved From <a
+  href="https://data.census.gov/table/ACSDP5Y2010.DP03?q=PUMA%20data%20for%20Houston%20Texas&amp;g=040XX00US48$7950000&amp;y=2010"
+  class="uri">https://data.census.gov/table/ACSDP5Y2010.DP03?q=PUMA%20data%20for%20Houston%20Texas&amp;g=040XX00US48\$7950000&amp;y=2010</a>.
+
 ### Policy References
 
 - Texas Commission on Environmental Quality. (2024, July 12). Texas
   Emissions Reduction Plan. Texas Commission on Environmental Quality.
-  https://www.tceq.texas.gov/airquality/terp
+  <https://www.tceq.texas.gov/airquality/terp>
